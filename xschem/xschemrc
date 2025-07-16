@@ -325,6 +325,15 @@ if { [info exists env(PDK_ROOT)] && $env(PDK_ROOT) ne {} } {
     puts stderr {No pdk installation found, set PDK_ROOT env. var. and restart xschem}
   }
 }
+if { [info exists env(PROJECT_ROOT)] && $env(PROJECT_ROOT) ne {} } {
+  ## found variable, set tcl PDK_ROOT var
+  if {![file isdir $env(PROJECT_ROOT)]} {
+    puts stderr "Warning: PROJECT_ROOT environment variable is set but path not found on the system."
+  }
+  set PROJECT_ROOT $env(PROJECT_ROOT)
+} else {
+  puts stderr "Warning: PROJECT_ROOT env. var. not found or empty, trying to find a pdk install"
+}
 
 if {[info exists PDK_ROOT]} {
   set 180MCU_MODELS ${PDK_ROOT}/gf180mcuC/libs.tech/ngspice
@@ -336,6 +345,7 @@ if {[info exists PDK_ROOT]} {
 set XSCHEM_START_WINDOW ${PDK_ROOT}/gf180mcuC/libs.tech/xschem/tests/0_top.sch
 append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/gf180mcuC/libs.tech/xschem
 append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/gf180mcuC/libs.tech/xschem/tests
+append XSCHEM_LIBRARY_PATH :${PROJECT_ROOT}/xschem/gf180mcuc-stdcells
 
 # allow a user-specific path add-on
 if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH) ] } {

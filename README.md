@@ -15,16 +15,17 @@ source $HOME/eda-env/bin/activate
 conda install -c unic-cass ngspice xschem open_pdks.gf180mcuc
 ```
 
-- Set up the environment variable `PDK_ROOT`
+- Set up the environment variable `PDK_ROOT` and `PROJECT_ROOT`
 
 ``` bash
-export PDK_ROOT=$CONDA_PREFIX/share/pdk
+source env.sh
+
 ```
 
 - Check out the source code
 
 ``` bash
-git clone 
+git clone https://github.com/sislab-vnu/CS_DAC
 ```
 
 - Launch Xschem and run the simulation
