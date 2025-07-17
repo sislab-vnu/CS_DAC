@@ -17,8 +17,8 @@ G {}
 K {type=primitive
 function2="0 1 | ~"
 format="@name @@A1 @@A2 @@ZN @VDD @VNW @VPW @VSS @prefix\\\\nor2_4"
-template="name=x1 VDD=VDD VNB=VNB VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ "
-extra="VDD VNB VPW VSS prefix"
+template="name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ "
+extra="VDD VNW VPW VSS prefix"
 verilogprefix=gf180mcu_fd_sc_mcu7t5v0__
 highlight=true}
 V {}
