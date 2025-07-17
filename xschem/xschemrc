@@ -337,6 +337,7 @@ if { [info exists env(PROJECT_ROOT)] && $env(PROJECT_ROOT) ne {} } {
 
 if {[info exists PDK_ROOT]} {
   set 180MCU_MODELS ${PDK_ROOT}/gf180mcuC/libs.tech/ngspice
+  set 180MCU_STDCELLS ${PDK_ROOT}/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice
   puts stderr "pdk installation: using $PDK_ROOT"
   puts stderr "180MCU_MODELS: $180MCU_MODELS"
 }
