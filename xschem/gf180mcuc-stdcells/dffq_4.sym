@@ -14,7 +14,7 @@ v {xschem version=3.1.0 file_version=1.2
 * limitations under the License.
 }
 K {type=primitive
-format="@name @@CLK @@D @@Q @VDD @VNW @VPW @VSS @prefix\\\\dffq_4"
+format="@name @@D @@CLK @@Q @VDD @VNW @VPW @VSS @prefix\\\\dffq_4"
 template="name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ "
 extra="VDD VNW VPW VSS prefix"
 verilogprefix=gf180mcu_fd_sc_mcu7t5v0__
