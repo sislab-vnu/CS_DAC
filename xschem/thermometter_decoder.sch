@@ -35,8 +35,6 @@ N 340 -120 340 -20 {
 lab=X2}
 N 330 100 330 180 {
 lab=D2}
-N 350 180 400 180 {
-lab=X0}
 N 400 -140 400 180 {
 lab=X0}
 N 340 300 340 420 {
@@ -53,56 +51,26 @@ N 170 320 170 380 {
 lab=D5}
 N 170 380 170 420 {
 lab=D5}
-N 180 100 180 180 {
-lab=#net1}
 N 150 -120 150 180 {
 lab=X2}
 N 60 120 60 200 {
-lab=#net2}
+lab=#net1}
 N 50 320 50 420 {
 lab=D3}
 N 40 -100 40 -20 {
 lab=X1}
 N 70 -140 70 -20 {
 lab=X0}
-N 10 200 40 200 {
-lab=X2}
 N 10 -120 10 200 {
 lab=X2}
 N -100 -120 -100 -80 {
 lab=X2}
 N -100 340 -100 420 {
 lab=D4}
-N 120 40 120 250 {
-lab=VP}
-N 100 250 120 250 {
-lab=VP}
-N 230 30 230 240 {
-lab=VP}
-N 390 30 390 230 {
-lab=VP}
-N 380 30 390 30 {
-lab=VP}
-N 630 20 650 20 {
-lab=VP}
-N -30 -220 -30 30 {
-lab=VP}
-N 120 -220 120 40 {
-lab=VP}
-N 230 -220 230 30 {
-lab=VP}
-N 390 -220 390 30 {
-lab=VP}
-N 650 -220 650 20 {
-lab=VP}
-N -30 -220 650 -220 {
-lab=VP}
-N 350 -280 350 -220 {
-lab=VP}
 N 570 100 570 140 {
 lab=D6}
 N 720 100 720 160 {
-lab=#net3}
+lab=#net2}
 N 550 -100 700 -100 {
 lab=X1}
 N 700 -100 700 -40 {
@@ -115,28 +83,58 @@ N 580 -120 800 -120 {
 lab=X2}
 N 800 -120 800 160 {
 lab=X2}
-N 750 160 800 160 {
-lab=X2}
-N 780 20 820 20 {
-lab=VP}
-N 820 20 820 220 {
-lab=VP}
-N 800 220 820 220 {
-lab=VP}
-N 820 -220 820 20 {
-lab=VP}
-N 650 -220 820 -220 {
-lab=VP}
 N -100 80 -100 140 {
-lab=#net4}
+lab=#net3}
 N -100 300 -100 340 {
 lab=D4}
-N -50 200 -30 200 {
-lab=VP}
-N -50 -20 -30 -20 {
-lab=VP}
-N -30 30 -30 200 {
-lab=VP}
+N 700 -40 700 -20 {
+lab=X1}
+N 730 -20 740 -20 {
+lab=X0}
+N 730 -40 730 -20 {
+lab=X0}
+N 760 160 800 160 {
+lab=X2}
+N 740 280 740 300 {
+lab=D7}
+N 550 -40 550 -20 {
+lab=X1}
+N 590 -40 590 -20 {
+lab=X2}
+N 580 -40 590 -40 {
+lab=X2}
+N 310 -20 320 -20 {
+lab=X1}
+N 340 -20 350 -20 {
+lab=X2}
+N 320 180 330 180 {
+lab=D2}
+N 360 180 400 180 {
+lab=X0}
+N 190 -20 210 -20 {
+lab=X0}
+N 150 180 150 200 {
+lab=X2}
+N 190 100 190 200 {
+lab=#net4}
+N 60 100 60 120 {
+lab=#net1}
+N 70 -20 80 -20 {
+lab=X0}
+N 60 200 70 200 {
+lab=#net1}
+N 10 200 30 200 {
+lab=X2}
+N -100 -80 -100 -40 {
+lab=X2}
+N -100 50 -100 80 {
+lab=#net3}
+N -100 40 -100 50 {
+lab=#net3}
+N -100 140 -100 180 {
+lab=#net3}
+N -100 260 -100 300 {
+lab=D4}
 C {ipin.sym} -220 -140 0 0 {name=p1 lab=X0}
 C {ipin.sym} -220 -100 0 0 {name=p3 lab=X1}
 C {ipin.sym} -220 -120 0 0 {name=p2 lab=X2}
@@ -147,15 +145,20 @@ C {opin.sym} -100 420 0 0 {name=p15 lab=D4}
 C {opin.sym} 170 420 0 0 {name=p12 lab=D5}
 C {opin.sym} 570 420 0 0 {name=p13 lab=D6}
 C {opin.sym} 740 420 0 0 {name=p14 lab=D7}
-C {iopin.sym} 350 -280 0 0 {name=p4 lab=VP}
-C {inverter.sym} -250 190 1 0 {name=x10}
-C {AND2.sym} 360 30 1 0 {name=x1}
-C {AND2.sym} 530 230 1 0 {name=x2}
-C {OR2.sym} 70 40 1 0 {name=x3}
-C {OR2.sym} 80 240 1 0 {name=x4}
-C {AND2.sym} -40 250 1 0 {name=x6}
-C {AND2.sym} -150 50 1 0 {name=x7}
-C {OR2.sym} -210 260 1 0 {name=x8}
-C {OR2.sym} -80 40 1 0 {name=x5}
-C {inverter.sym} -250 -30 1 0 {name=x9}
-C {AND2.sym} 510 30 1 0 {name=x11}
+C {gf180mcuc-stdcells/or2_2.sym} 340 240 1 0 {name=x3 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/or2_2.sym} 190 40 1 0 {name=x4 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/and2_2.sym} 170 260 1 0 {name=x5 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/and2_2.sym} 60 40 1 0 {name=x6 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/or2_2.sym} 50 260 1 0 {name=x7 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/inv_2.sym} -100 0 1 0 {name=x8 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/inv_2.sym} -100 220 1 0 {name=x9 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/and2_2.sym} 720 40 1 0 {name=x12 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/and2_2.sym} 570 40 1 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/and2_2.sym} 740 220 1 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/or2_2.sym} 330 40 1 0 {name=x11 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {code_shown.sym} -350 30 0 0 {name=NGSPICE only_toplevel=false value="
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0 
+VVPW VPW 0 dc 0 
+VVNW VNW 0 dc 3.3
+"}

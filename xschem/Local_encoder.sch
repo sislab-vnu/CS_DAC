@@ -5,58 +5,42 @@ K {}
 V {}
 S {}
 E {}
-N 590 -50 610 -50 {
+N 430 160 870 160 {
+lab=Ri-1}
+N 570 120 660 120 {
 lab=#net1}
-N 770 -50 850 -50 {
+N 740 120 870 120 {
 lab=#net2}
-N 850 -50 910 -50 {
-lab=#net2}
-N 330 -40 430 -40 {
+N 370 140 450 140 {
 lab=Ri}
-N 910 -30 910 -10 {
-lab=Ri-1}
-N 1070 -40 1110 -40 {
-lab=#net3}
-N 1110 -20 1110 20 {
-lab=CLK}
-N 330 20 1110 20 {
-lab=CLK}
-N 670 -100 970 -100 {
-lab=VP}
-N 820 -200 820 -100 {
-lab=VP}
-N 490 -140 490 -110 {
-lab=VP}
-N 490 -140 820 -140 {
-lab=VP}
-N 1410 -140 1410 -40 {
-lab=VP}
-N 820 -140 1410 -140 {
-lab=VP}
-N 1410 -20 1480 -20 {
+N 380 100 450 100 {
+lab=Ci}
+N 1230 120 1300 120 {
 lab=Q}
-N 1410 0 1480 -0 {
+N 1030 120 1050 120 {
+lab=CLK}
+N 1260 120 1260 200 {
+lab=Q}
+N 1340 200 1360 200 {
 lab=negQ}
-N 380 -60 430 -60 {
-lab=Ci}
-N 380 -60 380 -10 {
-lab=Ci}
-N 330 -10 380 -10 {
-lab=Ci}
-N 330 -60 360 -60 {
-lab=Ri-1}
-N 360 -60 410 -10 {
-lab=Ri-1}
-N 410 -10 910 -10 {
-lab=Ri-1}
-C {NAND2.sym} 980 130 0 0 {name=x1}
-C {NOR2.sym} 490 120 0 0 {name=x3}
-C {inverter.sym} 660 100 0 0 {name=x4}
-C {DFF.sym} 1260 -20 0 0 {name=x2}
-C {ipin.sym} 330 -60 0 0 {name=p1 lab=Ri-1}
-C {ipin.sym} 330 -40 0 0 {name=p2 lab=Ri}
-C {ipin.sym} 330 -10 0 0 {name=p3 lab=Ci}
-C {ipin.sym} 330 20 0 0 {name=p4 lab=CLK}
-C {iopin.sym} 820 -200 0 0 {name=p5 lab=VP}
-C {opin.sym} 1480 -20 0 0 {name=p6 lab=Q}
-C {opin.sym} 1480 0 0 0 {name=p7 lab=negQ}
+N 1300 120 1360 120 {
+lab=Q}
+N 990 140 1050 140 {
+lab=#net3}
+C {gf180mcuc-stdcells/nand2_2.sym} 930 140 0 0 {name=x5 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {ipin.sym} 430 160 0 0 {name=p8 lab=Ri-1}
+C {gf180mcuc-stdcells/nor2_2.sym} 510 120 0 0 {name=x6 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/inv_2.sym} 700 120 0 0 {name=x7 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {ipin.sym} 370 140 0 0 {name=p9 lab=Ri}
+C {ipin.sym} 380 100 0 0 {name=p10 lab=Ci}
+C {ipin.sym} 1030 120 0 0 {name=p11 lab=CLK}
+C {opin.sym} 1360 120 0 0 {name=p12 lab=Q}
+C {opin.sym} 1360 200 0 0 {name=p13 lab=negQ}
+C {gf180mcuc-stdcells/dffq_1.sym} 1140 130 0 0 {name=x8 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {gf180mcuc-stdcells/inv_2.sym} 1300 200 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {code_shown.sym} 600 -20 0 0 {name=NGSPICE only_toplevel=false value="
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0 
+VVNW VNW 0 dc 3.3
+"}

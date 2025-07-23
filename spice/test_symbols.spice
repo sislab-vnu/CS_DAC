@@ -1,0 +1,52 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/test_symbols.sch
+**.subckt test_symbols
+x1 D1 CLK q1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_1
+x2 D2 CLK q2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x3 D4 CLK q4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_4
+V1 CLK GND PULSE(0 3.3 0 1n 1n 4n 10n)
+x4 A1 A2 and2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+V3 A1 GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V4 A2 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+x6 A1 A2 and1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+x5 A1 A2 and4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+x7 A1 i1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_1
+x8 A1 i2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x9 A1 i3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x10 A1 i4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_4
+x11 A1 A2 or1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_1
+x12 A1 A2 or2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nor2_2
+x13 A1 A2 or4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_4
+x14 A1 A2 nand1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+x15 A1 A2 nand2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nand2_2
+x16 A1 A2 nand4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nand2_4
+V5 D GND PULSE(0 3.3 2n 1n 1n 19n 40n)
+x17 net1 D4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x18 D net1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x19 net2 D2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x20 D net2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x21 net3 D1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+x22 D net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_3
+**** begin user architecture code
+
+
+vvdd vdd 0 dc 3.3
+vvss vss 0 0
+vvnw vnw 0 dc 3.3
+vvpw vpw 0 0
+.tran 1n 320n
+.save all
+
+
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

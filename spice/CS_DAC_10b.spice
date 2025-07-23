@@ -1,0 +1,361 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_DAC_10b.sch
+**.subckt CS_DAC_10b
+x1 C1 net9 CLK D1 vcc net10 Local_encoder
+x2 C2 net11 CLK D1 vcc net12 Local_encoder
+x3 C3 net13 CLK D1 vcc net14 Local_encoder
+x4 C4 net15 CLK D1 vcc net16 Local_encoder
+x5 C5 net17 CLK D1 vcc net18 Local_encoder
+x6 C6 net19 CLK D1 vcc net20 Local_encoder
+x7 C7 net21 CLK D1 vcc net22 Local_encoder
+V1 vcc GND 3.3
+V3 VP GND 3.3
+V10 VBIAS GND 1.8
+V2 X1 GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V5 X2 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+V6 X3 GND PULSE(0 3.3 0 1n 1n 19n 40n)
+V7 X4 GND PULSE(0 3.3 0 1n 1n 39n 80n)
+V8 X5 GND PULSE(0 3.3 0 1n 1n 79n 160n)
+V9 X6 GND PULSE(0 3.3 0 1n 1n 159n 320n)
+V11 X7 GND PULSE(0 3.3 0 1n 1n 319n 640n)
+V12 X8 GND PULSE(0 3.3 0 1n 1n 639n 1280n)
+V13 X9 GND PULSE(0 3.3 0 1n 1n 1279n 2560n)
+V14 X10 GND PULSE(0 3.3 0 1n 1n 2559n 5120n)
+x64 X8 X10 X9 D3 D7 D4 D6 D5 D2 D1 thermometter_decoder
+x65 X5 X7 X6 C3 C7 C4 C6 C5 C2 C1 thermometter_decoder
+x66 X4 CLK net7 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x67 net7 net8 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x68 X3 CLK net5 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x69 net5 net6 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x70 X2 CLK net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x71 net3 net4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x72 X1 CLK net1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x73 net1 net2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+V15 CLK GND PULSE(0 3.3 2n 1n 1n 4n 10n)
+x74 net2 net1 OUT- OUT+ VBIAS GND CS_Switch_1x
+x75 net3 net4 OUT- OUT+ VBIAS GND CS_Switch_2x
+x76 net5 net6 OUT+ OUT- VBIAS GND CS_Switch_4x
+x77 net7 net8 OUT+ OUT- VBIAS GND CS_Switch_8x
+x78 net9 net10 OUT- OUT+ VBIAS GND CS_Switch_16x
+x79 net11 net12 OUT- OUT+ VBIAS GND CS_Switch_16x
+x80 net13 net14 OUT- OUT+ VBIAS GND CS_Switch_16x
+x81 net15 net16 OUT- OUT+ VBIAS GND CS_Switch_16x
+x82 net17 net18 OUT- OUT+ VBIAS GND CS_Switch_16x
+x83 net19 net20 OUT- OUT+ VBIAS GND CS_Switch_16x
+x84 net21 net22 OUT- OUT+ VBIAS GND CS_Switch_16x
+x85 GND net23 CLK D1 vcc net24 Local_encoder
+x86 net23 net24 OUT- OUT+ VBIAS GND CS_Switch_16x
+x8 C1 net25 CLK D2 D1 net26 Local_encoder
+x9 C2 net27 CLK D2 D1 net28 Local_encoder
+x10 C3 net29 CLK D2 D1 net30 Local_encoder
+x11 C4 net31 CLK D2 D1 net32 Local_encoder
+x12 C5 net33 CLK D2 D1 net34 Local_encoder
+x13 C6 net35 CLK D2 D1 net36 Local_encoder
+x14 C7 net37 CLK D2 D1 net38 Local_encoder
+x15 net25 net26 OUT- OUT+ VBIAS GND CS_Switch_16x
+x16 net27 net28 OUT- OUT+ VBIAS GND CS_Switch_16x
+x17 net29 net30 OUT- OUT+ VBIAS GND CS_Switch_16x
+x18 net31 net32 OUT- OUT+ VBIAS GND CS_Switch_16x
+x19 net33 net34 OUT- OUT+ VBIAS GND CS_Switch_16x
+x20 net35 net36 OUT- OUT+ VBIAS GND CS_Switch_16x
+x21 net37 net38 OUT- OUT+ VBIAS GND CS_Switch_16x
+x22 GND net39 CLK D2 D1 net40 Local_encoder
+x23 net39 net40 OUT- OUT+ VBIAS GND CS_Switch_16x
+x24 C1 net41 CLK D3 D2 net42 Local_encoder
+x25 C2 net43 CLK D3 D2 net44 Local_encoder
+x26 C3 net45 CLK D3 D2 net46 Local_encoder
+x27 C4 net47 CLK D3 D2 net48 Local_encoder
+x28 C5 net49 CLK D3 D2 net50 Local_encoder
+x29 C6 net51 CLK D3 D2 net52 Local_encoder
+x30 C7 net53 CLK D3 D2 net54 Local_encoder
+x31 net41 net42 OUT- OUT+ VBIAS GND CS_Switch_16x
+x32 net43 net44 OUT- OUT+ VBIAS GND CS_Switch_16x
+x33 net45 net46 OUT- OUT+ VBIAS GND CS_Switch_16x
+x34 net47 net48 OUT- OUT+ VBIAS GND CS_Switch_16x
+x35 net49 net50 OUT- OUT+ VBIAS GND CS_Switch_16x
+x36 net51 net52 OUT- OUT+ VBIAS GND CS_Switch_16x
+x37 net53 net54 OUT- OUT+ VBIAS GND CS_Switch_16x
+x38 GND net55 CLK D3 D1 net56 Local_encoder
+x39 net55 net56 OUT- OUT+ VBIAS GND CS_Switch_16x
+x40 C1 net57 CLK D4 D3 net58 Local_encoder
+x41 C2 net59 CLK D4 D3 net60 Local_encoder
+x42 C3 net61 CLK D4 D3 net62 Local_encoder
+x43 C4 net63 CLK D4 D3 net64 Local_encoder
+x44 C5 net65 CLK D4 D3 net66 Local_encoder
+x45 C6 net67 CLK D4 D3 net68 Local_encoder
+x46 C7 net69 CLK D4 D3 net70 Local_encoder
+x47 net57 net58 OUT- OUT+ VBIAS GND CS_Switch_16x
+x48 net59 net60 OUT- OUT+ VBIAS GND CS_Switch_16x
+x49 net61 net62 OUT- OUT+ VBIAS GND CS_Switch_16x
+x50 net63 net64 OUT- OUT+ VBIAS GND CS_Switch_16x
+x51 net65 net66 OUT- OUT+ VBIAS GND CS_Switch_16x
+x52 net67 net68 OUT- OUT+ VBIAS GND CS_Switch_16x
+x53 net69 net70 OUT- OUT+ VBIAS GND CS_Switch_16x
+x54 GND net71 CLK D4 D3 net72 Local_encoder
+x55 net71 net72 OUT- OUT+ VBIAS GND CS_Switch_16x
+x56 C1 net73 CLK D5 D4 net74 Local_encoder
+x57 C2 net75 CLK D5 D4 net76 Local_encoder
+x58 C3 net77 CLK D5 D4 net78 Local_encoder
+x59 C4 net79 CLK D5 D4 net80 Local_encoder
+x60 C5 net81 CLK D5 D4 net82 Local_encoder
+x61 C6 net83 CLK D5 D4 net84 Local_encoder
+x62 C7 net85 CLK D5 D4 net86 Local_encoder
+x63 net73 net74 OUT- OUT+ VBIAS GND CS_Switch_16x
+x87 net75 net76 OUT- OUT+ VBIAS GND CS_Switch_16x
+x88 net77 net78 OUT- OUT+ VBIAS GND CS_Switch_16x
+x89 net79 net80 OUT- OUT+ VBIAS GND CS_Switch_16x
+x90 net81 net82 OUT- OUT+ VBIAS GND CS_Switch_16x
+x91 net83 net84 OUT- OUT+ VBIAS GND CS_Switch_16x
+x92 net85 net86 OUT- OUT+ VBIAS GND CS_Switch_16x
+x93 GND net87 CLK D5 D4 net88 Local_encoder
+x94 net87 net88 OUT- OUT+ VBIAS GND CS_Switch_16x
+x95 C1 net89 CLK D6 D5 net90 Local_encoder
+x96 C2 net91 CLK D6 D5 net92 Local_encoder
+x97 C3 net93 CLK D6 D5 net94 Local_encoder
+x98 C4 net95 CLK D6 D5 net96 Local_encoder
+x99 C5 net97 CLK D6 D5 net98 Local_encoder
+x100 C6 net99 CLK D6 D5 net100 Local_encoder
+x101 C7 net101 CLK D6 D5 net102 Local_encoder
+x102 net89 net90 OUT- OUT+ VBIAS GND CS_Switch_16x
+x103 net91 net92 OUT- OUT+ VBIAS GND CS_Switch_16x
+x104 net93 net94 OUT- OUT+ VBIAS GND CS_Switch_16x
+x105 net95 net96 OUT- OUT+ VBIAS GND CS_Switch_16x
+x106 net97 net98 OUT- OUT+ VBIAS GND CS_Switch_16x
+x107 net99 net100 OUT- OUT+ VBIAS GND CS_Switch_16x
+x108 net101 net102 OUT- OUT+ VBIAS GND CS_Switch_16x
+x109 GND net103 CLK D6 D5 net104 Local_encoder
+x110 net103 net104 OUT- OUT+ VBIAS GND CS_Switch_16x
+x111 C1 net105 CLK D7 D6 net106 Local_encoder
+x112 C2 net107 CLK D7 D6 net108 Local_encoder
+x113 C3 net109 CLK D7 D6 net110 Local_encoder
+x114 C4 net111 CLK D7 D6 net112 Local_encoder
+x115 C5 net113 CLK D7 D6 net114 Local_encoder
+x116 C6 net115 CLK D7 D6 net116 Local_encoder
+x117 C7 net117 CLK D7 D6 net118 Local_encoder
+x118 net105 net106 OUT- OUT+ VBIAS GND CS_Switch_16x
+x119 net107 net108 OUT- OUT+ VBIAS GND CS_Switch_16x
+x120 net109 net110 OUT- OUT+ VBIAS GND CS_Switch_16x
+x121 net111 net112 OUT- OUT+ VBIAS GND CS_Switch_16x
+x122 net113 net114 OUT- OUT+ VBIAS GND CS_Switch_16x
+x123 net115 net116 OUT- OUT+ VBIAS GND CS_Switch_16x
+x124 net117 net118 OUT- OUT+ VBIAS GND CS_Switch_16x
+x125 GND net119 CLK D7 D6 net120 Local_encoder
+x126 net119 net120 OUT- OUT+ VBIAS GND CS_Switch_16x
+x127 C1 net121 CLK GND D7 net122 Local_encoder
+x128 C2 net123 CLK GND D7 net124 Local_encoder
+x129 C3 net125 CLK GND D7 net126 Local_encoder
+x130 C4 net127 CLK GND D7 net128 Local_encoder
+x131 C5 net129 CLK GND D7 net130 Local_encoder
+x132 C6 net131 CLK GND D7 net132 Local_encoder
+x133 C7 net133 CLK GND D7 net134 Local_encoder
+x134 net121 net122 OUT- OUT+ VBIAS GND CS_Switch_16x
+x135 net123 net124 OUT- OUT+ VBIAS GND CS_Switch_16x
+x136 net125 net126 OUT- OUT+ VBIAS GND CS_Switch_16x
+x137 net127 net128 OUT- OUT+ VBIAS GND CS_Switch_16x
+x138 net129 net130 OUT- OUT+ VBIAS GND CS_Switch_16x
+x139 net131 net132 OUT- OUT+ VBIAS GND CS_Switch_16x
+x140 net133 net134 OUT- OUT+ VBIAS GND CS_Switch_16x
+R1 VP OUT+ 50 m=1
+R2 VP OUT- 50 m=1
+**** begin user architecture code
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice statistical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/smbb000149.ngspice statistical
+
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+
+
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0
+VVNW VNW 0 dc 3.3
+.control
+tran 1n 5120n
+run
+wrdata /home/ducluong/CS_DAC/spice/CS_DAC_10b_statistical3.txt v(OUT+) V(OUT-)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  Local_encoder.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/Local_encoder.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/Local_encoder.sch
+.subckt Local_encoder Ci Q CLK Ri Ri-1 negQ
+*.ipin Ri-1
+*.ipin Ri
+*.ipin Ci
+*.ipin CLK
+*.opin Q
+*.opin negQ
+x5 net2 Ri-1 net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nand2_2
+x6 Ci Ri net1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__nor2_2
+x7 net1 net2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x8 net3 CLK Q VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_1
+x1 Q negQ VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+**** begin user architecture code
+
+
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0
+VVNW VNW 0 dc 3.3
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  thermometter_decoder.sym # of pins=10
+** sym_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sch
+.subckt thermometter_decoder X0 X2 X1 D3 D7 D4 D6 D5 D2 D1
+*.ipin X0
+*.ipin X1
+*.ipin X2
+*.opin D1
+*.opin D2
+*.opin D3
+*.opin D4
+*.opin D5
+*.opin D6
+*.opin D7
+x3 X0 D2 D1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x4 X0 X1 net4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x5 net4 X2 D5 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x6 X0 X1 net1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x7 net1 X2 D3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x8 X2 net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x9 net3 D4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x12 X0 X1 net2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x1 X2 X1 D6 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x2 X2 net2 D7 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x11 X2 X1 D2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+**** begin user architecture code
+
+
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0
+VVNW VNW 0 dc 3.3
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  CS_Switch_1x.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_1x.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_1x.sch
+.subckt CS_Switch_1x IN- IN+ OUT+ OUT- VBIAS VSS
+*.iopin VBIAS
+*.ipin IN+
+*.iopin VSS
+*.ipin IN-
+*.opin OUT+
+*.opin OUT-
+XM79 OUT- IN- net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM379 OUT+ IN+ net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM380 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM381 net2 VBIAS VSS VSS nfet_03v3 L=2.2u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_2x.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_2x.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_2x.sch
+.subckt CS_Switch_2x IN+ IN- OUT+ OUT- VBIAS VSS
+*.ipin IN+
+*.ipin IN-
+*.opin OUT-
+*.opin OUT+
+*.iopin VBIAS
+*.iopin VSS
+XM382 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM383 OUT- IN- net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM384 OUT+ IN+ net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM387 net2 VBIAS VSS VSS nfet_03v3 L=1.8u W=0.52u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_4x.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_4x.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_4x.sch
+.subckt CS_Switch_4x IN+ IN- OUT- OUT+ VBIAS VSS
+*.ipin IN+
+*.ipin IN-
+*.opin OUT+
+*.opin OUT-
+*.iopin VBIAS
+*.iopin VSS
+XM385 OUT+ IN+ net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM386 OUT- IN- net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM388 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM389 net1 VBIAS net3 VSS nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM390 net2 VBIAS VSS VSS nfet_03v3 L=1.4u W=0.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM391 net3 VBIAS VSS VSS nfet_03v3 L=1.4u W=0.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_8x.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_8x.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_8x.sch
+.subckt CS_Switch_8x IN+ IN- OUT- OUT+ VBIAS vss
+*.opin OUT+
+*.opin OUT-
+*.ipin IN+
+*.ipin IN-
+*.iopin VBIAS
+*.iopin vss
+XM392 OUT- IN- net1 vss nfet_03v3 L=0.28u W=0.66u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM393 OUT+ IN+ net1 vss nfet_03v3 L=0.28u W=0.66u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM394 net2 VBIAS vss vss nfet_03v3 L=0.28u W=0.86u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM395 net1 VBIAS net2 vss nfet_03v3 L=0.28u W=0.66u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  CS_Switch_16x.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_16x.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_16x.sch
+.subckt CS_Switch_16x IN+ IN- OUT- OUT+ VBIAS VSS
+*.ipin IN+
+*.ipin IN-
+*.opin OUT+
+*.opin OUT-
+*.iopin VBIAS
+*.iopin VSS
+XM43 OUT+ IN+ net1 VSS nfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM44 OUT- IN- net1 VSS nfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM45 net2 VBIAS VSS VSS nfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM46 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM48 net3 VBIAS VSS VSS nfet_03v3 L=0.28u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM47 net1 VBIAS net3 VSS nfet_03v3 L=0.28u W=0.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,4 +1,5 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -85,26 +86,22 @@ lab=nand4}
 C {gf180mcuc-stdcells/dffq_1.sym} 110 0 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/dffq_2.sym} 110 -60 0 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/dffq_4.sym} 100 -130 0 0 {name=x3 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {code_shown.sym} 70 -510 0 0 {name=NGSPICE only_toplevel=false value="
+C {code_shown.sym} -220 -490 0 0 {name=NGSPICE only_toplevel=false value="
 vvdd vdd 0 dc 3.3
 vvss vss 0 0
 vvnw vnw 0 dc 3.3
 vvpw vpw 0 0
-.control
-  tran 1n 320n
-  save all
-  write test_symbols.raw
-.endc"}
+.tran 1n 320n
+.save all
+"}
 C {lab_wire.sym} 10 -140 0 0 {name=p1 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 10 -120 0 0 {name=p2 sig_type=std_logic lab=D}
 C {lab_wire.sym} 20 -70 0 0 {name=p3 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} 20 -50 0 0 {name=p4 sig_type=std_logic lab=D}
 C {lab_wire.sym} 20 -10 0 0 {name=p5 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} 20 10 0 0 {name=p6 sig_type=std_logic lab=D}
 C {vsource.sym} -360 -170 0 0 {name=V1 value="PULSE(0 3.3 0 1n 1n 4n 10n)" savecurrent=false}
 C {lab_wire.sym} -360 -200 0 0 {name=p10 sig_type=std_logic lab=CLK}
 C {gnd.sym} -360 -140 0 0 {name=l1 lab=GND}
-C {vsource.sym} -180 -160 0 0 {name=V2 value="PULSE(0 3.3 7n 1n 1n 5n 20n)" savecurrent=false}
+C {vsource.sym} -180 -160 0 0 {name=V2 value="PULSE(0 3.3 0 1n 1n 39n 80n)" savecurrent=false}
 C {gnd.sym} -180 -130 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} -180 -190 0 0 {name=p12 sig_type=std_logic lab=D}
 C {lab_wire.sym} 260 -70 0 1 {name=p7 sig_type=std_logic lab=q2}
@@ -165,7 +162,7 @@ C {lab_wire.sym} 570 160 0 0 {name=p45 sig_type=std_logic lab=A2}
 C {lab_wire.sym} 500 130 0 1 {name=p48 sig_type=std_logic lab=nand1}
 C {lab_wire.sym} 500 230 0 1 {name=p49 sig_type=std_logic lab=nand2}
 C {lab_wire.sym} 750 140 0 1 {name=p50 sig_type=std_logic lab=nand4}
-C {devices/code_shown.sym} -710 -480 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -710 -470 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -175,6 +172,14 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 * .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {devices/code_shown.sym} -750 -580 0 0 {name=STDCELL_MODELS only_toplevel=false 
+C {devices/code_shown.sym} -710 -530 0 0 {name=STDCELL_MODELS only_toplevel=false 
 format="tcleval( @value )"
 value=".include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
+C {vsource.sym} -390 60 0 0 {name=V5 value="PULSE(0 3.3 0 1n 1n 19n 40n)" savecurrent=false}
+C {gnd.sym} -390 90 0 0 {name=l5 lab=GND}
+C {lab_wire.sym} -390 30 0 0 {name=p46 sig_type=std_logic lab=D2}
+C {lab_wire.sym} 20 -50 0 0 {name=p4 sig_type=std_logic lab=D2}
+C {vsource.sym} -180 60 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 4n 10n)" savecurrent=false}
+C {gnd.sym} -180 90 0 0 {name=l6 lab=GND}
+C {lab_wire.sym} -180 30 0 0 {name=p6 sig_type=std_logic lab=D3}
+C {lab_wire.sym} 20 10 0 0 {name=p47 sig_type=std_logic lab=D3}
