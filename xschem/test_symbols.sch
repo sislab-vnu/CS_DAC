@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
@@ -83,6 +82,14 @@ N 490 230 500 230 {
 lab=nand2}
 N 730 140 750 140 {
 lab=nand4}
+N 20 370 80 370 {lab=A1}
+N 20 410 80 410 {lab=A2}
+N 20 450 80 450 {lab=A3}
+N 200 410 240 410 {lab=nand3_1_zn}
+N 20 490 80 490 {lab=A1}
+N 20 530 80 530 {lab=A2}
+N 20 570 80 570 {lab=A3}
+N 200 530 240 530 {lab=nor3_1_zn}
 C {gf180mcuc-stdcells/dffq_1.sym} 110 0 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/dffq_2.sym} 110 -60 0 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/dffq_4.sym} 100 -130 0 0 {name=x3 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
@@ -183,3 +190,16 @@ C {vsource.sym} -180 60 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 4n 10n)" savecur
 C {gnd.sym} -180 90 0 0 {name=l6 lab=GND}
 C {lab_wire.sym} -180 30 0 0 {name=p6 sig_type=std_logic lab=D3}
 C {lab_wire.sym} 20 10 0 0 {name=p47 sig_type=std_logic lab=D3}
+C {gf180mcuc-stdcells/nand3_1.sym} 140 410 0 0 {name=x17 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {lab_wire.sym} 20 370 0 0 {name=p51 sig_type=std_logic lab=A1}
+C {lab_wire.sym} 20 410 0 0 {name=p52 sig_type=std_logic lab=A2}
+C {lab_wire.sym} 20 450 0 0 {name=p53 sig_type=std_logic lab=A3}
+C {lab_wire.sym} 240 410 0 1 {name=p54 sig_type=std_logic lab=nand3_1_zn}
+C {gf180mcuc-stdcells/nor3_1.sym} 140 530 0 0 {name=x18 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {lab_wire.sym} 20 490 0 0 {name=p55 sig_type=std_logic lab=A1}
+C {lab_wire.sym} 20 530 0 0 {name=p56 sig_type=std_logic lab=A2}
+C {lab_wire.sym} 20 570 0 0 {name=p57 sig_type=std_logic lab=A3}
+C {lab_wire.sym} 240 530 0 1 {name=p58 sig_type=std_logic lab=nor3_1_zn}
+C {vsource.sym} -650 -50 0 0 {name=V7 value="PULSE(0 3.3 0 1n 1n 50n 100n)" savecurrent=false}
+C {gnd.sym} -650 -20 0 0 {name=l7 lab=GND}
+C {lab_wire.sym} -650 -80 0 0 {name=p59 sig_type=std_logic lab=A3}
