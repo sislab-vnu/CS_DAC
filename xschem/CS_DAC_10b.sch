@@ -1534,8 +1534,8 @@ C {Local_encoder.sym} -790 -2070 0 0 {name=x4}
 C {Local_encoder.sym} -270 -2070 0 0 {name=x5}
 C {Local_encoder.sym} 250 -2070 0 0 {name=x6}
 C {Local_encoder.sym} 770 -2070 0 0 {name=x7}
-C {vsource.sym} -5870 -1680 0 0 {name=V1 value=3.3 savecurrent=false}
-C {gnd.sym} -5870 -1650 0 0 {name=l253 lab=GND}
+C {vsource.sym} -3140 -2790 0 0 {name=V1 value=3.3 savecurrent=false}
+C {gnd.sym} -3140 -2760 0 0 {name=l253 lab=GND}
 C {lab_wire.sym} -2710 -1950 2 0 {name=p144 sig_type=std_logic lab=D7}
 C {lab_wire.sym} -2710 -1970 2 0 {name=p145 sig_type=std_logic lab=D6}
 C {lab_wire.sym} -2710 -1990 2 0 {name=p146 sig_type=std_logic lab=D5}
@@ -1571,61 +1571,61 @@ C {lab_wire.sym} -850 -2040 3 0 {name=p442 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} -330 -2040 3 0 {name=p443 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 190 -2040 3 0 {name=p444 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 710 -2040 3 0 {name=p445 sig_type=std_logic lab=CLK}
-C {vsource.sym} -5750 -1680 0 0 {name=V3 value=3.3 savecurrent=false}
-C {lab_wire.sym} -5750 -1710 0 0 {name=p449 sig_type=std_logic lab=VP}
-C {gnd.sym} -5750 -1650 0 0 {name=l269 lab=GND}
-C {vsource.sym} -5810 -1680 0 0 {name=V10 value=1.8 savecurrent=false}
-C {lab_wire.sym} -5810 -1710 0 0 {name=p462 sig_type=std_logic lab=VBIAS}
-C {gnd.sym} -5810 -1650 0 0 {name=l276 lab=GND}
-C {vsource.sym} -5540 -1700 0 0 {name=V2 value="PULSE(0 3.3 0 1n 1n 4n 10n)" savecurrent=false}
-C {lab_wire.sym} -5540 -1730 0 0 {name=p160 sig_type=std_logic lab=X1}
-C {gnd.sym} -5540 -1670 0 0 {name=l254 lab=GND}
-C {vsource.sym} -5320 -1700 0 0 {name=V5 value="PULSE(0 3.3 0 1n 1n 9n 20n)" savecurrent=false}
-C {lab_wire.sym} -5320 -1730 0 0 {name=p458 sig_type=std_logic lab=X2}
-C {gnd.sym} -5320 -1670 0 0 {name=l272 lab=GND}
-C {vsource.sym} -5540 -1590 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 19n 40n)" savecurrent=false}
-C {lab_wire.sym} -5540 -1620 0 0 {name=p459 sig_type=std_logic lab=X3}
-C {gnd.sym} -5540 -1560 0 0 {name=l273 lab=GND}
-C {vsource.sym} -5310 -1580 0 0 {name=V7 value="PULSE(0 3.3 0 1n 1n 39n 80n)" savecurrent=false}
-C {lab_wire.sym} -5310 -1610 0 0 {name=p460 sig_type=std_logic lab=X4}
-C {gnd.sym} -5310 -1550 0 0 {name=l274 lab=GND}
-C {vsource.sym} -5540 -1470 0 0 {name=V8 value="PULSE(0 3.3 0 1n 1n 79n 160n)" savecurrent=false}
-C {lab_wire.sym} -5540 -1500 0 0 {name=p461 sig_type=std_logic lab=X5}
-C {gnd.sym} -5540 -1440 0 0 {name=l275 lab=GND}
-C {vsource.sym} -5310 -1470 0 0 {name=V9 value="PULSE(0 3.3 0 1n 1n 159n 320n)" savecurrent=false}
-C {lab_wire.sym} -5310 -1500 0 0 {name=p489 sig_type=std_logic lab=X6}
-C {gnd.sym} -5310 -1440 0 0 {name=l292 lab=GND}
+C {vsource.sym} -2960 -2790 0 0 {name=V3 value=3.3 savecurrent=false}
+C {lab_wire.sym} -2960 -2820 0 0 {name=p449 sig_type=std_logic lab=VP}
+C {gnd.sym} -2960 -2760 0 0 {name=l269 lab=GND}
+C {vsource.sym} -3040 -2790 0 0 {name=V10 value=1.8 savecurrent=false}
+C {lab_wire.sym} -3040 -2820 0 0 {name=p462 sig_type=std_logic lab=VBIAS}
+C {gnd.sym} -3040 -2760 0 0 {name=l276 lab=GND}
+C {vsource.sym} -2770 -2810 0 0 {name=V2 value="PULSE(0 3.3 0 1n 1n 4n 10n)" savecurrent=false}
+C {lab_wire.sym} -2770 -2840 0 0 {name=p160 sig_type=std_logic lab=X1}
+C {gnd.sym} -2770 -2780 0 0 {name=l254 lab=GND}
+C {vsource.sym} -2550 -2810 0 0 {name=V5 value="PULSE(0 3.3 0 1n 1n 9n 20n)" savecurrent=false}
+C {lab_wire.sym} -2550 -2840 0 0 {name=p458 sig_type=std_logic lab=X2}
+C {gnd.sym} -2550 -2780 0 0 {name=l272 lab=GND}
+C {vsource.sym} -2770 -2700 0 0 {name=V6 value="PULSE(0 3.3 0 1n 1n 19n 40n)" savecurrent=false}
+C {lab_wire.sym} -2770 -2730 0 0 {name=p459 sig_type=std_logic lab=X3}
+C {gnd.sym} -2770 -2670 0 0 {name=l273 lab=GND}
+C {vsource.sym} -2540 -2690 0 0 {name=V7 value="PULSE(0 3.3 0 1n 1n 39n 80n)" savecurrent=false}
+C {lab_wire.sym} -2540 -2720 0 0 {name=p460 sig_type=std_logic lab=X4}
+C {gnd.sym} -2540 -2660 0 0 {name=l274 lab=GND}
+C {vsource.sym} -2770 -2580 0 0 {name=V8 value="PULSE(0 3.3 0 1n 1n 79n 160n)" savecurrent=false}
+C {lab_wire.sym} -2770 -2610 0 0 {name=p461 sig_type=std_logic lab=X5}
+C {gnd.sym} -2770 -2550 0 0 {name=l275 lab=GND}
+C {vsource.sym} -2540 -2580 0 0 {name=V9 value="PULSE(0 3.3 0 1n 1n 159n 320n)" savecurrent=false}
+C {lab_wire.sym} -2540 -2610 0 0 {name=p489 sig_type=std_logic lab=X6}
+C {gnd.sym} -2540 -2550 0 0 {name=l292 lab=GND}
 C {lab_wire.sym} -1810 -3010 0 1 {name=p168 sig_type=std_logic lab=X7}
 C {lab_wire.sym} -1830 -3010 0 1 {name=p450 sig_type=std_logic lab=X6}
 C {lab_wire.sym} -1850 -3010 0 1 {name=p451 sig_type=std_logic lab=X5}
 C {lab_wire.sym} -3150 -1950 0 0 {name=p452 sig_type=std_logic lab=X10}
 C {lab_wire.sym} -3150 -1970 0 0 {name=p453 sig_type=std_logic lab=X9}
 C {lab_wire.sym} -3150 -1990 0 0 {name=p454 sig_type=std_logic lab=X8}
-C {vsource.sym} -5540 -1360 0 0 {name=V11 value="PULSE(0 3.3 0 1n 1n 319n 640n)" savecurrent=false}
-C {lab_wire.sym} -5540 -1390 0 0 {name=p490 sig_type=std_logic lab=X7}
-C {gnd.sym} -5540 -1330 0 0 {name=l293 lab=GND}
-C {vsource.sym} -5310 -1360 0 0 {name=V12 value="PULSE(0 3.3 0 1n 1n 639n 1280n)" savecurrent=false}
-C {lab_wire.sym} -5310 -1390 0 0 {name=p491 sig_type=std_logic lab=X8}
-C {gnd.sym} -5310 -1330 0 0 {name=l294 lab=GND}
-C {vsource.sym} -5540 -1240 0 0 {name=V13 value="PULSE(0 3.3 0 1n 1n 1279n 2560n)" savecurrent=false}
-C {lab_wire.sym} -5540 -1270 0 0 {name=p492 sig_type=std_logic lab=X9}
-C {gnd.sym} -5540 -1210 0 0 {name=l295 lab=GND}
-C {vsource.sym} -5300 -1240 0 0 {name=V14 value="PULSE(0 3.3 0 1n 1n 2559n 5120n)" savecurrent=false}
-C {lab_wire.sym} -5300 -1270 0 0 {name=p493 sig_type=std_logic lab=X10}
-C {gnd.sym} -5300 -1210 0 0 {name=l296 lab=GND}
-C {devices/code_shown.sym} -6210 -2180 0 0 {name=MODELS1 only_toplevel=true
+C {vsource.sym} -2770 -2470 0 0 {name=V11 value="PULSE(0 3.3 0 1n 1n 319n 640n)" savecurrent=false}
+C {lab_wire.sym} -2770 -2500 0 0 {name=p490 sig_type=std_logic lab=X7}
+C {gnd.sym} -2770 -2440 0 0 {name=l293 lab=GND}
+C {vsource.sym} -2540 -2470 0 0 {name=V12 value="PULSE(0 3.3 0 1n 1n 639n 1280n)" savecurrent=false}
+C {lab_wire.sym} -2540 -2500 0 0 {name=p491 sig_type=std_logic lab=X8}
+C {gnd.sym} -2540 -2440 0 0 {name=l294 lab=GND}
+C {vsource.sym} -2770 -2350 0 0 {name=V13 value="PULSE(0 3.3 0 1n 1n 1279n 2560n)" savecurrent=false}
+C {lab_wire.sym} -2770 -2380 0 0 {name=p492 sig_type=std_logic lab=X9}
+C {gnd.sym} -2770 -2320 0 0 {name=l295 lab=GND}
+C {vsource.sym} -2530 -2350 0 0 {name=V14 value="PULSE(0 3.3 0 1n 1n 2559n 5120n)" savecurrent=false}
+C {lab_wire.sym} -2530 -2380 0 0 {name=p493 sig_type=std_logic lab=X10}
+C {gnd.sym} -2530 -2320 0 0 {name=l296 lab=GND}
+C {devices/code_shown.sym} -3930 -3340 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice statistical
-.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/smbb000149.ngspice statistical
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/smbb000149.ngspice typical
 "}
-C {devices/code_shown.sym} -6210 -2310 0 0 {name=STDCELL_MODELS only_toplevel=false 
+C {devices/code_shown.sym} -3940 -3390 0 0 {name=STDCELL_MODELS only_toplevel=false 
 format="tcleval( @value )"
 value=".include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
 C {thermometter_decoder.sym} -2950 -2010 2 1 {name=x64}
 C {thermometter_decoder.sym} -1870 -2800 1 0 {name=x65}
-C {lab_wire.sym} -5870 -1710 0 0 {name=p127 sig_type=std_logic lab=vcc}
+C {lab_wire.sym} -3140 -2820 0 0 {name=p127 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} -2350 -2100 0 0 {name=p128 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} -1840 -2100 0 0 {name=p129 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} -1350 -2100 0 0 {name=p130 sig_type=std_logic lab=vcc}
@@ -1633,15 +1633,14 @@ C {lab_wire.sym} -850 -2100 0 0 {name=p131 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} -330 -2100 0 0 {name=p132 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} 190 -2100 0 0 {name=p133 sig_type=std_logic lab=vcc}
 C {lab_wire.sym} 710 -2100 0 0 {name=p134 sig_type=std_logic lab=vcc}
-C {code_shown.sym} -6150 -2070 0 0 {name=NGSPICE only_toplevel=false value="
-VVDD VDD 0 dc 3.3
-VVSS VSS 0 dc 0
-VVPW VPW 0 dc 0 
-VVNW VNW 0 dc 3.3
-.control
+C {code_shown.sym} -3780 -3220 0 0 {name=NGSPICE only_toplevel=false value="
+.save v(OUT+) v(OUT-) @R1[i] @R2[i]  
+.control 
+set wr_vecnames
+set wr_singlescale
 tran 1n 5120n
 run
-wrdata /home/ducluong/CS_DAC/spice/CS_DAC_10b_statistical3.txt v(OUT+) V(OUT-)
+wrdata /home/ducluong/CS_DAC/spice/CS_DAC_10b.raw v(OUT+) v(OUT-) @R1[i] @R2[i] 
 .endc
 "}
 C {lab_wire.sym} 2530 -1600 0 1 {name=p472 sig_type=std_logic lab=X2
@@ -1669,9 +1668,9 @@ C {gf180mcuc-stdcells/dffq_2.sym} 2520 -1750 3 0 {name=x70 VDD=VDD VNW=VNW VPW=V
 C {gf180mcuc-stdcells/inv_2.sym} 2570 -1930 3 0 {name=x71 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/dffq_2.sym} 2750 -1750 3 0 {name=x72 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/inv_2.sym} 2800 -1880 3 0 {name=x73 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {vsource.sym} -5220 -1770 0 0 {name=V15 value="PULSE(0 3.3 2n 1n 1n 4n 10n)" savecurrent=false}
-C {gnd.sym} -5220 -1740 0 0 {name=l288 lab=GND}
-C {lab_wire.sym} -5220 -1800 0 0 {name=p136 sig_type=std_logic lab=CLK}
+C {vsource.sym} -2450 -2880 0 0 {name=V15 value="PULSE(0 3.3 2n 1n 1n 4n 10n)" savecurrent=false}
+C {gnd.sym} -2450 -2850 0 0 {name=l288 lab=GND}
+C {lab_wire.sym} -2450 -2910 0 0 {name=p136 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 2870 -2000 0 1 {name=p137 sig_type=std_logic lab=VBIAS}
 C {gnd.sym} 2710 -2000 0 1 {name=l270 lab=GND}
 C {CS_Switch_1x.sym} 2770 -2170 1 1 {name=x74}
@@ -1683,25 +1682,20 @@ C {gnd.sym} 2350 -1990 0 1 {name=l277 lab=GND}
 C {lab_wire.sym} 2230 -1990 0 0 {name=p139 sig_type=std_logic lab=VBIAS}
 C {CS_Switch_8x.sym} 2030 -2170 3 0 {name=x77}
 C {lab_wire.sym} 1950 -1980 0 0 {name=p140 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -2030 -2250 3 0 {name=x78}
+C {CS_Switch_16x.sym} -2030 -2250 3 0 {name=x78 
+}
 C {gnd.sym} -2020 -2040 0 0 {name=l27 lab=GND}
 C {lab_wire.sym} -2040 -2040 0 0 {name=p42 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 -2250 3 0 {name=x79}
 C {gnd.sym} -1520 -2040 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} -1540 -2040 0 0 {name=p1 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 -2250 3 0 {name=x80}
 C {gnd.sym} -1030 -2040 0 0 {name=l2 lab=GND}
 C {lab_wire.sym} -1050 -2040 0 0 {name=p2 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 -2250 3 0 {name=x81}
 C {gnd.sym} -530 -2040 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} -550 -2040 0 0 {name=p3 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 -2250 3 0 {name=x82}
 C {gnd.sym} -10 -2040 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} -30 -2040 0 0 {name=p4 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 -2250 3 0 {name=x83}
 C {gnd.sym} 510 -2040 0 0 {name=l5 lab=GND}
 C {lab_wire.sym} 490 -2040 0 0 {name=p5 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 -2250 3 0 {name=x84}
 C {gnd.sym} 1030 -2040 0 0 {name=l6 lab=GND}
 C {lab_wire.sym} 1010 -2040 0 0 {name=p6 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 -2070 0 0 {name=x85}
@@ -1709,7 +1703,6 @@ C {lab_wire.sym} 1170 -2080 3 1 {name=p7 sig_type=std_logic lab=D1}
 C {gnd.sym} 1190 -2060 1 0 {name=l7 lab=GND}
 C {lab_wire.sym} 1210 -2040 3 0 {name=p8 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 -2100 0 0 {name=p9 sig_type=std_logic lab=vcc}
-C {CS_Switch_16x.sym} 1520 -2250 3 0 {name=x86}
 C {gnd.sym} 1530 -2040 0 0 {name=l8 lab=GND}
 C {lab_wire.sym} 1510 -2040 0 0 {name=p10 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 -1470 0 0 {name=x8}
@@ -1747,25 +1740,18 @@ C {lab_wire.sym} -850 -1500 0 0 {name=p35 sig_type=std_logic lab=D1}
 C {lab_wire.sym} -330 -1500 0 0 {name=p36 sig_type=std_logic lab=D1}
 C {lab_wire.sym} 190 -1500 0 0 {name=p37 sig_type=std_logic lab=D1}
 C {lab_wire.sym} 710 -1500 0 0 {name=p38 sig_type=std_logic lab=D1}
-C {CS_Switch_16x.sym} -2030 -1650 3 0 {name=x15}
 C {gnd.sym} -2020 -1440 0 0 {name=l9 lab=GND}
 C {lab_wire.sym} -2040 -1440 0 0 {name=p39 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 -1650 3 0 {name=x16}
 C {gnd.sym} -1520 -1440 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} -1540 -1440 0 0 {name=p40 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 -1650 3 0 {name=x17}
 C {gnd.sym} -1030 -1440 0 0 {name=l11 lab=GND}
 C {lab_wire.sym} -1050 -1440 0 0 {name=p41 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 -1650 3 0 {name=x18}
 C {gnd.sym} -530 -1440 0 0 {name=l12 lab=GND}
 C {lab_wire.sym} -550 -1440 0 0 {name=p43 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 -1650 3 0 {name=x19}
 C {gnd.sym} -10 -1440 0 0 {name=l13 lab=GND}
 C {lab_wire.sym} -30 -1440 0 0 {name=p44 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 -1650 3 0 {name=x20}
 C {gnd.sym} 510 -1440 0 0 {name=l14 lab=GND}
 C {lab_wire.sym} 490 -1440 0 0 {name=p45 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 -1650 3 0 {name=x21}
 C {gnd.sym} 1030 -1440 0 0 {name=l15 lab=GND}
 C {lab_wire.sym} 1010 -1440 0 0 {name=p46 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 -1470 0 0 {name=x22}
@@ -1773,7 +1759,6 @@ C {lab_wire.sym} 1170 -1480 3 1 {name=p47 sig_type=std_logic lab=D2}
 C {gnd.sym} 1190 -1460 1 0 {name=l16 lab=GND}
 C {lab_wire.sym} 1210 -1440 3 0 {name=p48 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 -1500 0 0 {name=p49 sig_type=std_logic lab=D1}
-C {CS_Switch_16x.sym} 1520 -1650 3 0 {name=x23}
 C {gnd.sym} 1530 -1440 0 0 {name=l17 lab=GND}
 C {lab_wire.sym} 1510 -1440 0 0 {name=p50 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 -860 0 0 {name=x24}
@@ -1811,25 +1796,18 @@ C {lab_wire.sym} -850 -890 0 0 {name=p75 sig_type=std_logic lab=D2}
 C {lab_wire.sym} -330 -890 0 0 {name=p76 sig_type=std_logic lab=D2}
 C {lab_wire.sym} 190 -890 0 0 {name=p77 sig_type=std_logic lab=D2}
 C {lab_wire.sym} 710 -890 0 0 {name=p78 sig_type=std_logic lab=D2}
-C {CS_Switch_16x.sym} -2030 -1040 3 0 {name=x31}
 C {gnd.sym} -2020 -830 0 0 {name=l18 lab=GND}
 C {lab_wire.sym} -2040 -830 0 0 {name=p79 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 -1040 3 0 {name=x32}
 C {gnd.sym} -1520 -830 0 0 {name=l19 lab=GND}
 C {lab_wire.sym} -1540 -830 0 0 {name=p80 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 -1040 3 0 {name=x33}
 C {gnd.sym} -1030 -830 0 0 {name=l20 lab=GND}
 C {lab_wire.sym} -1050 -830 0 0 {name=p81 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 -1040 3 0 {name=x34}
 C {gnd.sym} -530 -830 0 0 {name=l21 lab=GND}
 C {lab_wire.sym} -550 -830 0 0 {name=p82 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 -1040 3 0 {name=x35}
 C {gnd.sym} -10 -830 0 0 {name=l22 lab=GND}
 C {lab_wire.sym} -30 -830 0 0 {name=p83 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 -1040 3 0 {name=x36}
 C {gnd.sym} 510 -830 0 0 {name=l23 lab=GND}
 C {lab_wire.sym} 490 -830 0 0 {name=p84 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 -1040 3 0 {name=x37}
 C {gnd.sym} 1030 -830 0 0 {name=l24 lab=GND}
 C {lab_wire.sym} 1010 -830 0 0 {name=p85 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 -860 0 0 {name=x38}
@@ -1837,7 +1815,6 @@ C {lab_wire.sym} 1170 -870 3 1 {name=p86 sig_type=std_logic lab=D3}
 C {gnd.sym} 1190 -850 1 0 {name=l25 lab=GND}
 C {lab_wire.sym} 1210 -830 3 0 {name=p87 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 -890 0 0 {name=p88 sig_type=std_logic lab=D1}
-C {CS_Switch_16x.sym} 1520 -1040 3 0 {name=x39}
 C {gnd.sym} 1530 -830 0 0 {name=l26 lab=GND}
 C {lab_wire.sym} 1510 -830 0 0 {name=p89 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 -240 0 0 {name=x40}
@@ -1875,25 +1852,18 @@ C {lab_wire.sym} -850 -270 0 0 {name=p114 sig_type=std_logic lab=D3}
 C {lab_wire.sym} -330 -270 0 0 {name=p115 sig_type=std_logic lab=D3}
 C {lab_wire.sym} 190 -270 0 0 {name=p116 sig_type=std_logic lab=D3}
 C {lab_wire.sym} 710 -270 0 0 {name=p117 sig_type=std_logic lab=D3}
-C {CS_Switch_16x.sym} -2030 -420 3 0 {name=x47}
 C {gnd.sym} -2020 -210 0 0 {name=l28 lab=GND}
 C {lab_wire.sym} -2040 -210 0 0 {name=p118 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 -420 3 0 {name=x48}
 C {gnd.sym} -1520 -210 0 0 {name=l29 lab=GND}
 C {lab_wire.sym} -1540 -210 0 0 {name=p119 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 -420 3 0 {name=x49}
 C {gnd.sym} -1030 -210 0 0 {name=l30 lab=GND}
 C {lab_wire.sym} -1050 -210 0 0 {name=p120 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 -420 3 0 {name=x50}
 C {gnd.sym} -530 -210 0 0 {name=l31 lab=GND}
 C {lab_wire.sym} -550 -210 0 0 {name=p121 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 -420 3 0 {name=x51}
 C {gnd.sym} -10 -210 0 0 {name=l32 lab=GND}
 C {lab_wire.sym} -30 -210 0 0 {name=p122 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 -420 3 0 {name=x52}
 C {gnd.sym} 510 -210 0 0 {name=l33 lab=GND}
 C {lab_wire.sym} 490 -210 0 0 {name=p123 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 -420 3 0 {name=x53}
 C {gnd.sym} 1030 -210 0 0 {name=l34 lab=GND}
 C {lab_wire.sym} 1010 -210 0 0 {name=p124 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 -240 0 0 {name=x54}
@@ -1901,7 +1871,6 @@ C {lab_wire.sym} 1170 -250 3 1 {name=p125 sig_type=std_logic lab=D4}
 C {gnd.sym} 1190 -230 1 0 {name=l35 lab=GND}
 C {lab_wire.sym} 1210 -210 3 0 {name=p126 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 -270 0 0 {name=p135 sig_type=std_logic lab=D3}
-C {CS_Switch_16x.sym} 1520 -420 3 0 {name=x55}
 C {gnd.sym} 1530 -210 0 0 {name=l36 lab=GND}
 C {lab_wire.sym} 1510 -210 0 0 {name=p141 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 320 0 0 {name=x56}
@@ -1939,25 +1908,18 @@ C {lab_wire.sym} -850 290 0 0 {name=p197 sig_type=std_logic lab=D4}
 C {lab_wire.sym} -330 290 0 0 {name=p198 sig_type=std_logic lab=D4}
 C {lab_wire.sym} 190 290 0 0 {name=p199 sig_type=std_logic lab=D4}
 C {lab_wire.sym} 710 290 0 0 {name=p200 sig_type=std_logic lab=D4}
-C {CS_Switch_16x.sym} -2030 140 3 0 {name=x63}
 C {gnd.sym} -2020 350 0 0 {name=l37 lab=GND}
 C {lab_wire.sym} -2040 350 0 0 {name=p201 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 140 3 0 {name=x87}
 C {gnd.sym} -1520 350 0 0 {name=l38 lab=GND}
 C {lab_wire.sym} -1540 350 0 0 {name=p202 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 140 3 0 {name=x88}
 C {gnd.sym} -1030 350 0 0 {name=l39 lab=GND}
 C {lab_wire.sym} -1050 350 0 0 {name=p203 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 140 3 0 {name=x89}
 C {gnd.sym} -530 350 0 0 {name=l40 lab=GND}
 C {lab_wire.sym} -550 350 0 0 {name=p204 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 140 3 0 {name=x90}
 C {gnd.sym} -10 350 0 0 {name=l41 lab=GND}
 C {lab_wire.sym} -30 350 0 0 {name=p205 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 140 3 0 {name=x91}
 C {gnd.sym} 510 350 0 0 {name=l42 lab=GND}
 C {lab_wire.sym} 490 350 0 0 {name=p206 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 140 3 0 {name=x92}
 C {gnd.sym} 1030 350 0 0 {name=l43 lab=GND}
 C {lab_wire.sym} 1010 350 0 0 {name=p207 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 320 0 0 {name=x93}
@@ -1965,7 +1927,6 @@ C {lab_wire.sym} 1170 310 3 1 {name=p208 sig_type=std_logic lab=D5}
 C {gnd.sym} 1190 330 1 0 {name=l44 lab=GND}
 C {lab_wire.sym} 1210 350 3 0 {name=p209 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 290 0 0 {name=p210 sig_type=std_logic lab=D4}
-C {CS_Switch_16x.sym} 1520 140 3 0 {name=x94}
 C {gnd.sym} 1530 350 0 0 {name=l45 lab=GND}
 C {lab_wire.sym} 1510 350 0 0 {name=p211 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 860 0 0 {name=x95}
@@ -1999,25 +1960,18 @@ C {lab_wire.sym} -850 830 0 0 {name=p236 sig_type=std_logic lab=D5}
 C {lab_wire.sym} -330 830 0 0 {name=p237 sig_type=std_logic lab=D5}
 C {lab_wire.sym} 190 830 0 0 {name=p238 sig_type=std_logic lab=D5}
 C {lab_wire.sym} 710 830 0 0 {name=p239 sig_type=std_logic lab=D5}
-C {CS_Switch_16x.sym} -2030 680 3 0 {name=x102}
 C {gnd.sym} -2020 890 0 0 {name=l46 lab=GND}
 C {lab_wire.sym} -2040 890 0 0 {name=p240 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 680 3 0 {name=x103}
 C {gnd.sym} -1520 890 0 0 {name=l47 lab=GND}
 C {lab_wire.sym} -1540 890 0 0 {name=p241 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 680 3 0 {name=x104}
 C {gnd.sym} -1030 890 0 0 {name=l48 lab=GND}
 C {lab_wire.sym} -1050 890 0 0 {name=p242 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 680 3 0 {name=x105}
 C {gnd.sym} -530 890 0 0 {name=l49 lab=GND}
 C {lab_wire.sym} -550 890 0 0 {name=p243 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 680 3 0 {name=x106}
 C {gnd.sym} -10 890 0 0 {name=l50 lab=GND}
 C {lab_wire.sym} -30 890 0 0 {name=p244 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 680 3 0 {name=x107}
 C {gnd.sym} 510 890 0 0 {name=l51 lab=GND}
 C {lab_wire.sym} 490 890 0 0 {name=p245 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 680 3 0 {name=x108}
 C {gnd.sym} 1030 890 0 0 {name=l52 lab=GND}
 C {lab_wire.sym} 1010 890 0 0 {name=p246 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 860 0 0 {name=x109}
@@ -2025,7 +1979,6 @@ C {lab_wire.sym} 1170 850 3 1 {name=p247 sig_type=std_logic lab=D6}
 C {gnd.sym} 1190 870 1 0 {name=l53 lab=GND}
 C {lab_wire.sym} 1210 890 3 0 {name=p248 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 830 0 0 {name=p249 sig_type=std_logic lab=D5}
-C {CS_Switch_16x.sym} 1520 680 3 0 {name=x110}
 C {gnd.sym} 1530 890 0 0 {name=l54 lab=GND}
 C {lab_wire.sym} 1510 890 0 0 {name=p250 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 1440 0 0 {name=x111}
@@ -2063,25 +2016,18 @@ C {lab_wire.sym} -850 1410 0 0 {name=p275 sig_type=std_logic lab=D6}
 C {lab_wire.sym} -330 1410 0 0 {name=p276 sig_type=std_logic lab=D6}
 C {lab_wire.sym} 190 1410 0 0 {name=p277 sig_type=std_logic lab=D6}
 C {lab_wire.sym} 710 1410 0 0 {name=p278 sig_type=std_logic lab=D6}
-C {CS_Switch_16x.sym} -2030 1260 3 0 {name=x118}
 C {gnd.sym} -2020 1470 0 0 {name=l55 lab=GND}
 C {lab_wire.sym} -2040 1470 0 0 {name=p279 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 1260 3 0 {name=x119}
 C {gnd.sym} -1520 1470 0 0 {name=l56 lab=GND}
 C {lab_wire.sym} -1540 1470 0 0 {name=p280 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 1260 3 0 {name=x120}
 C {gnd.sym} -1030 1470 0 0 {name=l57 lab=GND}
 C {lab_wire.sym} -1050 1470 0 0 {name=p281 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 1260 3 0 {name=x121}
 C {gnd.sym} -530 1470 0 0 {name=l58 lab=GND}
 C {lab_wire.sym} -550 1470 0 0 {name=p282 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 1260 3 0 {name=x122}
 C {gnd.sym} -10 1470 0 0 {name=l59 lab=GND}
 C {lab_wire.sym} -30 1470 0 0 {name=p283 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 1260 3 0 {name=x123}
 C {gnd.sym} 510 1470 0 0 {name=l60 lab=GND}
 C {lab_wire.sym} 490 1470 0 0 {name=p284 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 1260 3 0 {name=x124}
 C {gnd.sym} 1030 1470 0 0 {name=l61 lab=GND}
 C {lab_wire.sym} 1010 1470 0 0 {name=p285 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} 1270 1440 0 0 {name=x125}
@@ -2089,7 +2035,6 @@ C {lab_wire.sym} 1170 1430 3 1 {name=p286 sig_type=std_logic lab=D7}
 C {gnd.sym} 1190 1450 1 0 {name=l62 lab=GND}
 C {lab_wire.sym} 1210 1470 3 0 {name=p287 sig_type=std_logic lab=CLK}
 C {lab_wire.sym} 1210 1410 0 0 {name=p288 sig_type=std_logic lab=D6}
-C {CS_Switch_16x.sym} 1520 1260 3 0 {name=x126}
 C {gnd.sym} 1530 1470 0 0 {name=l63 lab=GND}
 C {lab_wire.sym} 1510 1470 0 0 {name=p289 sig_type=std_logic lab=VBIAS}
 C {Local_encoder.sym} -2290 2040 0 0 {name=x127}
@@ -2121,25 +2066,18 @@ C {lab_wire.sym} -850 2010 0 0 {name=p314 sig_type=std_logic lab=D7}
 C {lab_wire.sym} -330 2010 0 0 {name=p315 sig_type=std_logic lab=D7}
 C {lab_wire.sym} 190 2010 0 0 {name=p316 sig_type=std_logic lab=D7}
 C {lab_wire.sym} 710 2010 0 0 {name=p317 sig_type=std_logic lab=D7}
-C {CS_Switch_16x.sym} -2030 1860 3 0 {name=x134}
 C {gnd.sym} -2020 2070 0 0 {name=l64 lab=GND}
 C {lab_wire.sym} -2040 2070 0 0 {name=p318 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1530 1860 3 0 {name=x135}
 C {gnd.sym} -1520 2070 0 0 {name=l65 lab=GND}
 C {lab_wire.sym} -1540 2070 0 0 {name=p319 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -1040 1860 3 0 {name=x136}
 C {gnd.sym} -1030 2070 0 0 {name=l66 lab=GND}
 C {lab_wire.sym} -1050 2070 0 0 {name=p320 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -540 1860 3 0 {name=x137}
 C {gnd.sym} -530 2070 0 0 {name=l67 lab=GND}
 C {lab_wire.sym} -550 2070 0 0 {name=p321 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} -20 1860 3 0 {name=x138}
 C {gnd.sym} -10 2070 0 0 {name=l68 lab=GND}
 C {lab_wire.sym} -30 2070 0 0 {name=p322 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 500 1860 3 0 {name=x139}
 C {gnd.sym} 510 2070 0 0 {name=l69 lab=GND}
 C {lab_wire.sym} 490 2070 0 0 {name=p323 sig_type=std_logic lab=VBIAS}
-C {CS_Switch_16x.sym} 1020 1860 3 0 {name=x140}
 C {gnd.sym} 1030 2070 0 0 {name=l70 lab=GND}
 C {lab_wire.sym} 1010 2070 0 0 {name=p324 sig_type=std_logic lab=VBIAS}
 C {lab_wire.sym} -1940 850 3 1 {name=p325 sig_type=std_logic lab=D6}
@@ -2167,3 +2105,132 @@ C {lab_wire.sym} 1740 -2780 0 0 {name=p215 sig_type=std_logic lab=VP}
 C {lab_wire.sym} 1860 -2780 0 1 {name=p235 sig_type=std_logic lab=VP}
 C {lab_wire.sym} 1740 -2590 0 0 {name=p291 sig_type=std_logic lab=OUT+}
 C {lab_wire.sym} 1860 -2590 0 1 {name=p292 sig_type=std_logic lab=OUT-}
+C {CS_Switch_16x.sym} -1530 -2250 3 0 {name=x15 
+}
+C {CS_Switch_16x.sym} -1040 -2250 3 0 {name=x16 
+}
+C {CS_Switch_16x.sym} -540 -2250 3 0 {name=x17 
+}
+C {CS_Switch_16x.sym} -20 -2250 3 0 {name=x18 
+}
+C {CS_Switch_16x.sym} 500 -2250 3 0 {name=x19 
+}
+C {CS_Switch_16x.sym} 1020 -2250 3 0 {name=x20 
+}
+C {CS_Switch_16x.sym} 1520 -2250 3 0 {name=x21 
+}
+C {CS_Switch_16x.sym} 1520 -1650 3 0 {name=x23 
+}
+C {CS_Switch_16x.sym} 1020 -1650 3 0 {name=x31 
+}
+C {CS_Switch_16x.sym} 500 -1650 3 0 {name=x32 
+}
+C {CS_Switch_16x.sym} -20 -1650 3 0 {name=x33 
+}
+C {CS_Switch_16x.sym} -540 -1650 3 0 {name=x34 
+}
+C {CS_Switch_16x.sym} -1040 -1650 3 0 {name=x35 
+}
+C {CS_Switch_16x.sym} -1530 -1650 3 0 {name=x36 
+}
+C {CS_Switch_16x.sym} -2030 -1650 3 0 {name=x37 
+}
+C {CS_Switch_16x.sym} -2030 -1040 3 0 {name=x39 
+}
+C {CS_Switch_16x.sym} -1530 -1040 3 0 {name=x47 
+}
+C {CS_Switch_16x.sym} -1040 -1040 3 0 {name=x48 
+}
+C {CS_Switch_16x.sym} -540 -1040 3 0 {name=x49 
+}
+C {CS_Switch_16x.sym} -20 -1040 3 0 {name=x50 
+}
+C {CS_Switch_16x.sym} 500 -1040 3 0 {name=x51 
+}
+C {CS_Switch_16x.sym} 1020 -1040 3 0 {name=x52 
+}
+C {CS_Switch_16x.sym} 1520 -1040 3 0 {name=x53 
+}
+C {CS_Switch_16x.sym} 1520 -420 3 0 {name=x55 
+}
+C {CS_Switch_16x.sym} 1020 -420 3 0 {name=x63 
+}
+C {CS_Switch_16x.sym} 500 -420 3 0 {name=x79 
+}
+C {CS_Switch_16x.sym} -20 -420 3 0 {name=x80 
+}
+C {CS_Switch_16x.sym} -540 -420 3 0 {name=x81 
+}
+C {CS_Switch_16x.sym} -1040 -420 3 0 {name=x82 
+}
+C {CS_Switch_16x.sym} -1530 -420 3 0 {name=x83 
+}
+C {CS_Switch_16x.sym} -2030 -420 3 0 {name=x84 
+}
+C {CS_Switch_16x.sym} -2030 140 3 0 {name=x86 
+}
+C {CS_Switch_16x.sym} -1530 140 3 0 {name=x87 
+}
+C {CS_Switch_16x.sym} -1040 140 3 0 {name=x88 
+}
+C {CS_Switch_16x.sym} -540 140 3 0 {name=x89 
+}
+C {CS_Switch_16x.sym} -20 140 3 0 {name=x90 
+}
+C {CS_Switch_16x.sym} 500 140 3 0 {name=x91 
+}
+C {CS_Switch_16x.sym} 1020 140 3 0 {name=x92 
+}
+C {CS_Switch_16x.sym} 1520 140 3 0 {name=x94 
+}
+C {CS_Switch_16x.sym} 1520 680 3 0 {name=x102 
+}
+C {CS_Switch_16x.sym} 1020 680 3 0 {name=x103 
+}
+C {CS_Switch_16x.sym} 500 680 3 0 {name=x104 
+}
+C {CS_Switch_16x.sym} -20 680 3 0 {name=x105 
+}
+C {CS_Switch_16x.sym} -540 680 3 0 {name=x106 
+}
+C {CS_Switch_16x.sym} -1040 680 3 0 {name=x107 
+}
+C {CS_Switch_16x.sym} -1530 680 3 0 {name=x108 
+}
+C {CS_Switch_16x.sym} -2030 680 3 0 {name=x110 
+}
+C {CS_Switch_16x.sym} -2030 1260 3 0 {name=x118 
+}
+C {CS_Switch_16x.sym} -1530 1260 3 0 {name=x119 
+}
+C {CS_Switch_16x.sym} -1040 1260 3 0 {name=x120 
+}
+C {CS_Switch_16x.sym} -540 1260 3 0 {name=x121 
+}
+C {CS_Switch_16x.sym} -20 1260 3 0 {name=x122 
+}
+C {CS_Switch_16x.sym} 500 1260 3 0 {name=x123 
+}
+C {CS_Switch_16x.sym} 1020 1260 3 0 {name=x124 
+}
+C {CS_Switch_16x.sym} 1520 1260 3 0 {name=x126 
+}
+C {CS_Switch_16x.sym} 1020 1860 3 0 {name=x134 
+}
+C {CS_Switch_16x.sym} 500 1860 3 0 {name=x135 
+}
+C {CS_Switch_16x.sym} -20 1860 3 0 {name=x136 
+}
+C {CS_Switch_16x.sym} -540 1860 3 0 {name=x137 
+}
+C {CS_Switch_16x.sym} -1040 1860 3 0 {name=x138 
+}
+C {CS_Switch_16x.sym} -1530 1860 3 0 {name=x139 
+}
+C {CS_Switch_16x.sym} -2030 1860 3 0 {name=x140 
+}
+C {code_shown.sym} -3570 -3230 0 0 {name=NGSPICE1 only_toplevel=false value="
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0
+VVNW VNW 0 dc 3.3"}

@@ -156,9 +156,8 @@ C {gf180mcuc-stdcells/and2_2.sym} 720 40 1 0 {name=x12 VDD=VDD VNW=VNW VPW=VPW V
 C {gf180mcuc-stdcells/and2_2.sym} 570 40 1 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/and2_2.sym} 740 220 1 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/or2_2.sym} 330 40 1 0 {name=x11 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {code_shown.sym} -350 30 0 0 {name=NGSPICE only_toplevel=false value="
+C {code_shown.sym} -290 90 0 0 {name=s2 only_toplevel=false value="
 VVDD VDD 0 dc 3.3
-VVSS VSS 0 dc 0 
-VVPW VPW 0 dc 0 
+VVSS VSS 0 dc 0
 VVNW VNW 0 dc 3.3
-"}
+VVPW VPW 0 dc 0"}

@@ -38,9 +38,8 @@ C {opin.sym} 1360 120 0 0 {name=p12 lab=Q}
 C {opin.sym} 1360 200 0 0 {name=p13 lab=negQ}
 C {gf180mcuc-stdcells/dffq_1.sym} 1140 130 0 0 {name=x8 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {gf180mcuc-stdcells/inv_2.sym} 1300 200 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {code_shown.sym} 600 -20 0 0 {name=NGSPICE only_toplevel=false value="
+C {code_shown.sym} 620 -50 0 0 {name=s2 only_toplevel=false value="
 VVDD VDD 0 dc 3.3
 VVSS VSS 0 dc 0
-VVPW VPW 0 dc 0 
 VVNW VNW 0 dc 3.3
-"}
+VVPW VPW 0 dc 0"}
