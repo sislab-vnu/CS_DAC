@@ -1,0 +1,34 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@INP @@INN @@OUTP @@OUTN @VBIAS @VSS @VPW @prefix\\\\CS_Switch_16x"
+template="name=x1 VBIAS=VBIAS VSS=VSS VPW=VPW prefix=layouted_cell__ "
+extra="VBIAS VSS VPW prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 -20 -50 -20 40 {}
+L 4 -20 40 140 40 {}
+L 4 140 -50 140 40 {}
+L 4 -20 -50 140 -50 {}
+L 4 -70 -30 -20 -30 {}
+L 4 -70 30 -20 30 {}
+L 4 140 -30 180 -30 {}
+L 4 140 30 180 30 {}
+B 5 -72.5 -32.5 -67.5 -27.5 {name=INP
+dir=in}
+B 5 -72.5 27.5 -67.5 32.5 {name=INN
+dir=in}
+B 5 177.5 -32.5 182.5 -27.5 {name=OUTP
+dir=in}
+B 5 177.5 27.5 182.5 32.5 {name=OUTN
+dir=in}
+T {INP} -60 -50 0 0 0.3 0.3 {}
+T {INN} -60 10 0 0 0.3 0.3 {}
+T {OUTP} 150 -50 0 0 0.3 0.3 {}
+T {OUTN} 150 10 0 0 0.3 0.3 {}
+T {@symname} -10 -10 0 0 0.3 0.3 {}
+T {@name} 100 -70 0 0 0.3 0.3 {}

@@ -1,0 +1,92 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO CS_Switch_4x
+  CLASS BLOCK ;
+  FOREIGN CS_Switch_4x ;
+  ORIGIN 1.880 7.200 ;
+  SIZE 6.840 BY 4.600 ;
+  PIN INP
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.061600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT -0.845 -3.660 -0.550 -3.080 ;
+    END
+  END INP
+  PIN INN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.061600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.275 -3.660 0.570 -3.080 ;
+    END
+  END INN
+  PIN OUTP
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT -1.420 -3.835 -1.140 -3.075 ;
+        RECT -1.470 -4.215 -1.090 -3.835 ;
+    END
+  END OUTP
+  PIN OUTN
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.870 -3.835 1.150 -3.060 ;
+        RECT 0.820 -4.215 1.200 -3.835 ;
+    END
+  END OUTN
+  PIN VBIAS
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.525 -4.765 3.885 -4.420 ;
+    END
+  END VBIAS
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.285 -4.205 4.665 -3.825 ;
+        RECT 4.360 -4.950 4.590 -4.205 ;
+        RECT 4.285 -5.330 4.665 -4.950 ;
+        RECT 4.325 -6.165 4.625 -5.330 ;
+        RECT -1.390 -6.725 4.700 -6.165 ;
+    END
+  END VSS
+  PIN VPW
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Pwell ;
+        RECT -1.880 -7.200 4.960 -2.600 ;
+    END
+  END VPW
+  OBS
+      LAYER Metal1 ;
+        RECT -0.325 -4.215 0.055 -3.835 ;
+        RECT 1.625 -4.215 2.005 -3.835 ;
+        RECT -0.255 -4.950 -0.020 -4.215 ;
+        RECT 1.700 -4.475 1.930 -4.215 ;
+        RECT 0.890 -4.705 1.930 -4.475 ;
+        RECT 0.890 -4.950 1.120 -4.705 ;
+        RECT -1.475 -5.330 -1.095 -4.950 ;
+        RECT -0.330 -5.330 0.050 -4.950 ;
+        RECT 0.815 -5.330 1.195 -4.950 ;
+        RECT -1.400 -5.580 -1.170 -5.330 ;
+        RECT 1.625 -5.335 2.005 -4.955 ;
+        RECT 1.700 -5.580 1.930 -5.335 ;
+        RECT -1.400 -5.810 1.935 -5.580 ;
+  END
+END CS_Switch_4x
+END LIBRARY
+

@@ -1,0 +1,292 @@
+* NGSPICE file created from CS_Switch_1x.ext - technology: gf180mcuD
+
+* Copyright 2022 GlobalFoundries PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+.SUBCKT layouted_cell__CS_Switch_1x INP INN OUTP OUTN VBIAS VSS VPW
+X0 a_613_n1507# VBIAS a_0_n1512# VPW nfet_03v3 ad=50.6f pd=0.68u as=0.2115p ps=2.06u w=0.22u l=0.28u
+X1 OUTN INN a_0_n1512# VPW nfet_03v3 ad=0.2115p pd=2.06u as=0.1316p ps=1.265u w=0.22u l=0.28u
+X2 a_0_n1512# INP OUTP VPW nfet_03v3 ad=0.1316p pd=1.265u as=0.2115p ps=2.06u w=0.22u l=0.28u
+X3 VSS VBIAS a_613_n1507# VPW nfet_03v3 ad=0.2126p pd=2.07u as=50.6f ps=0.68u w=0.22u l=2.2u
+C0 VBIAS OUTP 6.45e-21
+C1 OUTP INN 3.79e-19
+C2 VSS VBIAS 0.117709f
+C3 VSS INN 0.001201f
+C4 a_0_n1512# a_613_n1507# 0.001411f
+C5 INP INN 0.043313f
+C6 VSS a_613_n1507# 0.001695f
+C7 VBIAS INN 0.005743f
+C8 a_0_n1512# OUTN 0.136511f
+C9 OUTP OUTN 0.007875f
+C10 VSS OUTN 4.05e-21
+C11 a_0_n1512# OUTP 0.023799f
+C12 a_0_n1512# VSS 0.411672f
+C13 VSS OUTP 0.020882f
+C14 INP OUTN 3.75e-19
+C15 a_0_n1512# INP 0.00503f
+C16 INP OUTP 0.114712f
+C17 VBIAS OUTN 0.013416f
+C18 VSS INP 0.01189f
+C19 INN OUTN 0.110499f
+C20 a_0_n1512# VBIAS 0.012615f
+C21 a_0_n1512# INN 0.024293f
+C22 VSS VPW 0.682516f
+C23 OUTN VPW 0.066981f
+C24 OUTP VPW 0.093731f
+C25 VBIAS VPW 1.0013f
+C26 INN VPW 0.188609f
+C27 INP VPW 0.197516f
+C28 a_0_n1512# VPW 0.147085f
+.ENDS
+
+
+******* EOF
+
+* Copyright 2022 GlobalFoundries PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+.SUBCKT layouted_cell__CS_Switch_2x INP INN OUTP OUTN VBIAS VSS VPW
+X0 VSS VBIAS a_1545_1232# VPW nfet_03v3 ad=0.2652p pd=2.14u as=75.9f ps=0.9u w=0.44u l=1.8u
+X1 a_952_1232# INP OUTP VPW nfet_03v3 ad=0.1326p pd=1.27u as=0.2146p ps=2.08u w=0.22u l=0.28u
+X2 a_1545_1232# VBIAS a_952_1232# VPW nfet_03v3 ad=75.9f pd=0.9u as=0.2146p ps=2.08u w=0.22u l=0.28u
+X3 OUTN INN a_952_1232# VPW nfet_03v3 ad=0.2146p pd=2.08u as=0.1326p ps=1.27u w=0.22u l=0.28u
+C0 a_1545_1232# VSS 0.002668f
+C1 a_952_1232# OUTP 0.023938f
+C2 OUTP INN 4.92e-19
+C3 INP OUTP 0.106363f
+C4 a_952_1232# INN 0.026814f
+C5 VBIAS OUTN 0.014363f
+C6 INP a_952_1232# 0.004867f
+C7 INP INN 0.043342f
+C8 a_952_1232# a_1545_1232# 0.001997f
+C9 VBIAS VSS 0.093028f
+C10 VSS OUTN 2.63e-20
+C11 a_952_1232# VBIAS 0.013388f
+C12 VBIAS INN 0.006377f
+C13 INP VBIAS 4.21e-20
+C14 OUTP OUTN 0.003957f
+C15 a_952_1232# OUTN 0.159408f
+C16 INN OUTN 0.109005f
+C17 OUTP VSS 0.019825f
+C18 INP OUTN 6.48e-19
+C19 a_952_1232# VSS 0.337106f
+C20 a_1545_1232# OUTN 4.95e-20
+C21 INN VSS 9.41e-19
+C22 INP VSS 0.012354f
+C23 VSS VPW 0.632992f
+C24 OUTN VPW 0.049305f
+C25 OUTP VPW 0.078355f
+C26 VBIAS VPW 0.841315f
+C27 INN VPW 0.189859f
+C28 INP VPW 0.199024f
+C29 a_952_1232# VPW 0.138452f
+.ENDS
+
+
+******* EOF
+
+* Copyright 2022 GlobalFoundries PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+.SUBCKT layouted_cell__CS_Switch_4x INP INN OUTP OUTN VBIAS VSS VPW
+X0 a_114_n1050# VBIAS a_n114_n1050# VPW nfet_03v3 ad=0.2106p pd=2.06u as=0.1306p ps=1.26u w=0.22u l=0.28u
+X1 VSS VBIAS a_n296_n1068# VPW nfet_03v3 ad=0.2635p pd=2.16u as=0.2635p ps=2.16u w=0.45u l=1.8u
+X2 a_n114_n1050# INP OUTP VPW nfet_03v3 ad=0.1306p pd=1.26u as=0.2106p ps=2.06u w=0.22u l=0.28u
+X3 OUTN INN a_n114_n1050# VPW nfet_03v3 ad=0.2106p pd=2.06u as=0.1306p ps=1.26u w=0.22u l=0.28u
+X4 VSS VBIAS a_114_n1050# VPW nfet_03v3 ad=0.2635p pd=2.16u as=0.2635p ps=2.16u w=0.45u l=1.8u
+X5 a_n114_n1050# VBIAS a_n296_n1068# VPW nfet_03v3 ad=0.1306p pd=1.26u as=0.2106p ps=2.06u w=0.22u l=0.28u
+C0 INP INN 0.043634f
+C1 a_n296_n1068# INN 0.008338f
+C2 VBIAS a_114_n1050# 0.055696f
+C3 VBIAS OUTN 0.004537f
+C4 a_n114_n1050# a_114_n1050# 0.051863f
+C5 a_n114_n1050# OUTN 0.023241f
+C6 VBIAS VSS 0.167156f
+C7 a_n114_n1050# OUTP 0.023241f
+C8 OUTN INP 4.41e-19
+C9 a_n296_n1068# a_114_n1050# 0.205772f
+C10 OUTP INP 0.10276f
+C11 INN a_114_n1050# 9.07e-19
+C12 a_n296_n1068# OUTN 4.85e-19
+C13 INP VSS 3.66e-20
+C14 OUTN INN 0.101012f
+C15 a_n296_n1068# OUTP 0.022992f
+C16 OUTP INN 4.4e-19
+C17 a_n296_n1068# VSS 0.462977f
+C18 VSS INN 4.82e-20
+C19 a_n114_n1050# VBIAS 0.01392f
+C20 VBIAS INP 0.010394f
+C21 OUTN a_114_n1050# 0.105473f
+C22 a_n114_n1050# INP 0.004906f
+C23 a_n296_n1068# VBIAS 0.070924f
+C24 VBIAS INN 0.013183f
+C25 VSS a_114_n1050# 0.014752f
+C26 OUTP OUTN 0.003729f
+C27 a_n296_n1068# a_n114_n1050# 0.103128f
+C28 a_n114_n1050# INN 0.004908f
+C29 OUTN VSS 1.83e-19
+C30 a_n296_n1068# INP 0.008364f
+C31 VSS VPW 0.584391f
+C32 OUTN VPW 0.058832f
+C33 VBIAS VPW 1.47804f
+C34 OUTP VPW 0.075764f
+C35 INN VPW 0.18604f
+C36 INP VPW 0.189485f
+C37 a_n296_n1068# VPW 0.133822f
+C38 a_114_n1050# VPW 0.073555f
+C39 a_n114_n1050# VPW 0.065227f
+.ENDS
+
+
+******* EOF
+
+* Copyright 2022 GlobalFoundries PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+.SUBCKT layouted_cell__CS_Switch_8x INP INN OUTP OUTN VBIAS VSS VPW
+X0 a_784_1400# INP OUTP VPW nfet_03v3 ad=0.1306p pd=1.26u as=0.2106p ps=2.06u w=0.22u l=0.28u
+X1 OUTN INN a_784_1400# VPW nfet_03v3 ad=0.2106p pd=2.06u as=0.1306p ps=1.26u w=0.22u l=0.28u
+X2 VSS VBIAS a_1348_1366# VPW nfet_03v3 ad=0.2426p pd=2.2u as=0.1357p ps=1.08u w=0.62u l=0.3u
+X3 a_1348_1366# VBIAS a_784_1400# VPW nfet_03v3 ad=0.1357p pd=1.08u as=0.2248p ps=2.06u w=0.56u l=0.28u
+C0 a_784_1400# INP 0.004855f
+C1 OUTP VBIAS 1.6e-20
+C2 a_1348_1366# VBIAS 0.004224f
+C3 INN OUTP 4.3e-19
+C4 OUTN VBIAS 0.018385f
+C5 VSS OUTP 0.022271f
+C6 VSS a_1348_1366# 0.006681f
+C7 INN OUTN 0.093494f
+C8 OUTN VSS 2.05e-19
+C9 INN VBIAS 0.004483f
+C10 VSS VBIAS 0.047629f
+C11 INN VSS 0.001332f
+C12 OUTP INP 0.093494f
+C13 a_784_1400# OUTP 0.023368f
+C14 a_784_1400# a_1348_1366# 0.003294f
+C15 OUTN INP 4.3e-19
+C16 a_784_1400# OUTN 0.155188f
+C17 INP VBIAS 2.26e-20
+C18 a_784_1400# VBIAS 0.010206f
+C19 INN INP 0.047777f
+C20 a_784_1400# INN 0.028253f
+C21 VSS INP 0.014282f
+C22 a_784_1400# VSS 0.433755f
+C23 OUTN OUTP 0.003575f
+C24 OUTN a_1348_1366# 4.87e-19
+C25 VSS VPW 0.467529f
+C26 OUTN VPW 0.042162f
+C27 OUTP VPW 0.069742f
+C28 VBIAS VPW 0.372261f
+C29 INN VPW 0.201814f
+C30 INP VPW 0.207079f
+C31 a_784_1400# VPW 0.125638f
+.ENDS
+
+
+******* EOF
+
+* Copyright 2022 GlobalFoundries PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+.SUBCKT layouted_cell__CS_Switch_16x INP INN OUTP OUTN VBIAS VSS VPW
+X0 a_1640_n12# VBIAS a_1304_n132# VPW nfet_03v3 ad=0.1357p pd=1.08u as=0.2264p ps=2.1u w=0.56u l=0.28u
+X1 VSS VBIAS a_1640_n12# VPW nfet_03v3 ad=0.2358p pd=2.18u as=0.1357p ps=1.08u w=0.62u l=0.3u
+X2 VSS VBIAS a_1640_n192# VPW nfet_03v3 ad=0.2358p pd=2.18u as=0.1357p ps=1.08u w=0.62u l=0.3u
+X3 OUTN INN a_1304_n132# VPW nfet_03v3 ad=0.234p pd=2.14u as=0.218p ps=1.66u w=0.6u l=0.3u
+X4 a_1304_n132# INP OUTP VPW nfet_03v3 ad=0.218p pd=1.66u as=0.234p ps=2.14u w=0.6u l=0.3u
+X5 a_1640_n192# VBIAS a_1304_n132# VPW nfet_03v3 ad=0.1357p pd=1.08u as=0.2264p ps=2.1u w=0.56u l=0.28u
+C0 INP INN 0.058006f
+C1 INP VBIAS 0.001437f
+C2 INN VBIAS 0.001551f
+C3 VSS a_1640_n192# 0.007182f
+C4 INN a_1640_n12# 0.001013f
+C5 OUTN INP 3.49e-19
+C6 OUTP INP 0.007401f
+C7 OUTN INN 0.007874f
+C8 OUTP INN 3.2e-19
+C9 VBIAS a_1640_n12# 0.00422f
+C10 OUTN VBIAS 0.019262f
+C11 INP a_1304_n132# 0.00715f
+C12 OUTP VBIAS 0.00181f
+C13 INN a_1304_n132# 0.00715f
+C14 OUTN OUTP 0.002923f
+C15 a_1304_n132# VBIAS 0.007442f
+C16 INP VSS 0.038477f
+C17 VSS INN 7.92e-19
+C18 a_1304_n132# a_1640_n12# 2.3e-19
+C19 OUTN a_1304_n132# 0.04805f
+C20 OUTP a_1304_n132# 0.046263f
+C21 VSS VBIAS 0.045797f
+C22 INP a_1640_n192# 0.001013f
+C23 VSS a_1640_n12# 0.002225f
+C24 OUTN VSS 1.82e-19
+C25 OUTP VSS 0.159563f
+C26 VBIAS a_1640_n192# 0.002733f
+C27 VSS a_1304_n132# 0.034263f
+C28 a_1304_n132# a_1640_n192# 2.3e-19
+C29 OUTP VPW 0.028916f
+C30 INP VPW 0.229072f
+C31 VSS VPW 0.428197f
+C32 INN VPW 0.246194f
+C33 OUTN VPW 0.056853f
+C34 VBIAS VPW 0.504283f
+C35 a_1304_n132# VPW 0.04863f
+.ENDS
+
+
+******* EOF

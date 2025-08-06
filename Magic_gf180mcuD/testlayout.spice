@@ -1,0 +1,41 @@
+** sch_path: /home/ducluong/GF180mcu/testlayout.sch
+**.subckt testlayout
+V1 inp GND PULSE( 0 3.3 0 1n 1n 4n 10n)
+V2 inn GND 3.3
+x1 inp inn net1 net2 VBIAS VSS VPW layouted_cell__CS_Switch_1x
+V3 vcc GND 3.3
+R1 vcc net1 0 m=1
+R2 vcc net2 0 m=1
+x2 inp inn net3 net4 VBIAS VSS VPW layouted_cell__CS_Switch_2x
+R3 vcc net3 0 m=1
+R4 vcc net4 0 m=1
+x3 inp inn net5 net6 VBIAS VSS VPW layouted_cell__CS_Switch_4x
+R5 vcc net5 0 m=1
+R6 vcc net6 0 m=1
+x4 inp inn net7 net8 VBIAS VSS VPW layouted_cell__CS_Switch_8x
+R7 vcc net7 0 m=1
+R8 vcc net8 0 m=1
+**** begin user architecture code
+
+.tran 0.01n 80n
+.save @R1[i] @R2[i] @R3[i] @R4[i] @R5[i] @R6[i] @R7[i] @R8[i]
+.save all
+
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+
+
+VVDD VDD 0 dc 3.3
+VVSS  VSS 0 dc 0
+VVbias Vbias 0 dc 1.8
+VVPW VPW 0 dc 0
+
+
+ .include /home/ducluong/GF180mcu/Magic_gf180mcuD/layouted_cell.spice
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

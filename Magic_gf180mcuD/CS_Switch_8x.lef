@@ -1,0 +1,83 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO CS_Switch_8x
+  CLASS BLOCK ;
+  FOREIGN CS_Switch_8x ;
+  ORIGIN -2.595 -5.120 ;
+  SIZE 5.725 BY 3.475 ;
+  PIN INP
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.061600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.630 7.470 3.930 8.140 ;
+    END
+  END INP
+  PIN INN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.061600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.770 7.470 5.070 8.160 ;
+    END
+  END INN
+  PIN OUTP
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.060 7.300 3.360 7.940 ;
+        RECT 3.020 6.920 3.400 7.300 ;
+    END
+  END OUTP
+  PIN OUTN
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.340 7.300 5.640 7.940 ;
+        RECT 5.300 6.920 5.680 7.300 ;
+    END
+  END OUTN
+  PIN VBIAS
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.575 7.560 7.390 7.880 ;
+    END
+  END VBIAS
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.590 6.920 7.970 7.300 ;
+        RECT 7.660 6.155 7.900 6.920 ;
+        RECT 3.020 5.600 8.120 6.155 ;
+    END
+  END VSS
+  PIN VPW
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Pwell ;
+        RECT 2.595 5.120 8.320 8.595 ;
+    END
+  END VPW
+  OBS
+      LAYER Metal1 ;
+        RECT 4.160 6.920 4.540 7.300 ;
+        RECT 6.000 6.920 6.380 7.300 ;
+        RECT 4.230 6.660 4.470 6.920 ;
+        RECT 6.070 6.660 6.310 6.920 ;
+        RECT 4.230 6.420 6.310 6.660 ;
+        RECT 5.760 6.415 6.310 6.420 ;
+  END
+END CS_Switch_8x
+END LIBRARY
+
