@@ -1,0 +1,939 @@
+* SPICE3 file created from 4MSB_weighted_binary.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__dffq_2 D CLK Q VDD VNW VPW VSS a_2011_527# a_448_472#
++ a_880_527# a_36_151# a_2304_115# a_2256_159# a_1328_159# a_2296_527# a_1348_527#
++ a_1004_159# a_1376_115# a_836_159#
+X0 VSS a_2304_115# Q VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X1 VSS CLK a_36_151# VPW nfet_05v0 ad=0.1053p pd=0.925u as=0.1782p ps=1.69u w=0.405u l=0.6u
+X2 Q a_2304_115# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X3 a_2304_115# a_2011_527# VSS VPW nfet_05v0 ad=0.176p pd=1.68u as=0.142p ps=1.14u w=0.4u l=0.6u
+X4 a_1004_159# D a_836_159# VPW nfet_05v0 ad=0.207p pd=1.51u as=43.199997f ps=0.6u w=0.36u l=0.6u
+X5 a_1004_159# D a_880_527# VNW pfet_05v0 ad=0.1872p pd=1.4u as=53.999996f ps=0.66u w=0.36u l=0.5u
+X6 a_2011_527# a_36_151# a_1376_115# VNW pfet_05v0 ad=0.1665p pd=1.285u as=0.1791p ps=1.355u w=0.36u l=0.5u
+X7 a_2296_527# a_448_472# a_2011_527# VNW pfet_05v0 ad=50.399998f pd=0.64u as=0.1665p ps=1.285u w=0.36u l=0.5u
+X8 a_1376_115# a_1004_159# VDD VNW pfet_05v0 ad=0.1791p pd=1.355u as=0.1044p ps=0.94u w=0.36u l=0.5u
+X9 VDD CLK a_36_151# VNW pfet_05v0 ad=0.2249p pd=1.385u as=0.3806p ps=2.61u w=0.865u l=0.5u
+X10 VDD a_2304_115# Q VNW pfet_05v0 ad=0.854p pd=3.84u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X11 VSS a_1376_115# a_1328_159# VPW nfet_05v0 ad=0.2637p pd=1.825u as=43.199997f ps=0.6u w=0.36u l=0.6u
+X12 a_2011_527# a_448_472# a_1376_115# VPW nfet_05v0 ad=93.59999f pd=0.88u as=93.59999f ps=0.88u w=0.36u l=0.6u
+X13 a_448_472# a_36_151# VDD VNW pfet_05v0 ad=0.3806p pd=2.61u as=0.2249p ps=1.385u w=0.865u l=0.5u
+X14 Q a_2304_115# VDD VNW pfet_05v0 ad=0.3172p pd=1.74u as=0.5368p ps=3.32u w=1.22u l=0.5u
+X15 a_1376_115# a_1004_159# VSS VPW nfet_05v0 ad=93.59999f pd=0.88u as=0.2637p ps=1.825u w=0.36u l=0.6u
+X16 VSS a_2304_115# a_2256_159# VPW nfet_05v0 ad=0.142p pd=1.14u as=43.199997f ps=0.6u w=0.36u l=0.6u
+X17 a_836_159# a_36_151# VSS VPW nfet_05v0 ad=43.199997f pd=0.6u as=0.1584p ps=1.6u w=0.36u l=0.6u
+X18 a_448_472# a_36_151# VSS VPW nfet_05v0 ad=0.1782p pd=1.69u as=0.1053p ps=0.925u w=0.405u l=0.6u
+X19 a_2256_159# a_36_151# a_2011_527# VPW nfet_05v0 ad=43.199997f pd=0.6u as=93.59999f ps=0.88u w=0.36u l=0.6u
+X20 a_880_527# a_448_472# VDD VNW pfet_05v0 ad=53.999996f pd=0.66u as=0.4554p ps=3.25u w=0.36u l=0.5u
+X21 a_1348_527# a_36_151# a_1004_159# VNW pfet_05v0 ad=43.199997f pd=0.6u as=0.1872p ps=1.4u w=0.36u l=0.5u
+X22 a_1328_159# a_448_472# a_1004_159# VPW nfet_05v0 ad=43.199997f pd=0.6u as=0.207p ps=1.51u w=0.36u l=0.6u
+X23 VDD a_1376_115# a_1348_527# VNW pfet_05v0 ad=0.1044p pd=0.94u as=43.199997f ps=0.6u w=0.36u l=0.5u
+X24 VDD a_2304_115# a_2296_527# VNW pfet_05v0 ad=0.23p pd=1.54u as=50.399998f ps=0.64u w=0.36u l=0.5u
+X25 a_2304_115# a_2011_527# VDD VNW pfet_05v0 ad=0.352p pd=2.48u as=0.23p ps=1.54u w=0.8u l=0.5u
+C0 a_2256_159# a_2011_527# 0.002321f
+C1 a_36_151# VSS 0.239353f
+C2 a_836_159# a_1004_159# 5.21e-19
+C3 a_36_151# a_1376_115# 0.08109f
+C4 VNW VSS 0.012889f
+C5 VSS a_2304_115# 0.297968f
+C6 CLK a_448_472# 9.61e-19
+C7 VNW Q 0.027852f
+C8 Q a_2304_115# 0.22197f
+C9 a_1376_115# VNW 0.166159f
+C10 a_36_151# a_448_472# 0.718363f
+C11 a_36_151# a_2011_527# 0.047216f
+C12 a_36_151# D 0.121502f
+C13 VNW a_448_472# 0.413239f
+C14 a_448_472# a_2304_115# 0.023074f
+C15 a_1004_159# a_880_527# 8.45e-19
+C16 a_2011_527# VNW 0.241116f
+C17 a_2011_527# a_2304_115# 0.492407f
+C18 a_2296_527# VDD 0.002045f
+C19 VNW D 0.179001f
+C20 a_2256_159# a_2304_115# 6.51e-20
+C21 a_1348_527# a_1004_159# 0.002747f
+C22 VDD a_880_527# 6.18e-20
+C23 VDD a_1004_159# 0.160542f
+C24 a_36_151# CLK 0.478802f
+C25 a_1348_527# VDD 0.002458f
+C26 VNW CLK 0.133279f
+C27 a_836_159# a_448_472# 0.003934f
+C28 a_36_151# VNW 0.961572f
+C29 a_36_151# a_2304_115# 0.038728f
+C30 VNW a_2304_115# 0.470008f
+C31 VSS a_1004_159# 0.01381f
+C32 a_2296_527# a_448_472# 1.45e-19
+C33 a_1376_115# a_1004_159# 0.107446f
+C34 VSS VDD 0.020906f
+C35 Q VDD 0.182961f
+C36 a_448_472# a_880_527# 3.69e-19
+C37 a_2296_527# a_2011_527# 0.002772f
+C38 a_448_472# a_1004_159# 0.839895f
+C39 a_1376_115# VDD 0.019757f
+C40 a_36_151# a_836_159# 4.76e-19
+C41 D a_880_527# 0.001444f
+C42 a_2011_527# a_1004_159# 3.27e-19
+C43 a_1348_527# a_448_472# 1.15e-19
+C44 D a_1004_159# 0.206518f
+C45 VDD a_448_472# 0.682409f
+C46 a_1328_159# VSS 0.001464f
+C47 a_2011_527# VDD 0.120839f
+C48 VDD D 0.003492f
+C49 a_1328_159# a_1376_115# 3.44e-19
+C50 VSS Q 0.30704f
+C51 a_36_151# a_880_527# 0.00384f
+C52 a_1328_159# a_448_472# 0.003059f
+C53 a_1376_115# VSS 0.143676f
+C54 a_36_151# a_1004_159# 0.220649f
+C55 CLK VDD 0.020306f
+C56 a_1348_527# a_36_151# 6.01e-20
+C57 VSS a_448_472# 0.896548f
+C58 VNW a_1004_159# 0.235416f
+C59 a_36_151# VDD 1.20601f
+C60 a_2011_527# VSS 0.107248f
+C61 a_2011_527# Q 8.42e-19
+C62 VSS D 0.003487f
+C63 a_1376_115# a_448_472# 1.16391f
+C64 a_2256_159# VSS 0.001699f
+C65 VNW VDD 0.472919f
+C66 VDD a_2304_115# 0.206361f
+C67 a_1376_115# a_2011_527# 0.021118f
+C68 a_1376_115# D 0.004715f
+C69 a_2011_527# a_448_472# 0.416346f
+C70 D a_448_472# 0.242978f
+C71 CLK VSS 0.021941f
+C72 a_2256_159# a_448_472# 2.06e-20
+C73 Q VPW 0.059844f
+C74 VSS VPW 1.26234f
+C75 D VPW 0.278185f
+C76 CLK VPW 0.288343f
+C77 VDD VPW 0.792691f
+C78 VNW VPW 5.64395f
+C79 a_2304_115# VPW 0.897199f
+C80 a_2011_527# VPW 0.373034f
+C81 a_1004_159# VPW 0.293092f
+C82 a_1376_115# VPW 0.283585f
+C83 a_448_472# VPW 0.605448f
+C84 a_36_151# VPW 1.05216f
+.ends
+
+.subckt CS_Switch_8x2 INP INN OUTP OUTN VBIAS VSS VPW a_784_1400# a_1348_1366# a_1712_1360#
++ a_450_1400#
+X0 a_784_1400# INP OUTP VPW nfet_03v3 ad=0.1306p pd=1.26u as=0.1328p ps=1.28u w=0.22u l=0.28u
+X1 OUTP VSS a_450_1400# VPW nfet_03v3 ad=0.1328p pd=1.28u as=50.6f ps=0.9u w=0.22u l=0.28u
+X2 OUTN INN a_784_1400# VPW nfet_03v3 ad=0.2106p pd=2.06u as=0.1306p ps=1.26u w=0.22u l=0.28u
+X3 VSS VBIAS a_1348_1366# VPW nfet_03v3 ad=0.2026p pd=1.6u as=0.1357p ps=1.08u w=0.62u l=0.3u
+X4 a_1348_1366# VBIAS a_784_1400# VPW nfet_03v3 ad=0.1357p pd=1.08u as=0.2248p ps=2.06u w=0.56u l=0.28u
+X5 a_1712_1360# VSS VSS VPW nfet_03v3 ad=0.1426p pd=1.7u as=0.2026p ps=1.6u w=0.62u l=0.3u
+C0 VBIAS a_784_1400# 0.010206f
+C1 OUTP INP 0.003587f
+C2 a_450_1400# VSS 5.26e-19
+C3 a_784_1400# INP 0.004996f
+C4 a_784_1400# INN 0.032405f
+C5 VSS a_1348_1366# 0.006681f
+C6 VBIAS VSS 0.055613f
+C7 OUTP a_784_1400# 0.023319f
+C8 VSS INP 0.022774f
+C9 VBIAS a_1348_1366# 0.004224f
+C10 VSS INN 0.001406f
+C11 INN OUTN 0.003587f
+C12 a_450_1400# OUTP 7.35e-19
+C13 VBIAS INP 1.33e-20
+C14 VBIAS INN 0.013345f
+C15 VSS a_1712_1360# 0.003417f
+C16 INP INN 0.034564f
+C17 OUTP VSS 0.026376f
+C18 VSS a_784_1400# 0.445348f
+C19 a_784_1400# OUTN 0.154807f
+C20 a_784_1400# a_1348_1366# 0.003294f
+C21 OUTN VPW 0.018986f
+C22 OUTP VPW 0.031901f
+C23 VSS VPW 0.978803f
+C24 VBIAS VPW 0.3659f
+C25 INN VPW 0.19646f
+C26 INP VPW 0.203821f
+C27 a_784_1400# VPW 0.115832f
+.ends
+
+.subckt CS_Switch_4x2 INP INN OUTP OUTN VBIAS VSS VPW a_984_240# a_984_0# a_n212_240#
++ a_n212_0# a_812_0# a_n110_0# a_42_240#
+X0 a_984_0# VSS a_812_0# VPW nfet_03v3 ad=0.1035p pd=1.36u as=0.1794p ps=1.525u w=0.45u l=0.28u
+X1 a_42_240# INP OUTP VPW nfet_03v3 ad=0.102p pd=1u as=0.182p ps=1.8u w=0.22u l=0.28u
+X2 a_812_0# VBIAS a_42_240# VPW nfet_03v3 ad=0.1794p pd=1.525u as=0.1516p ps=1.64u w=0.22u l=0.28u
+X3 VSS VBIAS a_n110_0# VPW nfet_03v3 ad=0.2128p pd=1.78u as=0.1752p ps=1.48u w=0.45u l=1.8u
+X4 a_n110_0# VSS a_n212_240# VPW nfet_03v3 ad=0.1752p pd=1.48u as=50.6f ps=0.9u w=0.22u l=0.28u
+X5 a_42_240# VBIAS a_n110_0# VPW nfet_03v3 ad=0.1516p pd=1.64u as=0.1752p ps=1.48u w=0.22u l=0.28u
+X6 a_984_240# VSS a_812_0# VPW nfet_03v3 ad=50.6f pd=0.9u as=0.1794p ps=1.525u w=0.22u l=0.28u
+X7 OUTN INN a_42_240# VPW nfet_03v3 ad=0.182p pd=1.8u as=0.102p ps=1u w=0.22u l=0.28u
+X8 a_n110_0# VSS a_n212_0# VPW nfet_03v3 ad=0.1752p pd=1.48u as=0.1035p ps=1.36u w=0.45u l=0.28u
+X9 a_812_0# VBIAS VSS VPW nfet_03v3 ad=0.1794p pd=1.525u as=0.2128p ps=1.78u w=0.45u l=1.8u
+C0 VBIAS a_42_240# 0.096115f
+C1 VBIAS a_n110_0# 6.69e-19
+C2 INP OUTP 0.003859f
+C3 VBIAS INN 0.038981f
+C4 a_n212_240# VSS 3.58e-19
+C5 INP OUTN 3.66e-20
+C6 a_42_240# a_n110_0# 0.00195f
+C7 VSS a_812_0# 0.007354f
+C8 a_42_240# INN 0.028229f
+C9 VBIAS OUTP 0.001662f
+C10 VBIAS OUTN 0.001662f
+C11 VBIAS VSS 0.192637f
+C12 a_42_240# OUTP 0.145304f
+C13 OUTP INN 3.66e-20
+C14 a_42_240# OUTN 0.145304f
+C15 a_984_0# VSS 0.001156f
+C16 VSS a_984_240# 3.37e-19
+C17 a_42_240# VSS 0.206666f
+C18 VSS a_n110_0# 0.007168f
+C19 INN OUTN 0.003859f
+C20 a_n212_0# VSS 0.001229f
+C21 VBIAS INP 0.038981f
+C22 VBIAS a_812_0# 6.69e-19
+C23 a_42_240# INP 0.028229f
+C24 a_42_240# a_812_0# 0.00187f
+C25 OUTP OUTN 3.07e-19
+C26 OUTP VSS 4.43e-20
+C27 INP INN 0.055413f
+C28 VSS OUTN 4.31e-20
+C29 OUTN VPW 0.019007f
+C30 OUTP VPW 0.019007f
+C31 VSS VPW 0.972366f
+C32 INN VPW 0.179143f
+C33 INP VPW 0.179143f
+C34 VBIAS VPW 1.43377f
+C35 a_42_240# VPW 0.175417f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__inv_2 I ZN VDD VNW VPW VSS
+X0 VDD I ZN VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.4575p ps=1.97u w=1.22u l=0.5u
+X1 ZN I VSS VPW nfet_05v0 ad=0.2255p pd=1.37u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X2 VSS I ZN VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.2255p ps=1.37u w=0.82u l=0.6u
+X3 ZN I VDD VNW pfet_05v0 ad=0.4575p pd=1.97u as=0.5368p ps=3.32u w=1.22u l=0.5u
+C0 I VSS 0.091531f
+C1 VNW VDD 0.097124f
+C2 I ZN 0.58604f
+C3 VNW VSS 0.010163f
+C4 VNW ZN 0.027829f
+C5 VSS VDD 0.023187f
+C6 VNW I 0.285482f
+C7 VDD ZN 0.266247f
+C8 VSS ZN 0.179304f
+C9 I VDD 0.074838f
+C10 VSS VPW 0.308828f
+C11 ZN VPW 0.100523f
+C12 VDD VPW 0.240805f
+C13 I VPW 0.610668f
+C14 VNW VPW 1.31158f
+.ends
+
+.subckt CS_Switch_1x1 INP INN OUTP OUTN VBIAS VSS VPW a_668_n40# a_n228_n224# a_440_n224#
++ a_n228_n40# a_56_n40# a_668_n224#
+X0 a_668_n40# VSS a_440_n224# VPW nfet_03v3 ad=50.6f pd=0.9u as=0.1452p ps=1.465u w=0.22u l=0.28u
+X1 a_668_n224# VSS a_440_n224# VPW nfet_03v3 ad=50.6f pd=0.9u as=0.1452p ps=1.465u w=0.22u l=0.28u
+X2 a_440_n224# VBIAS a_56_n40# VPW nfet_03v3 ad=0.1452p pd=1.465u as=0.1516p ps=1.64u w=0.22u l=0.28u
+X3 VSS VSS a_n228_n224# VPW nfet_03v3 ad=94.5f pd=0.99u as=50.6f ps=0.9u w=0.22u l=0.28u
+X4 OUTN INN a_56_n40# VPW nfet_03v3 ad=0.182p pd=1.8u as=86.8f ps=0.92u w=0.22u l=0.28u
+X5 a_440_n224# VBIAS VSS VPW nfet_03v3 ad=0.1452p pd=1.465u as=94.5f ps=0.99u w=0.22u l=2.2u
+X6 a_56_n40# INP OUTP VPW nfet_03v3 ad=86.8f pd=0.92u as=0.1053p ps=1.03u w=0.22u l=0.28u
+X7 OUTP VSS a_n228_n40# VPW nfet_03v3 ad=0.1053p pd=1.03u as=50.6f ps=0.9u w=0.22u l=0.28u
+C0 a_n228_n40# OUTP 7.7e-19
+C1 a_n228_n224# VSS 3.61e-19
+C2 VPW INP 0.105738f
+C3 VPW VBIAS 0.410847f
+C4 INP OUTP 0.003858f
+C5 a_668_n224# VSS 8.29e-19
+C6 INP VBIAS 0.019271f
+C7 OUTN OUTP 6.32e-19
+C8 OUTN INP 7.62e-20
+C9 a_668_n40# VSS 5.59e-19
+C10 OUTN VBIAS 0.001717f
+C11 a_440_n224# VBIAS 0.001013f
+C12 INN a_56_n40# 0.029406f
+C13 a_56_n40# VSS 0.150521f
+C14 a_n228_n40# VSS 2.43e-19
+C15 VPW INN 0.108806f
+C16 INN OUTP 7.62e-20
+C17 INN INP 0.060872f
+C18 INN VBIAS 0.041164f
+C19 VPW VSS 0.275976f
+C20 a_56_n40# OUTP 0.029701f
+C21 OUTP VSS 0.02973f
+C22 OUTN INN 0.003858f
+C23 INP a_56_n40# 0.003069f
+C24 INP VSS 0.021464f
+C25 a_56_n40# VBIAS 0.047893f
+C26 VBIAS VSS 0.11846f
+C27 OUTN a_56_n40# 0.164087f
+C28 OUTN VSS 4.68e-20
+C29 a_56_n40# a_440_n224# 0.00171f
+C30 a_440_n224# VSS 0.006325f
+C31 OUTN VSUBS 0.018808f
+C32 OUTP VSUBS 0.030912f
+C33 VSS VSUBS 0.66916f
+C34 VBIAS VSUBS 0.414038f
+C35 INN VSUBS 0.069304f
+C36 INP VSUBS 0.085275f
+C37 a_56_n40# VSUBS 0.105866f
+.ends
+
+.subckt CS_Switch_2x2 INP INN OUTP OUTN VBIAS VSS VPW a_652_n248# a_n246_n20# a_n246_n248#
++ a_652_n20# a_32_n20# a_336_n248#
+X0 a_336_n248# VBIAS a_32_n20# VPW nfet_03v3 ad=0.2728p pd=1.905u as=0.1516p ps=1.64u w=0.22u l=0.28u
+X1 OUTN INN a_32_n20# VPW nfet_03v3 ad=0.182p pd=1.8u as=0.102p ps=1u w=0.22u l=0.28u
+X2 a_32_n20# INP OUTP VPW nfet_03v3 ad=0.102p pd=1u as=0.102p ps=1u w=0.22u l=0.28u
+X3 OUTP VSS a_n246_n20# VPW nfet_03v3 ad=0.102p pd=1u as=50.6f ps=0.9u w=0.22u l=0.28u
+X4 a_336_n248# VBIAS VSS VPW nfet_03v3 ad=0.2728p pd=1.905u as=0.132p ps=1.04u w=0.44u l=1.8u
+X5 a_652_n20# VSS a_336_n248# VPW nfet_03v3 ad=50.6f pd=0.9u as=0.2728p ps=1.905u w=0.22u l=0.28u
+X6 a_652_n248# VSS a_336_n248# VPW nfet_03v3 ad=0.1012p pd=1.34u as=0.2728p ps=1.905u w=0.44u l=0.28u
+X7 VSS VSS a_n246_n248# VPW nfet_03v3 ad=0.132p pd=1.04u as=0.1012p ps=1.34u w=0.44u l=0.28u
+C0 VBIAS a_32_n20# 0.049088f
+C1 VSS INP 0.020482f
+C2 a_32_n20# OUTP 0.028781f
+C3 VSS OUTN 4.68e-20
+C4 VBIAS INN 0.041085f
+C5 a_n246_n20# OUTP 7.78e-19
+C6 VBIAS INP 0.019794f
+C7 INN a_32_n20# 0.029571f
+C8 a_336_n248# VSS 0.014638f
+C9 a_32_n20# INP 0.003036f
+C10 VSS a_n246_n248# 0.00298f
+C11 VBIAS OUTN 0.001721f
+C12 INN OUTP 7.31e-20
+C13 INP OUTP 0.003859f
+C14 a_32_n20# OUTN 0.163167f
+C15 VBIAS a_336_n248# 0.001759f
+C16 VBIAS VSS 0.126911f
+C17 INN INP 0.055413f
+C18 OUTP OUTN 6.13e-19
+C19 a_32_n20# a_336_n248# 0.004758f
+C20 a_32_n20# VSS 0.109741f
+C21 VSS a_652_n248# 0.001884f
+C22 INN OUTN 0.003859f
+C23 a_n246_n20# VSS 4.96e-19
+C24 VSS a_652_n20# 4.96e-19
+C25 INP OUTN 7.31e-20
+C26 VSS OUTP 0.028393f
+C27 OUTN VPW 0.018752f
+C28 OUTP VPW 0.031142f
+C29 VSS VPW 0.970356f
+C30 VBIAS VPW 0.776597f
+C31 INN VPW 0.178433f
+C32 INP VPW 0.190875f
+C33 a_32_n20# VPW 0.107288f
+.ends
+
+.subckt x4MSB_weighted_binary D1 D2 D3 D4 CLK OUTP OUTN VBIAS VDD VSS
+Xgf180mcu_fd_sc_mcu7t5v0__dffq_2_1 D1 CLK CS_Switch_1x1_0/INN VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_880_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2256_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1328_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2296_527#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1348_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_836_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2
+Xgf180mcu_fd_sc_mcu7t5v0__dffq_2_0 D3 CLK CS_Switch_4x2_0/INP VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2296_527#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_836_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2
+Xgf180mcu_fd_sc_mcu7t5v0__dffq_2_2 D2 CLK CS_Switch_2x2_0/INN VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_880_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2256_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1328_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2296_527#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1348_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_836_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2
+Xgf180mcu_fd_sc_mcu7t5v0__dffq_2_3 D4 CLK CS_Switch_8x2_0/INN VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_880_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2256_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1328_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2296_527#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1348_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1004_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_836_159#
++ gf180mcu_fd_sc_mcu7t5v0__dffq_2
+XCS_Switch_8x2_0 CS_Switch_8x2_0/INP CS_Switch_8x2_0/INN OUTN OUTP VBIAS VSS VSUBS
++ CS_Switch_8x2_0/a_784_1400# CS_Switch_8x2_0/a_1348_1366# CS_Switch_8x2_0/a_1712_1360#
++ CS_Switch_8x2_0/a_450_1400# CS_Switch_8x2
+XCS_Switch_4x2_0 CS_Switch_4x2_0/INP CS_Switch_4x2_0/INN OUTP CS_Switch_4x2_0/OUTN
++ VBIAS VSS VSUBS CS_Switch_4x2_0/a_984_240# CS_Switch_4x2_0/a_984_0# CS_Switch_4x2_0/a_n212_240#
++ CS_Switch_4x2_0/a_n212_0# CS_Switch_4x2_0/a_812_0# CS_Switch_4x2_0/a_n110_0# CS_Switch_4x2_0/a_42_240#
++ CS_Switch_4x2
+Xgf180mcu_fd_sc_mcu7t5v0__inv_2_0 CS_Switch_4x2_0/INP CS_Switch_4x2_0/INN VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+Xgf180mcu_fd_sc_mcu7t5v0__inv_2_1 CS_Switch_1x1_0/INN CS_Switch_1x1_0/INP VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+Xgf180mcu_fd_sc_mcu7t5v0__inv_2_2 CS_Switch_2x2_0/INN CS_Switch_2x2_0/INP VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+Xgf180mcu_fd_sc_mcu7t5v0__inv_2_3 CS_Switch_8x2_0/INN CS_Switch_8x2_0/INP VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW
++ VSUBS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+XCS_Switch_1x1_0 CS_Switch_1x1_0/INP CS_Switch_1x1_0/INN OUTN OUTP VBIAS VSS VSUBS
++ CS_Switch_1x1_0/a_668_n40# CS_Switch_1x1_0/a_n228_n224# CS_Switch_1x1_0/a_440_n224#
++ CS_Switch_1x1_0/a_n228_n40# CS_Switch_1x1_0/a_56_n40# CS_Switch_1x1_0/a_668_n224#
++ CS_Switch_1x1
+XCS_Switch_2x2_0 CS_Switch_2x2_0/INP CS_Switch_2x2_0/INN OUTN OUTP VBIAS VSS VSUBS
++ CS_Switch_2x2_0/a_652_n248# CS_Switch_2x2_0/a_n246_n20# CS_Switch_2x2_0/a_n246_n248#
++ CS_Switch_2x2_0/a_652_n20# CS_Switch_2x2_0/a_32_n20# CS_Switch_2x2_0/a_336_n248#
++ CS_Switch_2x2
+C0 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 2.21e-22
+C1 CS_Switch_2x2_0/INP CS_Switch_1x1_0/INN 0.001206f
+C2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1328_159# VDD 5.95e-19
+C3 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.005769f
+C4 VBIAS gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.002152f
+C5 VBIAS CS_Switch_8x2_0/a_1712_1360# 0.001799f
+C6 VDD CS_Switch_8x2_0/INN 0.212908f
+C7 CS_Switch_1x1_0/INN OUTN 0.081435f
+C8 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 8.15e-22
+C9 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# VSS 0.132139f
+C10 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 0.002086f
+C11 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.012832f
+C12 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 0.007561f
+C13 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 4.99e-21
+C14 CS_Switch_2x2_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 4.26e-21
+C15 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# VDD 0.032091f
+C16 OUTN gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.011456f
+C17 CS_Switch_2x2_0/INN CS_Switch_2x2_0/a_32_n20# 0.005719f
+C18 OUTN CS_Switch_8x2_0/a_1712_1360# 4.3e-20
+C19 CS_Switch_1x1_0/a_56_n40# CS_Switch_4x2_0/INP 2.6e-19
+C20 CS_Switch_4x2_0/a_984_240# CS_Switch_8x2_0/INN 1.58e-19
+C21 CS_Switch_1x1_0/INN OUTP 0.104045f
+C22 CS_Switch_8x2_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.00831f
+C23 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 4.38e-20
+C24 VBIAS CS_Switch_4x2_0/a_n212_0# 8.61e-20
+C25 D4 D3 0.009724f
+C26 CS_Switch_1x1_0/a_56_n40# VSS 0.001475f
+C27 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# VDD 0.020289f
+C28 OUTP CS_Switch_8x2_0/a_1712_1360# 0.001904f
+C29 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.006833f
+C30 VBIAS gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.002149f
+C31 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 4.74e-21
+C32 D1 CLK 0.003686f
+C33 CS_Switch_2x2_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.016201f
+C34 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_8x2_0/INN 0.006155f
+C35 OUTN CS_Switch_4x2_0/a_n212_0# 0.001897f
+C36 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 5.35e-22
+C37 CS_Switch_4x2_0/INP CS_Switch_4x2_0/OUTN 0.001833f
+C38 CS_Switch_8x2_0/INP CS_Switch_8x2_0/a_1348_1366# 4.47e-20
+C39 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.007563f
+C40 CS_Switch_4x2_0/OUTN VSS 5.93e-19
+C41 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW OUTN 0.011395f
+C42 CS_Switch_1x1_0/INP CS_Switch_2x2_0/INN 0.054119f
+C43 CS_Switch_2x2_0/a_652_n248# VBIAS 0.001751f
+C44 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.020504f
+C45 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.01457f
+C46 CS_Switch_2x2_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.00393f
+C47 CS_Switch_4x2_0/a_n212_0# OUTP 0.001584f
+C48 VBIAS CS_Switch_8x2_0/INN 0.046632f
+C49 VBIAS CS_Switch_4x2_0/a_n212_240# 4.21e-20
+C50 CLK VSS 0.142307f
+C51 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 1.4e-21
+C52 VBIAS CS_Switch_1x1_0/a_n228_n40# 1.22e-19
+C53 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# D2 0.023459f
+C54 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 3.21e-21
+C55 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# 0.007163f
+C56 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 2.17e-19
+C57 OUTN CS_Switch_8x2_0/INN 0.083059f
+C58 CS_Switch_4x2_0/OUTN VDD 2.05e-19
+C59 OUTN CS_Switch_4x2_0/a_n212_240# 8.79e-19
+C60 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 1.04e-19
+C61 OUTN CS_Switch_1x1_0/a_n228_n40# 3.72e-20
+C62 D4 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1348_527# 9.77e-20
+C63 CS_Switch_8x2_0/a_784_1400# CS_Switch_8x2_0/INN 0.005854f
+C64 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159# 6.64e-19
+C65 CS_Switch_2x2_0/a_652_n248# OUTP 0.001063f
+C66 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.02438f
+C67 CLK VDD 0.192606f
+C68 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW D3 1.98e-20
+C69 CS_Switch_8x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 0.00195f
+C70 CLK gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 2.25e-19
+C71 CS_Switch_4x2_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.002733f
+C72 OUTP CS_Switch_8x2_0/INN 0.09875f
+C73 CS_Switch_4x2_0/a_n212_240# OUTP 0.001048f
+C74 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 9.58e-21
+C75 D2 gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 3.51e-21
+C76 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# CS_Switch_8x2_0/INN 0.003574f
+C77 CS_Switch_1x1_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.057325f
+C78 VBIAS CS_Switch_1x1_0/a_56_n40# 0.009378f
+C79 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159# VDD 4.84e-19
+C80 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.032014f
+C81 CS_Switch_4x2_0/a_812_0# CS_Switch_8x2_0/INN 0.00195f
+C82 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 1.18e-21
+C83 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.004222f
+C84 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_4x2_0/OUTN 0.001839f
+C85 CS_Switch_4x2_0/a_42_240# CS_Switch_4x2_0/INP 0.004304f
+C86 CLK gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 2.24e-19
+C87 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# D2 2.62e-21
+C88 CS_Switch_8x2_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 3.27e-19
+C89 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_4x2_0/INP 0.005065f
+C90 CS_Switch_4x2_0/INP CS_Switch_2x2_0/INN 0.097151f
+C91 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# D1 0.017296f
+C92 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CLK 0.052887f
+C93 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# D3 1.29e-21
+C94 CS_Switch_4x2_0/a_42_240# VSS 0.007293f
+C95 CS_Switch_1x1_0/a_56_n40# OUTN 0.01133f
+C96 CS_Switch_1x1_0/INP CS_Switch_1x1_0/a_440_n224# 7.82e-20
+C97 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# VSS 0.150892f
+C98 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 6.23e-19
+C99 CS_Switch_2x2_0/INN VSS 0.176828f
+C100 CS_Switch_4x2_0/INP CS_Switch_8x2_0/INP 0.001072f
+C101 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_836_159# VDD 2.73e-19
+C102 VBIAS CS_Switch_4x2_0/OUTN 0.049782f
+C103 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# D2 6.16e-22
+C104 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# 0.004508f
+C105 CS_Switch_2x2_0/a_652_n20# VBIAS 8.76e-19
+C106 CS_Switch_8x2_0/INP VSS 0.040425f
+C107 CS_Switch_1x1_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.017885f
+C108 CS_Switch_1x1_0/a_56_n40# OUTP 0.081648f
+C109 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# CS_Switch_4x2_0/INP 1.32e-19
+C110 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1004_159# 4.9e-20
+C111 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527# 2.95e-19
+C112 CS_Switch_1x1_0/INP CS_Switch_1x1_0/a_n228_n224# 3.22e-19
+C113 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# -0.005305f
+C114 CS_Switch_4x2_0/OUTN OUTN 0.043064f
+C115 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# VSS 0.023494f
+C116 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# VDD 0.005512f
+C117 CS_Switch_2x2_0/INN VDD 0.226367f
+C118 CS_Switch_8x2_0/INP VDD 0.002841f
+C119 CS_Switch_4x2_0/a_984_0# CS_Switch_4x2_0/INN 5.06e-19
+C120 CS_Switch_8x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 1.6e-20
+C121 CS_Switch_4x2_0/OUTN OUTP 0.013938f
+C122 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2296_527# VSS 0.001378f
+C123 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_880_527# 2.95e-19
+C124 CS_Switch_2x2_0/a_652_n20# OUTP 7.98e-19
+C125 D2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1348_527# 9.77e-20
+C126 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# VDD 0.056245f
+C127 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# VDD 0.165653f
+C128 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 0.0021f
+C129 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW -0.005305f
+C130 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527# VDD 6.06e-19
+C131 CS_Switch_2x2_0/a_n246_n248# CS_Switch_4x2_0/INP 5.99e-19
+C132 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 0.005562f
+C133 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.002762f
+C134 D1 D2 0.009927f
+C135 CS_Switch_4x2_0/a_42_240# gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 2.27e-19
+C136 CS_Switch_2x2_0/a_n246_n248# VSS 5.46e-19
+C137 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 0.020663f
+C138 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2296_527# VDD 2.03e-19
+C139 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2256_159# VSS 6.64e-19
+C140 CS_Switch_1x1_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 4.09e-19
+C141 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_2x2_0/INN 0.016042f
+C142 CLK D3 0.003687f
+C143 CS_Switch_4x2_0/INP CS_Switch_4x2_0/INN 0.591774f
+C144 CS_Switch_4x2_0/INP CS_Switch_1x1_0/a_440_n224# 6.67e-20
+C145 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 6.22e-19
+C146 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 2.77e-21
+C147 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 9.89e-19
+C148 CS_Switch_4x2_0/INN VSS 0.036988f
+C149 CS_Switch_4x2_0/a_42_240# VBIAS 0.119277f
+C150 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 5.92e-20
+C151 VBIAS CS_Switch_2x2_0/INN 0.025453f
+C152 VSS D2 0.005507f
+C153 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 1.07e-19
+C154 CS_Switch_1x1_0/a_56_n40# CS_Switch_1x1_0/INN 0.005523f
+C155 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_2x2_0/INP 0.002549f
+C156 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1348_527# 9.77e-20
+C157 CS_Switch_1x1_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.002437f
+C158 CS_Switch_2x2_0/INP CS_Switch_2x2_0/INN 0.455498f
+C159 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2256_159# VDD 4.84e-19
+C160 VBIAS CS_Switch_8x2_0/INP 0.001789f
+C161 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# D3 0.010717f
+C162 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# -0.005374f
+C163 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2296_527# VSS 0.001429f
+C164 CS_Switch_4x2_0/a_42_240# OUTN 0.018269f
+C165 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_880_527# D2 3.83e-19
+C166 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# VSS 0.023706f
+C167 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.005637f
+C168 CS_Switch_1x1_0/a_n228_n224# VSS 7.06e-19
+C169 CS_Switch_4x2_0/INN VDD 0.027532f
+C170 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 2.13e-19
+C171 OUTN CS_Switch_2x2_0/INN 0.082353f
+C172 D4 CLK 0.003688f
+C173 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2256_159# VSS 6.64e-19
+C174 CS_Switch_8x2_0/INP OUTN 0.16707f
+C175 VDD D2 0.032085f
+C176 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 0.006895f
+C177 CS_Switch_4x2_0/a_42_240# OUTP 0.074096f
+C178 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# 4.91e-20
+C179 CS_Switch_2x2_0/INN OUTP 0.104499f
+C180 CS_Switch_8x2_0/a_784_1400# CS_Switch_8x2_0/INP 0.001152f
+C181 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2296_527# VDD 1.74e-19
+C182 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.01551f
+C183 CS_Switch_4x2_0/INP CS_Switch_2x2_0/a_32_n20# 0.003832f
+C184 CS_Switch_4x2_0/INN CS_Switch_4x2_0/a_984_240# 6.02e-19
+C185 CS_Switch_8x2_0/INP OUTP 5.08e-19
+C186 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# 0.014305f
+C187 D3 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527# 3.83e-19
+C188 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# 0.010717f
+C189 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# VDD 0.165398f
+C190 VSS gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.082055f
+C191 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# CS_Switch_2x2_0/INN 3.14e-19
+C192 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2256_159# 6.64e-19
+C193 CS_Switch_2x2_0/a_32_n20# VSS 1.12e-19
+C194 CLK gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.045596f
+C195 CS_Switch_4x2_0/INP CS_Switch_2x2_0/a_336_n248# 0.001817f
+C196 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2256_159# VDD 4.84e-19
+C197 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 2.14e-19
+C198 VBIAS CS_Switch_1x1_0/a_668_n40# 8.76e-19
+C199 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1348_527# 6.07e-19
+C200 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_4x2_0/INN 0.026017f
+C201 VSS CS_Switch_2x2_0/a_336_n248# 5.96e-20
+C202 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.002875f
+C203 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# D2 4.24e-19
+C204 CS_Switch_2x2_0/a_n246_n248# VBIAS 2.53e-19
+C205 VBIAS CS_Switch_1x1_0/a_668_n224# 8.76e-19
+C206 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_836_159# VDD 2.75e-19
+C207 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW D2 0.005667f
+C208 CS_Switch_8x2_0/a_450_1400# CS_Switch_8x2_0/INP 7.96e-19
+C209 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 2.18e-19
+C210 CS_Switch_2x2_0/a_n246_n248# CS_Switch_2x2_0/INP 6.28e-19
+C211 D3 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_880_527# 1.28e-19
+C212 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# VSS 0.008083f
+C213 VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.020993f
+C214 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 1.07e-19
+C215 CS_Switch_8x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 1.89e-19
+C216 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2256_159# 4.82e-19
+C217 gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 1.09e-22
+C218 CS_Switch_1x1_0/INP CS_Switch_4x2_0/INP 4.46e-21
+C219 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# D3 0.023462f
+C220 VBIAS CS_Switch_4x2_0/INN 0.103502f
+C221 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 0.002065f
+C222 CS_Switch_4x2_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 2.3e-19
+C223 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 0.003859f
+C224 VBIAS CS_Switch_1x1_0/a_440_n224# 0.00744f
+C225 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 1.07e-21
+C226 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527# D3 9.77e-20
+C227 CS_Switch_1x1_0/INP VSS 0.039167f
+C228 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 0.007228f
+C229 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW CLK 0.053108f
+C230 CS_Switch_2x2_0/INP CS_Switch_4x2_0/INN 1.39e-20
+C231 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# VSS 0.023681f
+C232 CS_Switch_1x1_0/a_668_n40# OUTP 7.69e-19
+C233 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.14679f
+C234 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.002421f
+C235 OUTN CS_Switch_4x2_0/INN 0.033134f
+C236 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# VDD 0.033297f
+C237 CS_Switch_2x2_0/a_n246_n248# OUTP 9.31e-21
+C238 OUTP CS_Switch_1x1_0/a_668_n224# 5.29e-19
+C239 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# 0.003769f
+C240 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# CS_Switch_2x2_0/INN 3.79e-19
+C241 VBIAS CS_Switch_1x1_0/a_n228_n224# 1.22e-19
+C242 D4 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_880_527# 3.83e-19
+C243 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 4.63e-22
+C244 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 0.001058f
+C245 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_1x1_0/INN 0.001023f
+C246 CS_Switch_2x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 1.6e-20
+C247 CS_Switch_1x1_0/INP VDD 0.00631f
+C248 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.002696f
+C249 CS_Switch_1x1_0/INN CS_Switch_2x2_0/INN 0.084591f
+C250 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# D4 4.04e-19
+C251 CS_Switch_4x2_0/INN OUTP 0.005369f
+C252 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# VDD 0.026376f
+C253 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 0.151369f
+C254 CS_Switch_1x1_0/a_440_n224# OUTP 0.004157f
+C255 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# VDD 0.005651f
+C256 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 1.22e-19
+C257 CS_Switch_2x2_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.002911f
+C258 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 4.14e-20
+C259 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# CS_Switch_4x2_0/INN 0.002567f
+C260 CLK gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.186303f
+C261 CS_Switch_4x2_0/a_984_0# VSS 0.001093f
+C262 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# -5.68e-32
+C263 VBIAS gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.001773f
+C264 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# 0.005475f
+C265 VBIAS CS_Switch_2x2_0/a_32_n20# 0.01108f
+C266 CS_Switch_4x2_0/a_812_0# CS_Switch_4x2_0/INN 0.003643f
+C267 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.006049f
+C268 CS_Switch_2x2_0/INP CS_Switch_2x2_0/a_32_n20# 0.005394f
+C269 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 1.26e-19
+C270 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 2.84e-32
+C271 D1 VSS 0.002929f
+C272 D2 D3 0.00984f
+C273 VBIAS CS_Switch_2x2_0/a_336_n248# 0.01095f
+C274 CS_Switch_1x1_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 1.61e-20
+C275 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 4.02e-22
+C276 OUTN gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.017046f
+C277 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# D2 0.002892f
+C278 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# 0.002885f
+C279 CS_Switch_2x2_0/INP CS_Switch_2x2_0/a_336_n248# 1.81e-19
+C280 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.012973f
+C281 OUTN CS_Switch_2x2_0/a_32_n20# 0.012307f
+C282 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# 0.002619f
+C283 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1348_527# 6.06e-19
+C284 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 9.89e-19
+C285 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_880_527# D2 7.24e-21
+C286 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 1.05e-20
+C287 VBIAS CS_Switch_8x2_0/a_1348_1366# 0.003806f
+C288 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW CS_Switch_2x2_0/INN 0.057659f
+C289 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_880_527# D1 1.22e-19
+C290 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# D3 4.15e-19
+C291 CS_Switch_4x2_0/INP VSS 0.263935f
+C292 CS_Switch_2x2_0/a_32_n20# OUTP 0.087001f
+C293 D1 VDD 0.032252f
+C294 CS_Switch_1x1_0/INP VBIAS 0.006348f
+C295 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 2.1e-19
+C296 CS_Switch_1x1_0/INP CS_Switch_2x2_0/INP 1.15e-20
+C297 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.01929f
+C298 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.00319f
+C299 D4 D2 1.2e-21
+C300 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 2.2e-19
+C301 OUTP CS_Switch_2x2_0/a_336_n248# 0.005902f
+C302 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 8.67e-20
+C303 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_8x2_0/INN 7.53e-22
+C304 CS_Switch_2x2_0/INN CS_Switch_8x2_0/INN 4.64e-22
+C305 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1004_159# 0.054419f
+C306 CS_Switch_4x2_0/INP VDD 0.339084f
+C307 CS_Switch_2x2_0/INN CS_Switch_1x1_0/a_n228_n40# 1.81e-19
+C308 D3 gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.00542f
+C309 CS_Switch_1x1_0/INP OUTN 0.153737f
+C310 OUTP CS_Switch_8x2_0/a_1348_1366# 5.29e-19
+C311 CS_Switch_8x2_0/INP CS_Switch_8x2_0/INN 0.278189f
+C312 VSS VDD 12.204515f
+C313 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 0.023389f
+C314 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 6.23e-19
+C315 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 4.34e-20
+C316 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1328_159# VDD 5.93e-19
+C317 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 0.023452f
+C318 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# VDD 0.145686f
+C319 CS_Switch_1x1_0/INP OUTP 0.001117f
+C320 D2 gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 4e-20
+C321 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# VDD 0.055014f
+C322 D1 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 7.35e-21
+C323 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_880_527# VDD 2.95e-19
+C324 VBIAS CS_Switch_4x2_0/a_984_0# 6.49e-19
+C325 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 4.4e-20
+C326 D2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 0.017303f
+C327 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_836_159# VDD 2.73e-19
+C328 VSS CS_Switch_4x2_0/a_984_240# 3.67e-19
+C329 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1328_159# VDD 5.94e-19
+C330 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.003932f
+C331 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.004373f
+C332 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 3.33e-22
+C333 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 0.163367f
+C334 D4 gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.013086f
+C335 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 2.24e-19
+C336 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_4x2_0/INP 0.05474f
+C337 CLK gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.184471f
+C338 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 0.021321f
+C339 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# D3 4.35e-19
+C340 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2296_527# VSS 0.001378f
+C341 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 1.48e-21
+C342 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW VSS 0.08172f
+C343 CS_Switch_1x1_0/a_56_n40# CS_Switch_2x2_0/INN 0.001372f
+C344 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# VDD 0.145737f
+C345 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW D2 0.013066f
+C346 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 0.013962f
+C347 VBIAS CS_Switch_4x2_0/INP 0.118308f
+C348 CS_Switch_4x2_0/a_984_0# OUTP 8.06e-20
+C349 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 8.71e-19
+C350 CS_Switch_4x2_0/INP CS_Switch_2x2_0/INP 0.065644f
+C351 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159# VDD 5.93e-19
+C352 VBIAS VSS 0.481192f
+C353 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# VDD 0.164776f
+C354 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2296_527# VDD 2.03e-19
+C355 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 0.131402f
+C356 CS_Switch_4x2_0/a_42_240# CS_Switch_4x2_0/OUTN 0.046383f
+C357 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 2.21e-19
+C358 CS_Switch_2x2_0/INP VSS 0.04203f
+C359 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW VDD 0.020991f
+C360 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# 1.07e-19
+C361 CS_Switch_4x2_0/INN CS_Switch_8x2_0/INN 0.039739f
+C362 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 2.15e-19
+C363 CS_Switch_2x2_0/a_n246_n20# CS_Switch_4x2_0/INP 2.14e-19
+C364 CS_Switch_4x2_0/INP OUTN 0.080795f
+C365 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# D4 0.010717f
+C366 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 1.14e-31
+C367 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1376_115# VDD 0.144788f
+C368 CS_Switch_2x2_0/a_n246_n20# VSS 2.18e-19
+C369 OUTN VSS 0.803307f
+C370 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 5.91e-20
+C371 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW -0.005305f
+C372 CS_Switch_4x2_0/INP OUTP 0.107549f
+C373 VBIAS VDD 0.00434f
+C374 CS_Switch_1x1_0/INP CS_Switch_1x1_0/INN 0.458353f
+C375 CS_Switch_8x2_0/a_784_1400# VSS 8.51e-19
+C376 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# VDD 0.020535f
+C377 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# D2 0.010717f
+C378 D1 D3 4.69e-21
+C379 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 4.14e-20
+C380 CS_Switch_1x1_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.034424f
+C381 CS_Switch_2x2_0/INP VDD 0.006229f
+C382 VSS OUTP 0.185832f
+C383 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# CS_Switch_4x2_0/INP 0.042393f
+C384 CS_Switch_1x1_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.012103f
+C385 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# CLK 2.25e-19
+C386 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 2.77e-21
+C387 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 9.5e-19
+C388 OUTN VDD 0.04905f
+C389 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_880_527# 3.83e-19
+C390 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# VSS 0.150581f
+C391 VBIAS CS_Switch_4x2_0/a_984_240# 3.6e-19
+C392 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# -5.68e-32
+C393 CS_Switch_4x2_0/a_812_0# VSS 0.002163f
+C394 VSS D3 0.005429f
+C395 CS_Switch_8x2_0/a_450_1400# VSS 3.06e-19
+C396 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# 0.02125f
+C397 VDD OUTP 0.001781f
+C398 CS_Switch_8x2_0/INN gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.063386f
+C399 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 4.11e-20
+C400 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 0.131375f
+C401 VBIAS gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 0.007783f
+C402 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 6.23e-19
+C403 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# D3 0.017306f
+C404 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# VDD 0.005295f
+C405 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_880_527# D3 3.58e-21
+C406 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_2x2_0/INP 0.001382f
+C407 CS_Switch_1x1_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.003369f
+C408 CS_Switch_4x2_0/a_n110_0# VSS 1.09e-19
+C409 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# 0.021843f
+C410 VDD D3 0.031934f
+C411 D4 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1004_159# 0.017306f
+C412 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW OUTN 0.001259f
+C413 CS_Switch_4x2_0/OUTN CS_Switch_4x2_0/INN 0.116994f
+C414 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_2x2_0/INN 0.036856f
+C415 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 0.018902f
+C416 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# VDD 0.145737f
+C417 D4 VSS 0.005332f
+C418 VBIAS CS_Switch_2x2_0/INP 0.010373f
+C419 D1 gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.013063f
+C420 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_880_527# VDD 2.96e-19
+C421 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.013075f
+C422 CS_Switch_8x2_0/INP CS_Switch_2x2_0/INN 5.7e-22
+C423 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# VSS 0.132207f
+C424 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW OUTP 4.06e-19
+C425 CS_Switch_4x2_0/INP CS_Switch_1x1_0/INN 3.82e-22
+C426 VBIAS CS_Switch_2x2_0/a_n246_n20# 1.27e-19
+C427 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# D3 0.002896f
+C428 CS_Switch_1x1_0/INP CS_Switch_1x1_0/a_n228_n40# 7.6e-19
+C429 VBIAS OUTN 2.061183f
+C430 CLK D2 0.003696f
+C431 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_836_159# VDD 2.74e-19
+C432 CS_Switch_2x2_0/a_n246_n20# CS_Switch_2x2_0/INP 6.34e-19
+C433 CS_Switch_2x2_0/INP OUTN 0.162389f
+C434 CS_Switch_1x1_0/INN VSS 0.116509f
+C435 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 9.89e-19
+C436 VBIAS CS_Switch_8x2_0/a_784_1400# 0.004383f
+C437 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 5.35e-22
+C438 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# D3 5.14e-22
+C439 D4 VDD 0.029327f
+C440 D4 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# 0.023462f
+C441 VBIAS OUTP 0.948509f
+C442 CS_Switch_2x2_0/a_n246_n20# OUTN 2.58e-20
+C443 VSS gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.036396f
+C444 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# CLK 2.25e-19
+C445 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW D3 0.013086f
+C446 CS_Switch_2x2_0/INP OUTP 0.001184f
+C447 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# VDD 0.020484f
+C448 CS_Switch_8x2_0/INN gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# 0.035876f
+C449 CS_Switch_1x1_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# 2.27e-19
+C450 CS_Switch_8x2_0/a_784_1400# OUTN 0.014475f
+C451 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# VBIAS 4.72e-19
+C452 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW 0.002576f
+C453 D2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 4.47e-19
+C454 D1 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.00587f
+C455 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 1.14e-31
+C456 CS_Switch_1x1_0/INN VDD 0.206431f
+C457 OUTN OUTP 4.058501f
+C458 CS_Switch_4x2_0/a_984_0# CS_Switch_8x2_0/INN 4.7e-19
+C459 VBIAS CS_Switch_4x2_0/a_812_0# 0.004548f
+C460 VBIAS CS_Switch_8x2_0/a_450_1400# 9.45e-20
+C461 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1348_527# VDD 6.06e-19
+C462 CS_Switch_4x2_0/a_n212_0# VSS 3.75e-21
+C463 CS_Switch_8x2_0/a_784_1400# OUTP 0.041195f
+C464 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# 0.007381f
+C465 VDD gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 0.020555f
+C466 CS_Switch_4x2_0/INP gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.004548f
+C467 CLK gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.052571f
+C468 CS_Switch_1x1_0/INP CS_Switch_1x1_0/a_56_n40# 0.003727f
+C469 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 0.005174f
+C470 VDD gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 0.054784f
+C471 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW VSS 0.083524f
+C472 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# 9.39e-22
+C473 CS_Switch_4x2_0/a_n110_0# VBIAS 0.008872f
+C474 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2296_527# 0.001395f
+C475 D2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527# 1.25e-19
+C476 CS_Switch_4x2_0/a_42_240# CS_Switch_4x2_0/INN 0.016152f
+C477 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW 0.002707f
+C478 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 0.006508f
+C479 D4 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1376_115# 0.002896f
+C480 CS_Switch_2x2_0/INN CS_Switch_4x2_0/INN 4.6e-19
+C481 D1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 4.58e-19
+C482 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# CLK 0.183762f
+C483 CS_Switch_4x2_0/INP CS_Switch_8x2_0/INN 0.066844f
+C484 CS_Switch_4x2_0/a_812_0# OUTP 2.77e-19
+C485 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW 0.019603f
+C486 CS_Switch_2x2_0/a_652_n248# VSS 5.41e-21
+C487 CS_Switch_8x2_0/INP CS_Switch_4x2_0/INN 4.66e-20
+C488 CS_Switch_4x2_0/a_n110_0# OUTN 1.8e-19
+C489 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW 1.07e-19
+C490 VSS CS_Switch_8x2_0/INN 0.165172f
+C491 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW VDD 0.02098f
+C492 CS_Switch_1x1_0/a_n228_n40# VSS 3.18e-19
+C493 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 4.89e-20
+C494 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2296_527# VDD 1.93e-19
+C495 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# 0.005383f
+C496 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# CS_Switch_4x2_0/INN 1.6e-20
+C497 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# CLK 0.17684f
+C498 CS_Switch_2x2_0/INP gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# 2.57e-19
+C499 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# 0.003046f
+C500 CS_Switch_1x1_0/a_n228_n224# CS_Switch_2x2_0/INN 2.48e-19
+C501 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# 5.89e-20
+C502 VBIAS CS_Switch_1x1_0/INN 0.017276f
+C503 CS_Switch_4x2_0/a_n110_0# OUTP 0.007025f
+C504 VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# 0.025005f
+C505 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# D2 1.37e-21
+C506 VDD CS_Switch_1x1_0/VSUBS 1.995684f
+C507 CS_Switch_2x2_0/INN CS_Switch_1x1_0/VSUBS 0.830795f
+C508 CS_Switch_2x2_0/INP CS_Switch_1x1_0/VSUBS 0.279214f
+C509 CS_Switch_2x2_0/a_32_n20# CS_Switch_1x1_0/VSUBS 0.107288f
+C510 CS_Switch_1x1_0/INN CS_Switch_1x1_0/VSUBS 0.934416f
+C511 CS_Switch_1x1_0/INP CS_Switch_1x1_0/VSUBS 0.175243f
+C512 CS_Switch_1x1_0/a_56_n40# CS_Switch_1x1_0/VSUBS 0.105866f
+C513 gf180mcu_fd_sc_mcu7t5v0__inv_2_3/VNW CS_Switch_1x1_0/VSUBS 6.688242f
+C514 gf180mcu_fd_sc_mcu7t5v0__inv_2_2/VNW CS_Switch_1x1_0/VSUBS 6.688242f
+C515 gf180mcu_fd_sc_mcu7t5v0__inv_2_1/VNW CS_Switch_1x1_0/VSUBS 6.685134f
+C516 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW CS_Switch_1x1_0/VSUBS 6.688242f
+C517 CS_Switch_4x2_0/OUTN CS_Switch_1x1_0/VSUBS 0.046448f
+C518 CS_Switch_4x2_0/INN CS_Switch_1x1_0/VSUBS 0.321381f
+C519 CS_Switch_4x2_0/INP CS_Switch_1x1_0/VSUBS 0.865794f
+C520 CS_Switch_4x2_0/a_42_240# CS_Switch_1x1_0/VSUBS 0.175417f
+C521 OUTP CS_Switch_1x1_0/VSUBS 3.255795f
+C522 OUTN CS_Switch_1x1_0/VSUBS 2.362181f
+C523 VSS CS_Switch_1x1_0/VSUBS 7.395964f
+C524 VBIAS CS_Switch_1x1_0/VSUBS 3.810789f
+C525 CS_Switch_8x2_0/INN CS_Switch_1x1_0/VSUBS 0.998173f
+C526 CS_Switch_8x2_0/INP CS_Switch_1x1_0/VSUBS 0.346237f
+C527 CS_Switch_8x2_0/a_784_1400# CS_Switch_1x1_0/VSUBS 0.115832f
+C528 D4 CS_Switch_1x1_0/VSUBS 0.308367f
+C529 CLK CS_Switch_1x1_0/VSUBS 3.377182f
+C530 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2304_115# CS_Switch_1x1_0/VSUBS 0.897199f
+C531 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_2011_527# CS_Switch_1x1_0/VSUBS 0.373034f
+C532 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1004_159# CS_Switch_1x1_0/VSUBS 0.293092f
+C533 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_1376_115# CS_Switch_1x1_0/VSUBS 0.283585f
+C534 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_448_472# CS_Switch_1x1_0/VSUBS 0.605448f
+C535 gf180mcu_fd_sc_mcu7t5v0__dffq_2_3/a_36_151# CS_Switch_1x1_0/VSUBS 1.05216f
+C536 D2 CS_Switch_1x1_0/VSUBS 0.2896f
+C537 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2304_115# CS_Switch_1x1_0/VSUBS 0.897199f
+C538 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_2011_527# CS_Switch_1x1_0/VSUBS 0.373034f
+C539 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1004_159# CS_Switch_1x1_0/VSUBS 0.293092f
+C540 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_1376_115# CS_Switch_1x1_0/VSUBS 0.283585f
+C541 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_448_472# CS_Switch_1x1_0/VSUBS 0.605448f
+C542 gf180mcu_fd_sc_mcu7t5v0__dffq_2_2/a_36_151# CS_Switch_1x1_0/VSUBS 1.05216f
+C543 D3 CS_Switch_1x1_0/VSUBS 0.290027f
+C544 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115# CS_Switch_1x1_0/VSUBS 0.897199f
+C545 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527# CS_Switch_1x1_0/VSUBS 0.373034f
+C546 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159# CS_Switch_1x1_0/VSUBS 0.293092f
+C547 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115# CS_Switch_1x1_0/VSUBS 0.283585f
+C548 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472# CS_Switch_1x1_0/VSUBS 0.605448f
+C549 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151# CS_Switch_1x1_0/VSUBS 1.05216f
+C550 D1 CS_Switch_1x1_0/VSUBS 0.302371f
+C551 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2304_115# CS_Switch_1x1_0/VSUBS 0.897199f
+C552 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_2011_527# CS_Switch_1x1_0/VSUBS 0.373034f
+C553 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1004_159# CS_Switch_1x1_0/VSUBS 0.293092f
+C554 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_1376_115# CS_Switch_1x1_0/VSUBS 0.283585f
+C555 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_448_472# CS_Switch_1x1_0/VSUBS 0.605448f
+C556 gf180mcu_fd_sc_mcu7t5v0__dffq_2_1/a_36_151# CS_Switch_1x1_0/VSUBS 1.05216f
+.ends
+
