@@ -1,0 +1,62 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1754909118
+<< metal1 >>
+rect 1193 545 1516 665
+rect 2519 545 3164 665
+rect 840 181 1640 245
+rect 3410 69 4364 133
+rect 1192 -240 1544 -119
+rect 2508 -239 2882 -119
+rect 2508 -240 2860 -239
+rect 3661 -554 4190 -493
+rect 4300 -495 4364 69
+rect 3661 -617 3722 -554
+rect 3356 -678 3722 -617
+rect 3539 -1143 3797 -1023
+<< via1 >>
+rect 3043 198 3287 252
+rect 1766 -61 1820 97
+rect 1004 -809 1056 -576
+rect 3176 -590 3324 -526
+<< metal2 >>
+rect 3000 252 3304 264
+rect 3000 198 3043 252
+rect 3287 198 3304 252
+rect 3000 181 3304 198
+rect 1758 97 1830 133
+rect 1758 -38 1766 97
+rect 988 -61 1766 -38
+rect 1820 -61 1830 97
+rect 988 -119 1830 -61
+rect 988 -576 1069 -119
+rect 988 -809 1004 -576
+rect 1056 -809 1069 -576
+rect 3140 -488 3219 181
+rect 3140 -526 3356 -488
+rect 3140 -590 3176 -526
+rect 3324 -590 3356 -526
+rect 3140 -617 3356 -590
+rect 988 -841 1069 -809
+use CS_Switch_16x2  CS_Switch_16x2_0
+timestamp 1754908551
+transform 1 0 4009 0 1 -1833
+box -377 631 825 1384
+use gf180mcu_fd_sc_mcu7t5v0__dffq_2  gf180mcu_fd_sc_mcu7t5v0__dffq_2_0 ~/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1753044640
+transform 1 0 74 0 1 -1083
+box -86 -86 3558 870
+use gf180mcu_fd_sc_mcu7t5v0__inv_2  gf180mcu_fd_sc_mcu7t5v0__inv_2_0 ~/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1753044640
+transform 1 0 2874 0 -1 605
+box -86 -86 758 870
+use gf180mcu_fd_sc_mcu7t5v0__nand2_2  gf180mcu_fd_sc_mcu7t5v0__nand2_2_0 ~/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1753044640
+transform 1 0 1514 0 -1 605
+box -86 -86 1094 870
+use gf180mcu_fd_sc_mcu7t5v0__or2_2  gf180mcu_fd_sc_mcu7t5v0__or2_2_0 ~/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1753044640
+transform 1 0 74 0 -1 605
+box -86 -86 1206 870
+<< end >>
