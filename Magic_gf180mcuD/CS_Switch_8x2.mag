@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1754903761
+timestamp 1755706082
 << pwell >>
 rect 426 1024 1804 1719
 << nmos >>
@@ -59,6 +59,13 @@ rect 846 1398 894 1446
 rect 1075 1399 1121 1445
 rect 1214 1398 1262 1446
 rect 1532 1398 1580 1446
+<< psubdiff >>
+rect 1066 1196 1212 1221
+rect 1066 1150 1113 1196
+rect 1159 1150 1212 1196
+rect 1066 1125 1212 1150
+<< psubdiffcont >>
+rect 1113 1150 1159 1196
 << polysilicon >>
 rect 716 1553 796 1570
 rect 716 1507 733 1553
@@ -140,14 +147,13 @@ rect 1152 1283 1262 1284
 rect 1532 1231 1580 1384
 rect 1659 1301 1705 1312
 rect 1659 1231 1705 1255
-rect 458 1120 1796 1231
+rect 458 1196 1796 1231
+rect 458 1150 1113 1196
+rect 1159 1150 1796 1196
+rect 458 1120 1796 1150
 << labels >>
 flabel metal1 1315 1512 1478 1576 1 FreeSans 400 0 0 0 VBIAS
 port 5 nsew power bidirectional
-flabel pwell 619 1123 734 1226 1 FreeSans 400 0 0 0 VPW
-port 7 nsew ground bidirectional
-flabel metal1 784 1120 1624 1231 1 FreeSans 400 0 0 0 VSS
-port 6 nsew ground bidirectional
 flabel metal1 718 1492 794 1568 1 FreeSans 400 0 0 0 INP
 port 1 n
 flabel metal1 946 1492 1022 1568 1 FreeSans 400 0 0 0 INN
@@ -156,4 +162,12 @@ flabel metal1 604 1384 680 1460 1 FreeSans 400 0 0 0 OUTP
 port 3 n
 flabel metal1 1060 1384 1136 1460 1 FreeSans 400 0 0 0 OUTN
 port 4 n
+flabel metal1 458 1120 1796 1231 1 FreeSans 400 0 0 0 VSS
+port 6 n
+rlabel metal1 501 1231 547 1352 1 VSS
+port 6 n
+rlabel metal1 1532 1231 1580 1398 1 VSS
+port 6 n
+rlabel metal1 1659 1231 1705 1312 1 VSS
+port 6 n
 << end >>

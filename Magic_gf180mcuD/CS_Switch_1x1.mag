@@ -1,14 +1,23 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1754893325
+timestamp 1755704468
 << isosubstrate >>
 rect -267 4 752 170
 rect -267 -40 714 4
-rect -267 -180 752 -40
+rect -267 -75 752 -40
+rect -267 -146 716 -75
+rect -267 -180 752 -146
 rect -267 -224 -266 -180
 rect -228 -224 714 -180
-rect -267 -314 752 -224
+rect -267 -248 752 -224
+rect -267 -249 483 -248
+rect -267 -314 -99 -249
+rect 0 -268 440 -249
+rect 482 -251 483 -249
+rect 612 -270 752 -248
+rect 477 -359 513 -288
+rect 640 -314 752 -270
 << pwell >>
 rect -306 -434 837 214
 << nmos >>
@@ -70,6 +79,13 @@ rect 89 -41 135 5
 rect 261 -41 307 5
 rect 393 -41 439 5
 rect -79 -225 -33 -179
+<< psubdiff >>
+rect 470 -299 570 -282
+rect 470 -345 496 -299
+rect 542 -345 570 -299
+rect 470 -363 570 -345
+<< psubdiffcont >>
+rect 496 -345 542 -299
 << polysilicon >>
 rect -12 129 68 146
 rect -12 83 5 129
@@ -97,7 +113,7 @@ rect 0 -160 528 -134
 rect -182 -270 -126 -224
 rect 0 -180 440 -160
 rect 612 -180 668 -40
-rect 0 -270 440 -224
+rect 0 -268 440 -224
 rect 612 -270 668 -224
 rect -194 -286 -114 -270
 rect -194 -332 -176 -286
@@ -143,9 +159,13 @@ rect -79 -179 -33 -168
 rect -79 -256 -33 -225
 rect -202 -286 717 -256
 rect -202 -332 -176 -286
-rect -130 -332 618 -286
+rect -130 -299 618 -286
+rect -130 -332 496 -299
+rect -202 -345 496 -332
+rect 542 -332 618 -299
 rect 664 -332 717 -286
-rect -202 -374 717 -332
+rect 542 -345 717 -332
+rect -202 -374 717 -345
 << labels >>
 flabel metal1 -10 68 66 144 1 FreeSans 400 0 0 0 INP
 port 1 nsew signal input
@@ -155,12 +175,14 @@ flabel metal1 246 -56 322 20 1 FreeSans 400 0 0 0 OUTN
 port 4 n power bidirectional
 flabel metal1 462 68 538 144 1 FreeSans 400 0 0 0 VBIAS
 port 5 nsew power bidirectional
-flabel metal1 -94 -374 448 -256 1 FreeSans 400 0 0 0 VSS
-port 6 nsew ground bidirectional
-flabel pwell 490 -376 634 -252 1 FreeSans 400 0 0 0 VPW
-port 7 nsew ground bidirectional
 flabel metal1 -98 -56 -22 20 1 FreeSans 400 0 0 0 OUTP
 port 3 nsew power bidirectional
+rlabel metal1 -79 -256 -33 -168 1 VSS
+port 6 n
+flabel metal1 -202 -374 717 -256 1 FreeSans 400 0 0 0 VSS
+port 6 n
+flabel pwell 477 -359 560 -288 1 FreeSans 408 0 0 0 VPW
+port 7 n
 << properties >>
 string FIXED_BBOX -222 -186 222 186
 string gencell nfet_03v3

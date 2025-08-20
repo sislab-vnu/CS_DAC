@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1754896551
+timestamp 1755705775
 << pwell >>
 rect -304 -185 1117 488
 << nmos >>
@@ -61,8 +61,8 @@ rect 984 0 1030 90
 rect 384 -56 428 0
 rect 380 -66 432 -56
 rect 366 -79 446 -66
-rect 366 -125 383 -79
-rect 429 -125 446 -79
+rect 366 -125 381 -79
+rect 427 -125 446 -79
 rect 366 -138 446 -125
 << ndiffc >>
 rect 75 239 121 285
@@ -70,7 +70,14 @@ rect 207 239 253 285
 rect 383 241 429 287
 rect 559 239 605 285
 rect 691 239 737 285
-rect 383 -125 429 -79
+rect 381 -125 427 -79
+<< psubdiff >>
+rect 679 -84 878 -71
+rect 679 -130 753 -84
+rect 799 -130 878 -84
+rect 679 -143 878 -130
+<< psubdiffcont >>
+rect 753 -130 799 -84
 << polysilicon >>
 rect -26 407 54 424
 rect -26 361 -9 407
@@ -108,23 +115,23 @@ rect 452 90 812 110
 rect 928 90 984 240
 rect -166 -46 -110 0
 rect 0 -46 360 0
-rect -174 -58 -102 -46
+rect -174 -59 -102 -46
 rect 452 -46 812 0
 rect 928 -46 984 0
-rect -174 -104 -161 -58
-rect -115 -104 -102 -58
-rect 920 -58 992 -46
-rect -174 -118 -102 -104
-rect 920 -104 933 -58
-rect 979 -104 992 -58
-rect 920 -118 992 -104
+rect -174 -105 -161 -59
+rect -115 -105 -102 -59
+rect 920 -59 992 -46
+rect -174 -118 -102 -105
+rect 920 -105 933 -59
+rect 979 -105 992 -59
+rect 920 -118 992 -105
 << polycontact >>
 rect -9 361 37 407
 rect 295 361 341 407
 rect 471 361 517 407
 rect 775 361 821 407
-rect -161 -104 -115 -58
-rect 933 -104 979 -58
+rect -161 -105 -115 -59
+rect 933 -105 979 -59
 << metal1 >>
 rect -24 407 52 422
 rect -24 361 -9 407
@@ -157,15 +164,18 @@ rect 544 224 620 239
 rect 691 285 737 296
 rect 691 168 737 239
 rect 75 122 737 168
-rect -200 -58 1016 -24
-rect -200 -104 -161 -58
-rect -115 -79 933 -58
-rect -115 -104 383 -79
-rect -200 -125 383 -104
-rect 429 -104 933 -79
-rect 979 -104 1016 -58
-rect 429 -125 1016 -104
-rect -200 -144 1016 -125
+rect -200 -59 1016 -24
+rect -200 -105 -161 -59
+rect -115 -79 933 -59
+rect -115 -105 381 -79
+rect -200 -125 381 -105
+rect 427 -84 933 -79
+rect 427 -125 753 -84
+rect -200 -130 753 -125
+rect 799 -105 933 -84
+rect 979 -105 1016 -59
+rect 799 -130 1016 -105
+rect -200 -144 1016 -130
 << labels >>
 flabel metal1 280 346 356 422 1 FreeSans 400 0 0 0 INP
 port 1 nsew signal input
@@ -179,8 +189,6 @@ flabel metal1 760 346 836 422 1 FreeSans 400 0 0 0 VBIAS
 port 5 nsew power bidirectional
 flabel metal1 -24 346 52 422 1 FreeSans 400 0 0 0 VBIAS
 port 6 nsew power bidirectional
-flabel metal1 -187 -79 999 -24 1 FreeSans 400 0 0 0 VSS
-port 7 nsew ground bidirectional
-flabel pwell 841 -146 971 -20 1 FreeSans 400 0 0 0 VPW
-port 8 nsew ground bidirectional
+flabel metal1 -200 -144 1016 -24 1 FreeSans 400 0 0 0 VSS
+port 7 n
 << end >>
