@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755706248
+timestamp 1755760707
 << pwell >>
 rect -377 631 825 1384
 << nmos >>
@@ -170,5 +170,13 @@ port 5 n
 flabel metal1 402 972 478 1048 1 FreeSans 400 0 0 0 VBIAS
 port 6 n
 flabel metal1 -151 690 615 810 1 FreeSans 400 0 0 0 VSS
+port 7 n
+rlabel pwell 615 690 756 811 1 VSS
+port 7 n
+rlabel pwell 489 810 535 921 1 VSS
+port 7 n
+rlabel pwell -71 810 -25 921 1 VSS
+port 7 n
+rlabel pwell -307 690 -151 810 1 VSS
 port 7 n
 << end >>

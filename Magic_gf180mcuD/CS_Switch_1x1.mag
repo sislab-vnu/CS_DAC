@@ -1,23 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1755704468
+timestamp 1755764817
 << isosubstrate >>
-rect -267 4 752 170
-rect -267 -40 714 4
-rect -267 -75 752 -40
-rect -267 -146 716 -75
-rect -267 -180 752 -146
-rect -267 -224 -266 -180
-rect -228 -224 714 -180
-rect -267 -248 752 -224
-rect -267 -249 483 -248
-rect -267 -314 -99 -249
-rect 0 -268 440 -249
-rect 482 -251 483 -249
-rect 612 -270 752 -248
-rect 477 -359 513 -288
-rect 640 -314 752 -270
+rect -306 -434 837 214
 << pwell >>
 rect -306 -434 837 214
 << nmos >>
@@ -80,12 +66,12 @@ rect 261 -41 307 5
 rect 393 -41 439 5
 rect -79 -225 -33 -179
 << psubdiff >>
-rect 470 -299 570 -282
-rect 470 -345 496 -299
-rect 542 -345 570 -299
-rect 470 -363 570 -345
+rect 470 -298 570 -282
+rect 470 -344 496 -298
+rect 542 -344 570 -298
+rect 470 -363 570 -344
 << psubdiffcont >>
-rect 496 -345 542 -299
+rect 496 -344 542 -298
 << polysilicon >>
 rect -12 129 68 146
 rect -12 83 5 129
@@ -159,13 +145,13 @@ rect -79 -179 -33 -168
 rect -79 -256 -33 -225
 rect -202 -286 717 -256
 rect -202 -332 -176 -286
-rect -130 -299 618 -286
-rect -130 -332 496 -299
-rect -202 -345 496 -332
-rect 542 -332 618 -299
+rect -130 -298 618 -286
+rect -130 -332 496 -298
+rect -202 -344 496 -332
+rect 542 -332 618 -298
 rect 664 -332 717 -286
-rect 542 -345 717 -332
-rect -202 -374 717 -345
+rect 542 -344 717 -332
+rect -202 -374 717 -344
 << labels >>
 flabel metal1 -10 68 66 144 1 FreeSans 400 0 0 0 INP
 port 1 nsew signal input
@@ -179,10 +165,10 @@ flabel metal1 -98 -56 -22 20 1 FreeSans 400 0 0 0 OUTP
 port 3 nsew power bidirectional
 rlabel metal1 -79 -256 -33 -168 1 VSS
 port 6 n
-flabel metal1 -202 -374 717 -256 1 FreeSans 400 0 0 0 VSS
+flabel metal1 -202 -374 470 -256 1 FreeSans 400 0 0 0 VSS
 port 6 n
-flabel pwell 477 -359 560 -288 1 FreeSans 408 0 0 0 VPW
-port 7 n
+rlabel pwell 470 -374 717 -256 1 VSS
+port 6 n
 << properties >>
 string FIXED_BBOX -222 -186 222 186
 string gencell nfet_03v3
