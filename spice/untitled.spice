@@ -1,0 +1,9 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/untitled.sch
+.subckt untitled D CLK Q
+*.PININFO D:I CLK:I Q:O
+x1 D CLK Q VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+**** begin user architecture code
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+**** end user architecture code
+.ends
+.end

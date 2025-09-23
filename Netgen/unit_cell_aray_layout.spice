@@ -1,0 +1,16 @@
+.subckt unit_cell_aray Ri Ci Ri-1 CLK OUTP OUTN VBIAS VDD VSS
+Xgf180mcu_fd_sc_mcu7t5v0__dffq_2_0 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/D CLK gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I
++ VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+Xgf180mcu_fd_sc_mcu7t5v0__nand2_2_0 gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z Ri-1 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/D
++ VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand2_2
+XCS_Switch_16x2_0 CS_Switch_16x2_0/INP CS_Switch_16x2_0/INN OUTP OUTN VBIAS VSS CS_Switch_16x2
+Xgf180mcu_fd_sc_mcu7t5v0__inv_2_0 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I gf180mcu_fd_sc_mcu7t5v0__buf_2_2/I
++ VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+Xgf180mcu_fd_sc_mcu7t5v0__buf_2_1 gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I CS_Switch_16x2_0/INP
++ VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+Xgf180mcu_fd_sc_mcu7t5v0__buf_2_2 gf180mcu_fd_sc_mcu7t5v0__buf_2_2/I CS_Switch_16x2_0/INN
++ VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+Xgf180mcu_fd_sc_mcu7t5v0__or2_2_0 Ri Ci gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z VDD VDD
++ VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+.ends
+

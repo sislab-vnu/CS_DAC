@@ -1,0 +1,799 @@
+timestamp 1757908133
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use gf180mcu_fd_sc_mcu7t5v0__or2_2 gf180mcu_fd_sc_mcu7t5v0__or2_2_0 1 0 2102 0 1 -194
+use gf180mcu_fd_sc_mcu7t5v0__or2_2 gf180mcu_fd_sc_mcu7t5v0__or2_2_4 1 0 982 0 1 -194
+use gf180mcu_fd_sc_mcu7t5v0__and2_2 gf180mcu_fd_sc_mcu7t5v0__and2_2_3 1 0 982 0 1 1598
+use gf180mcu_fd_sc_mcu7t5v0__or2_2 gf180mcu_fd_sc_mcu7t5v0__or2_2_2 1 0 1990 0 1 1598
+use gf180mcu_fd_sc_mcu7t5v0__buf_2 gf180mcu_fd_sc_mcu7t5v0__buf_2_0 1 0 982 0 -1 3278
+use gf180mcu_fd_sc_mcu7t5v0__and2_2 gf180mcu_fd_sc_mcu7t5v0__and2_2_4 1 0 2102 0 1 3390
+use gf180mcu_fd_sc_mcu7t5v0__or2_2 gf180mcu_fd_sc_mcu7t5v0__or2_2_1 1 0 982 0 1 3390
+use gf180mcu_fd_sc_mcu7t5v0__and2_2 gf180mcu_fd_sc_mcu7t5v0__and2_2_1 1 0 982 0 -1 5070
+use gf180mcu_fd_sc_mcu7t5v0__and2_2 gf180mcu_fd_sc_mcu7t5v0__and2_2_0 1 0 982 0 1 5182
+use gf180mcu_fd_sc_mcu7t5v0__and2_2 gf180mcu_fd_sc_mcu7t5v0__and2_2_2 1 0 1990 0 1 5182
+port "D1" 4 3752 141 3920 197 m2
+port "D2" 5 3752 1064 3920 1120 m2
+port "D3" 6 3752 1960 3920 2016 m2
+port "D4" 7 3752 2912 3920 2968 m2
+port "D5" 8 3752 3752 3920 3808 m2
+port "D6" 9 3752 4648 3920 4704 m2
+port "VSS" 12 2464 -336 2688 6440 m3
+port "D7" 10 3752 5544 3920 5600 m2
+port "X0" 1 672 -337 840 6160 m2
+port "X0" 1 672 6160 840 6384 m2
+port "VDD" 11 1456 -336 1680 6440 m3
+port "X2" 3 3528 -337 3696 6160 m1
+port "X2" 3 3528 6160 3696 6384 m1
+port "X1" 2 336 -337 504 5152 m1
+port "X1" 2 336 5376 504 6384 m1
+port "X1" 2 336 5152 504 5376 m1
+node "D1" 2 337.368 3752 141 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 64656 2404 0 0 0 0 0 0
+node "D2" 6 833.967 3752 1064 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30800 1212 162016 5884 0 0 0 0 0 0
+node "m1_1680_1904#" 1 208.093 1680 1904 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27608 1098 0 0 0 0 0 0 0 0
+node "D3" 2 282.951 3752 1960 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 70960 2632 0 0 0 0 0 0
+node "D4" 4 401.363 3752 2912 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 127464 4650 0 0 0 0 0 0
+node "D5" 2 223.741 3752 3752 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 64688 2408 0 0 0 0 0 0
+node "m1_1700_3752#" 1 256.288 1700 3752 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32368 1268 0 0 0 0 0 0 0 0
+node "D6" 4 409.606 3752 4648 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 127128 4638 0 0 0 0 0 0
+node "VSS" 6 2109.46 2464 -336 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25088 1344 38475 1640 1517824 14000 0 0 0 0
+node "D7" 2 361.764 3752 5544 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 71072 2636 0 0 0 0 0 0
+node "m1_1681_5544#" 1 210.398 1681 5544 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26264 1050 0 0 0 0 0 0 0 0
+node "X0" 10 3711.43 672 6160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 114240 4640 1265136 18676 0 0 0 0 0 0
+node "VDD" 6 2093.36 1456 -336 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25088 1344 39340 1646 1517824 14000 0 0 0 0
+node "X2" 22 7054.02 3528 6160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1466696 26506 384136 14234 0 0 0 0 0 0
+node "X1" 7 4760.62 336 5152 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1315832 20446 0 0 0 0 0 0 0 0
+node "a_2016_540#" 6 23.8426 2016 540 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 0 0 0 0 0 0 0 0
+node "a_1960_2332#" 6 34.2019 1960 2332 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 0 0 0 0 0 0 0 0
+node "a_2000_4124#" 6 34.1258 2000 4124 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 0 0 0 0 0 0 0 0
+node "a_1293_5458#" 50 65.69 1293 5458 p 0 0 0 0 0 0 0 0 0 0 0 0 2720 312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1209_5458#" 50 65.69 1209 5458 p 0 0 0 0 0 0 0 0 0 0 0 0 2720 312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1956_5916#" 6 31.7389 1956 5916 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3136 224 0 0 0 0 0 0 0 0
+node "w_1338_3800#" 1000 17.328 1338 3800 nw 5776 304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1741_4648#" 3107 29.232 1741 4648 nw 9744 460 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_1937_1548#" 0 0 1937 1548 ppd 0 0 0 0 0 0 40000 1600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12600 898 0 0 0 0 0 0 0 0
+cap "VDD" "a_2016_540#" 6.05637
+cap "a_1293_5458#" "a_1209_5458#" 27.9505
+cap "D2" "a_2016_540#" 13.0263
+cap "w_1338_3800#" "X0" 3.28849
+cap "X2" "D3" 113.61
+cap "a_1960_2332#" "VSS" 1.00711
+cap "D4" "a_1960_2332#" 0.9834
+cap "m1_1700_3752#" "a_1960_2332#" 1.79014
+cap "X2" "VDD" 436.325
+cap "D4" "VSS" 100.673
+cap "D2" "X2" 220.856
+cap "m1_1700_3752#" "VSS" 5.22983
+cap "D4" "m1_1700_3752#" 2.58499
+cap "D7" "VSS" 25.9869
+cap "m1_1681_5544#" "X1" 1.94402
+cap "D6" "VDD" 22.3681
+cap "m1_1681_5544#" "X0" 1.23991
+cap "X2" "D1" 106.168
+cap "m1_1681_5544#" "a_1956_5916#" 8.01562
+cap "X2" "a_2000_4124#" 5.35385
+cap "w_1741_4648#" "D6" 3.6779
+cap "m1_1680_1904#" "a_1960_2332#" 6.84012
+cap "m1_1680_1904#" "VSS" 3.98808
+cap "m1_1680_1904#" "D4" 3.5129
+cap "m1_1681_5544#" "a_1209_5458#" 0.115065
+cap "a_1960_2332#" "X1" 1.60823
+cap "D4" "X1" 1.96966
+cap "VSS" "X1" 0.647098
+cap "D3" "VDD" 0.268322
+cap "m1_1700_3752#" "X1" 1.91288
+cap "D2" "D3" 65.1607
+cap "a_1960_2332#" "X0" 0.205845
+cap "D4" "X0" 4.03171
+cap "X0" "VSS" 130.945
+cap "m1_1700_3752#" "X0" 1.23175
+cap "D7" "X0" 0.710274
+cap "VSS" "a_1956_5916#" 1.0051
+cap "D2" "VDD" 45.0412
+cap "D5" "D4" 15.1864
+cap "D5" "VSS" 13.3614
+cap "D5" "m1_1700_3752#" 5.85155
+cap "a_1293_5458#" "VDD" 0.935592
+cap "D2" "D1" 64.6773
+cap "m1_1681_5544#" "X2" 0.283099
+cap "VDD" "a_2000_4124#" 1.5722
+cap "m1_1680_1904#" "X1" 1.94569
+cap "m1_1681_5544#" "D6" 4.06278
+cap "m1_1680_1904#" "X0" 19.595
+cap "D7" "a_1209_5458#" 0.0279127
+cap "VSS" "a_2016_540#" 0.489852
+cap "X0" "X1" 1043.69
+cap "a_1956_5916#" "X1" 0.110611
+cap "X0" "a_1956_5916#" 0.0994801
+cap "a_1960_2332#" "X2" 3.17785
+cap "D4" "X2" 683.113
+cap "X2" "VSS" 694.357
+cap "D5" "X0" 0.621838
+cap "m1_1700_3752#" "X2" 6.03274
+cap "D7" "X2" 112.971
+cap "D6" "VSS" 110.482
+cap "D6" "m1_1700_3752#" 2.65834
+cap "D6" "D7" 65.2611
+cap "m1_1681_5544#" "VDD" 6.32339
+cap "a_1209_5458#" "X1" 2.87933
+cap "m1_1681_5544#" "a_1293_5458#" 0.89635
+cap "m1_1681_5544#" "w_1741_4648#" 0.47736
+cap "X0" "a_1209_5458#" 1.59854
+cap "a_2016_540#" "X1" 0.0694103
+cap "m1_1680_1904#" "X2" 1.96072
+cap "m1_1681_5544#" "a_2000_4124#" 1.32594
+cap "X0" "a_2016_540#" 0.622314
+cap "X2" "X1" 17.9231
+cap "VSS" "D3" 25.2074
+cap "D4" "D3" 61.3008
+cap "a_1960_2332#" "VDD" 1.6234
+cap "X2" "X0" 664.267
+cap "D6" "X1" 5.65703
+cap "D4" "VDD" 24.1539
+cap "VSS" "VDD" 543.161
+cap "D2" "a_1960_2332#" 0.127016
+cap "D7" "VDD" 0.269277
+cap "D2" "VSS" 140.99
+cap "m1_1700_3752#" "VDD" 6.83188
+cap "X2" "a_1956_5916#" 3.16805
+cap "D6" "X0" 4.00444
+cap "D5" "X2" 230.639
+cap "a_1293_5458#" "VSS" 0.206127
+cap "D6" "a_1956_5916#" 0.280479
+cap "D7" "a_1293_5458#" 0.101728
+cap "VSS" "D1" 13.2577
+cap "D5" "D6" 14.1783
+cap "w_1741_4648#" "m1_1700_3752#" 0.47736
+cap "VSS" "a_2000_4124#" 1.06056
+cap "m1_1680_1904#" "D3" 0.274647
+cap "m1_1700_3752#" "a_2000_4124#" 8.02541
+cap "m1_1680_1904#" "VDD" 6.49353
+cap "m1_1680_1904#" "D2" 0.680003
+cap "X2" "a_2016_540#" 26.039
+cap "w_1338_3800#" "m1_1700_3752#" 0.117831
+cap "X0" "D3" 0.637309
+cap "VDD" "X1" 105.117
+cap "D2" "X1" 2.27323
+cap "X0" "VDD" 212.686
+cap "a_1293_5458#" "X1" 0.412192
+cap "D2" "X0" 162.439
+cap "VDD" "a_1956_5916#" 8.62251
+cap "D5" "VDD" 0.221986
+cap "X0" "a_1293_5458#" 1.01202
+cap "D6" "X2" 523.258
+cap "a_2000_4124#" "X1" 1.56403
+cap "X0" "a_2000_4124#" 0.186652
+cap "m1_1681_5544#" "VSS" 3.69868
+cap "m1_1681_5544#" "D7" 5.53304
+cap "a_1209_5458#" "VDD" 0.303597
+cap "w_1338_3800#" "X1" 0.0919607
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -1.20418
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.288417
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 25.1159
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 2.96549
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 5.88272
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 1.41023
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" -7.87478
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.029185
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 35.3925
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 48.2752
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 8.81351
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 0.242052
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 4.96226
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 0.00064362
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 49.5222
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 2.77177
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 276.695
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 19.0555
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.0938183
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" -2.03432
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 2.55304
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 94.3519
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 2.29624
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 2.22508
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 66.6264
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.537575
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 59.2432
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 2.22283
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 1.11282
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 1.46194
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.295142
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.186946
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 51.9016
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -35.5476
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 3.81105
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.0629647
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 40.8325
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 23.3146
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 52.371
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.945216
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 3.09048
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 80.5871
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.450373
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 1.27257
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 2.29394
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 4.55064
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" -0.746274
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" -1.22941
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 3.45481
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.145805
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.15097
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 191.092
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -0.485237
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 41.342
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" -8.19271
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 27.7864
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 7.4884
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" -1.96133
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.591219
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 58.1219
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.916657
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.439222
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 832.022
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.3063
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 36.1977
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" -15.8825
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 22.669
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.0314391
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 0.531953
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" 0.477766
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 7.66943
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 115.627
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 69.4483
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.00800098
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 2.71249
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" -0.256797
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 7.35208
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 110.585
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.60738
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 14.6603
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -0.627969
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" -1.33592
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 2.51979
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 18.4621
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 4.20739
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.469258
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 20.3341
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -1.94569
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_247_68#" 1.12546
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.0546263
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 1.7359
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_247_68#" 0.426805
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.0188213
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 122.442
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 55.6959
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 6.36118
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.00616868
+cap "w_1338_3800#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.0203145
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 3.85346
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 61.1492
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -1.21358
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.583805
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.0112118
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 0.582208
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.141367
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 54.7174
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 1.58663
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 4.22143
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 57.1288
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_244_472#" 0.262295
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_247_68#" 0.178588
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 28.3888
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.0352125
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.00420776
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 6.24879
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0965602
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 34.6493
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.182598
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 3.5352
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" 82.5506
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.0790075
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 58.9872
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.538687
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.00532833
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 1.00911
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 2.30326
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -0.850327
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.930867
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.0898005
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.131636
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 85.3084
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.10174
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" -0.773235
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.757961
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 0.0314391
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 1.37468
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 9.77049
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 11.2666
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.171219
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 11.2155
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 0.00854294
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 331.823
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "w_1338_3800#" 0.0907307
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.14632
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.0627189
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 7.91501
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0322382
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 29.0673
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/a_56_472#" 0.591219
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 22.8038
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.00227921
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 67.6221
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.211222
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 65.54
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 38.8226
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 29.2915
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.0583547
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 2.73225
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.148116
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -0.230577
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 64.7701
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 0.519906
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.135745
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 0.103015
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "w_1338_3800#" 0.134678
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.896442
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" -0.19342
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.919783
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 3.2536
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 1.05881
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.514187
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 2.22283
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 1.18493
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" -0.784465
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.0838917
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.0160921
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.0552184
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.110394
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 25.7556
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 0.0619082
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 3.49363
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.744789
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.168873
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 1.80812
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 7.67267
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -8.05037
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 0.36092
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" 35.5047
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 58.0892
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 67.1254
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "w_1338_3800#" 0.0921483
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 1.6198
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 3.06719
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 1.7063
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 21.6372
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 34.9309
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 3.75509
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0120401
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" -0.843372
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 29.4337
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 7.08164
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 5.14887
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 6.07397
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 1.82172
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 6.47283
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 0.979763
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 73.7851
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 0.0478478
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 1.76373
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 12.8316
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.00279095
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 91.4424
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 44.2724
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 2.68371
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 11.3498
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 0.00138165
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 83.0534
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.415492
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" -1.89506
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0146201
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 45.6176
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" 0.000941253
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.00862253
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 0.00872782
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 37.8965
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 3.955
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 8.13741
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 3.39813
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.299954
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.145387
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" 0.0969018
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 3.60901
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 5.83178
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 0.29304
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 45.3293
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.162004
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 44.5591
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 31.687
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -1.91288
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.487009
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 69.6956
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 2.81631
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.313406
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 60.2723
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" 0.00064362
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 20.1382
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 33.9291
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 0.249329
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.620409
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 12.7758
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.0011214
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" -1.96966
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.0739436
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.973971
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.0242084
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 34.7643
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 59.9133
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -0.886278
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" 0.0250038
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -0.0786951
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 50.9275
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.572625
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" -1.01501
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 0.279224
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 44.4308
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 10.6521
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 0.0225239
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 13.5192
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.255445
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 0.412173
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" 0.0417368
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" 0.00294149
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 64.2846
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 20.0051
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 19.2323
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.259901
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 0.0979546
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 0.380121
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 6.6649
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 8.63169
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.0290144
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" -0.816069
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 0.00665197
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" -4.77285
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.347757
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 0.348199
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0265249
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 4.30013
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 2.00871
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 0.0753298
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" -0.756118
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 8.651
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.0725359
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 64.5725
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 0.514187
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 47.4794
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" 0.00066591
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 23.6349
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 1.89283
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.311358
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_244_472#" 1.64387
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 52.2233
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/a_39_68#" 3.68411
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 25.302
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 0.171125
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 265.912
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 14.0258
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 0.0898005
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" -1.65669
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 0.126521
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 0.55506
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.254978
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 20.3072
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" -0.494216
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" -0.734556
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 125.996
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 0.0164997
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" -3.91215
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 5.22218
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" 1.81514
+cap "D2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" -0.255625
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.273663
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" 3.86293
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" -3.51714
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 12.7269
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/a_56_472#" 1.03732
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 87.3739
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 0.510052
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" 0.899048
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 0.0290144
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" 0.000993255
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.49757
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 0.0992511
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 5.14887
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 8.18427
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 7.16842
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" 11.624
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 2.185
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 2.58465
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 0.0212123
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" -4.19296
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" 3.09009
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" -4.5928
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 9.6792
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 10.3239
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 0.465427
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" 0.0583791
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" 23.389
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 2.14713
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.356758
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 40.0475
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 132.561
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.0379029
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 2.06664
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.0227071
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 25.7253
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.0400143
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 85.7292
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 0.0535015
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 21.9167
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.273532
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 2.58661
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" -1.04042
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 1.92446
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 114.797
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 0.0714973
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 1.61359
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 2.15365
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" 2.41298
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 28.3408
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" -0.149256
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.25643
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 31.2154
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 2.21047
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.00611224
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 1.16226
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 21.4854
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 48.7416
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" 0.0877538
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 0.426805
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.47294
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 0.241111
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.106364
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 32.3206
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.151676
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -0.878573
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.508792
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 0.178588
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" 0.0459254
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 3.12809
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 1.87822
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 7.73463
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 21.0313
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" 0.183892
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.512423
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 6.4567
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 1.01011
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 11.5324
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 74.9793
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 22.6939
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/a_36_68#" 0.417537
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.684323
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" 0.21506
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.159362
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 23.4008
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" 0.0645172
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 35.9358
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.10623
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" 0.283254
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.535652
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.0191843
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 3.98171
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 5.71338
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 7.1758
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" -0.242157
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.129052
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 0.17695
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 48.9422
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" 1.8288
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 4.03167
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 27.1922
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.460746
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 82.281
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 11.3806
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 2.01782
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" -0.753712
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" -0.77482
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 15.8965
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.674204
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 2.39281
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.00392648
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -0.00713252
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.0297977
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" -4.03211
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 21.3499
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 9.9846
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 4.15157
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 34.741
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.120205
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 0.11542
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 8.60869
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 8.9512
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" 0.550617
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 1.51188
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.0458688
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 14.8755
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" -1.15663
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 6.7482
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.00756779
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.295143
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.455636
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 0.116155
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" -1.45146
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 2.41563
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 5.70028
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" 0.257075
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.220475
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 14.2507
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 2.28397
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_247_68#" 0.223562
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 1.96261
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 8.95225
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.985543
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 7.37758
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" 11.7615
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 1.63181
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 4.22685
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" 672.905
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 0.0774545
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" 32.3091
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" 0.381894
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.721085
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" 0.246262
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VNW" 38.2887
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" 1.0687
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 4.50997
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" -1.24178
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 3.01946
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.262295
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.225307
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" 1.02031
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 4.37034
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 79.8857
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 1.84135
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/a_56_472#" 0.181486
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" 3.97118
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.0877524
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.0076243
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" -0.00396498
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 6.2974
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" 5.38108
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 49.5404
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.349272
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 107.864
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 5.52392
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 62.1064
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 23.9442
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" 1.64206
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 1.10427
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" 0.339051
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 27.7565
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.356758
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.609881
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" -2.05909
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 11.8874
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 0.132663
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 58.6888
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 1.7353
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" 0.249294
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.800803
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 5.72265
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 35.4502
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 54.9368
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 0.534422
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 32.9362
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" -1.77636e-15
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 0.0458688
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.553588
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" 0.0960501
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" -0.013789
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 3.69353
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 105.422
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 0.526204
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" 0.105866
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" -0.203189
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 4.81384
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 80.4376
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 2.19839
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" 0.0812012
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" -3.69498
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 66.048
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 1.68845
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 3.08757
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" -0.497971
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.0728003
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 12.9817
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" -11.2136
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 0.304055
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.231875
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/a_39_68#" 0.473516
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" 32.3286
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_247_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" 0.0584678
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" 20.1204
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 509.92
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" -0.588893
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" 32.8985
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 7.89294
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" 21.1049
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/a_39_68#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" 2.06205
+cap "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" -0.756281
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VPW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VSS" -2464.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52920 -7042 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VPW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VSS" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VPW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "VSS"
+merge "VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VPW" "a_1937_1548#"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VNW" -5945.16 -506784 -11020 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52864 -7040 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/VNW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/VNW" "a_1956_5916#"
+merge "a_1956_5916#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/VNW" "w_1741_4648#"
+merge "w_1741_4648#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/VNW" "a_2000_4124#"
+merge "a_2000_4124#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/VNW" "w_1338_3800#"
+merge "w_1338_3800#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/VNW" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VDD" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/VNW" "a_1960_2332#"
+merge "a_1960_2332#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "VDD"
+merge "VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/VNW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VNW" "a_2016_540#"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -455.683 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3640 -354 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "D2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/Z" "D3" -123.855 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -224 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "D1" -120.618 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -224 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/Z" "D4" -141.418 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -280 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" -270.993 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6664 -462 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/Z" "m1_1680_1904#"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/A1" "a_1209_5458#" -1036.31 0 0 0 0 0 0 0 0 0 0 0 0 0 -312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15904 -1128 0 0 0 0 0 0 0 0
+merge "a_1209_5458#" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A1"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A1" "X1"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" -1979.06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18816 -1344 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A2" "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_2/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_4/A2" "X2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" -292.543 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5208 -410 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/A1" "m1_1700_3752#"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/A2" "a_1293_5458#" -1207.15 0 0 0 0 0 0 0 0 0 0 0 0 0 -312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12544 -896 0 0 0 0 0 0 0 0
+merge "a_1293_5458#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_1/A2" "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_3/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "X0"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/A1" "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" -272.733 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5320 -414 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_0/Z" "m1_1681_5544#"
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_1/Z" "D6" -125.269 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -224 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_4/Z" "D5" -109.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -224 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__and2_2_2/Z" "D7" -108.197 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3136 -224 0 0 0 0 0 0 0 0

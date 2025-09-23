@@ -1,0 +1,35 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS.sch
+**.subckt CS
+V1 vcc GND 3.3
+V10 VBIAS GND 1.8
+R1 vcc net1 0 m=1
+R2 vcc net2 0 m=1
+x1 X1 X2 X3 X4 net2 net1 VBIAS CLK vcc GND 4MSB_weighted_binary
+V4 CLK GND PULSE(0 3.3 0n 1n 1n 24n 50n)
+V8 X1 GND PULSE(0 3.3 0 1n 1n 49n 100n)
+V9 X2 GND PULSE(0 3.3 0 1n 1n 99n 200n)
+V11 X3 GND PULSE(0 3.3 0 1n 1n 199n 400n)
+V7 X4 GND PULSE(0 3.3 0 1n 1n 399n 800n)
+**** begin user architecture code
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+.inc /home/ducluong/CS_DAC/Magic_gf180mcuD/4MSB_weighted_binary.spice
+
+
+
+.save  @R1[i] @R2[i]
+.control
+set wr_vecnames
+set wr_singlescale
+tran 0.1n 800n
+run
+wrdata /home/ducluong/CS_DAC/spice/4MSB.raw @R1[i] @R2[i]
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

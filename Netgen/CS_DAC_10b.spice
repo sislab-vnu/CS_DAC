@@ -1,0 +1,9 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_DAC_10b.sch
+.subckt CS_DAC_10b X1 X2 X3 X4 X5 X6 X7 X8 X9 X10 CLK OUTP OUTN VBIAS VDD VSS
+*.PININFO X1:B X2:B X3:B X4:B X5:B X6:B X7:B X8:B X9:B X10:B CLK:B OUTP:B OUTN:B VBIAS:B VDD:B VSS:B
+x3 X5 net10 net8 X7 net9 net13 X6 net11 net14 VSS VDD net12 thermo_decoder
+x4 X8 net5 net7 X10 net6 net2 X9 net4 net1 VSS VDD net3 thermo_decoder
+x1 X1 X2 X3 X4 OUTN OUTP CLK VBIAS VSS VDD x4MSB_weighted_binary
+x2 net1 net2 net3 net4 net5 net6 net7 net14 net13 net12 net11 net10 net9 net8 CLK OUTP OUTN VBIAS VSS VDD x6MSB_MATRIX
+.ends
+.end

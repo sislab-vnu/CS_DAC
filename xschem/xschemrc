@@ -307,48 +307,58 @@ set tabbed_interface 1
 ###########################################################################
 #### SKYWATER PDK SPECIFIC VARIABLES
 ###########################################################################
-
-## check if env var PDK_ROOT exists, and use it for building open_pdks paths
+## Load PDK_ROOT from env or fallback paths
 if { [info exists env(PDK_ROOT)] && $env(PDK_ROOT) ne {} } {
-  ## found variable, set tcl PDK_ROOT var
   if {![file isdir $env(PDK_ROOT)]} {
     puts stderr "Warning: PDK_ROOT environment variable is set but path not found on the system."
   }
   set PDK_ROOT $env(PDK_ROOT)
 } else {
-  ## not existing or empty. 
-  puts stderr "Warning: PDK_ROOT env. var. not found or empty, trying to find a pdk install"
-  if {[file isdir /usr/share/pdk]} {set PDK_ROOT /usr/share/pdk
-  } elseif {[file isdir /usr/local/share/pdk]} {set PDK_ROOT /usr/local/share/pdk
-  } elseif {[file isdir $env(HOME)/share/pdk]} {set PDK_ROOT $env(HOME)/share/pdk
+  puts stderr "Warning: PDK_ROOT env. var. not found or empty, trying fallback locations"
+  if {[file isdir /usr/share/pdk]} {
+    set PDK_ROOT /usr/share/pdk
+  } elseif {[file isdir /usr/local/share/pdk]} {
+    set PDK_ROOT /usr/local/share/pdk
+  } elseif {[file isdir $env(HOME)/share/pdk]} {
+    set PDK_ROOT $env(HOME)/share/pdk
   } else {
-    puts stderr {No pdk installation found, set PDK_ROOT env. var. and restart xschem}
+    puts stderr "❌ No PDK installation found, set PDK_ROOT env. var. and restart xschem"
   }
 }
+
+## Load PROJECT_ROOT if exists
 if { [info exists env(PROJECT_ROOT)] && $env(PROJECT_ROOT) ne {} } {
-  ## found variable, set tcl PDK_ROOT var
   if {![file isdir $env(PROJECT_ROOT)]} {
     puts stderr "Warning: PROJECT_ROOT environment variable is set but path not found on the system."
   }
   set PROJECT_ROOT $env(PROJECT_ROOT)
 } else {
-  puts stderr "Warning: PROJECT_ROOT env. var. not found or empty, trying to find a pdk install"
+  puts stderr "Warning: PROJECT_ROOT env. var. not found or empty"
 }
 
-if {[info exists PDK_ROOT]} {
-  set 180MCU_MODELS ${PDK_ROOT}/gf180mcuC/libs.tech/ngspice
-  set 180MCU_STDCELLS ${PDK_ROOT}/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice
-  puts stderr "pdk installation: using $PDK_ROOT"
-  puts stderr "180MCU_MODELS: $180MCU_MODELS"
+## Load selected PDK flavor (gf180mcuC, D, etc.)
+if { [info exists env(PDK)] && $env(PDK) ne {} } {
+  set PDK_FLAVOR $env(PDK)
+} else {
+  puts stderr "Warning: PDK env. var. not set, defaulting to gf180mcuC"
+  set PDK_FLAVOR gf180mcuC
 }
 
-# open_pdks-specific
-set XSCHEM_START_WINDOW ${PDK_ROOT}/gf180mcuC/libs.tech/xschem/tests/0_top.sch
-append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/gf180mcuC/libs.tech/xschem
-append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/gf180mcuC/libs.tech/xschem/tests
-append XSCHEM_LIBRARY_PATH :${PROJECT_ROOT}/xschem/gf180mcuc-stdcells
+## Set paths dynamically
+set 180MCU_MODELS ${PDK_ROOT}/${PDK_FLAVOR}/libs.tech/ngspice
+set 180MCU_STDCELLS ${PDK_ROOT}/${PDK_FLAVOR}/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice
+set XSCHEM_START_WINDOW ${PDK_ROOT}/${PDK_FLAVOR}/libs.tech/xschem/tests/0_top.sch
 
-# allow a user-specific path add-on
-if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH) ] } {
+puts stderr "✔ Using PDK: $PDK_FLAVOR"
+puts stderr "📦 PDK_ROOT: $PDK_ROOT"
+puts stderr "🔧 MODEL path: $180MCU_MODELS"
+
+## Xschem library paths
+append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK_FLAVOR}/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK_FLAVOR}/libs.tech/xschem/tests
+append XSCHEM_LIBRARY_PATH :${PROJECT_ROOT}/xschem/${PDK_FLAVOR}-stdcells
+
+## User library path override
+if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH)] } {
     append XSCHEM_LIBRARY_PATH :$env(XSCHEM_USER_LIBRARY_PATH)
 }

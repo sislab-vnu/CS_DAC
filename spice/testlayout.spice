@@ -1,0 +1,56 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/testlayout.sch
+**.subckt testlayout
+V1 CLK GND PULSE( 0 3.3 2n 1n 1n 4n 10n)
+V3 vcc GND 3.3
+R1 vcc net2 0 m=1
+R2 vcc net1 0 m=1
+V4 D1 GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V5 D2 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+V6 D3 GND PULSE(0 3.3 0 1n 1n 19n 40n)
+V7 D4 GND PULSE(0 3.3 0 1n 1n 39n 80n)
+x2 D1 CLK net4 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x3 net4 net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x1 net4 net3 net14 net1 VBIAS VSS VPW layouted_cell__CS_Switch_1x
+x4 net6 net5 net13 net1 VBIAS VSS VPW layouted_cell__CS_Switch_2x
+x5 net8 net7 net12 net1 VBIAS VSS VPW layouted_cell__CS_Switch_4x
+x6 net10 net9 net11 net1 VBIAS VSS VPW layouted_cell__CS_Switch_8x
+x7 D2 CLK net6 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x8 net6 net5 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x9 D3 CLK net8 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x10 net8 net7 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x11 D4 CLK net10 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x12 net10 net9 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+R3 net2 net14 0 m=1
+R4 vcc net13 0 m=1
+R5 vcc net12 0 m=1
+R6 vcc net11 0 m=1
+x13 net16 net15 net17 net1 VBIAS VSS VPW layouted_cell__CS_Switch_16x
+x14 D4 CLK net16 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x15 net16 net15 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+R7 vcc net17 0 m=1
+**** begin user architecture code
+
+.tran 0.01n 320n
+.save @R1[i] @R2[i] @R3[i] @R4[i] @R5[i] @R6[i] @R7[i]
+.save all
+
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+
+
+VVNW VNW 0 dc 3.3
+VVDD VDD 0 dc 3.3
+VVSS  VSS 0 dc 0
+VVbias Vbias 0 dc 1.8
+VVPW VPW 0 dc 0
+
+
+ .include /home/ducluong/CS_DAC/Magic_gf180mcuD/layouted_cell.spice
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

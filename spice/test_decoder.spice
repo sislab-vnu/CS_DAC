@@ -1,0 +1,51 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/test_decoder.sch
+**.subckt test_decoder
+V2 XO GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V6 X2 GND PULSE(0 3.3 0 1n 1n 19n 40n)
+V5 X1 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+x1 XO X1 X2 D1 D3 D4 D5 D6 D2 D7 VDD GND thermometter_decoder
+V1 VDD GND 3.3
+**** begin user architecture code
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+
+.tran 0.1n 80n
+.save all
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  thermometter_decoder.sym # of pins=12
+** sym_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sch
+.subckt thermometter_decoder X0 X1 X2 D1 D3 D4 D5 D6 D2 D7 VDD VSS
+*.ipin X0
+*.ipin X1
+*.ipin X2
+*.opin D1
+*.opin D2
+*.opin D3
+*.opin D4
+*.opin D5
+*.opin D6
+*.opin D7
+*.iopin VDD
+*.iopin VSS
+x3 X1 X2 D6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x4 X1 X0 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x5 net2 X2 D5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x6 X2 D4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+x7 X1 X0 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x8 net3 X2 D3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x9 X1 X2 D2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x10 D2 X0 D1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x1 X1 X0 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x2 net1 X2 D7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+.ends
+
+.GLOBAL GND
+.end

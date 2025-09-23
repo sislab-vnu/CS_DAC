@@ -1,0 +1,9 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_2x.sch
+.subckt CS_Switch_2x OUTN OUTP INP INN VBIAS VSS
+*.PININFO INP:I INN:I OUTP:O OUTN:O VBIAS:B VSS:B
+M1 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.22u nf=1 m=1
+M2 OUTN INN net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 m=1
+M3 OUTP INP net1 VSS nfet_03v3 L=0.28u W=0.22u nf=1 m=1
+M5 net2 VBIAS VSS VSS nfet_03v3 L=1.8u W=0.44u nf=1 m=1
+.ends
+.end

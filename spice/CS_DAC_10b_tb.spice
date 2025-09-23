@@ -1,0 +1,40 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_DAC_10b_tb.sch
+**.subckt CS_DAC_10b_tb
+V1 VDD GND 3.3
+V3 VBIAS GND 1.8
+V2 CLK GND PULSE(0 3.3 0n 1n 1n 24n 50n)
+V4 X1 GND PULSE(0 3.3 0 1n 1n 49n 100n)
+V5 X2 GND PULSE(0 3.3 0 1n 1n 99n 200n)
+V6 X3 GND PULSE(0 3.3 0 1n 1n 199n 400n)
+V7 X4 GND PULSE(0 3.3 0 1n 1n 399n 800n)
+V8 X5 GND PULSE(0 3.3 0 1n 1n 799n 1600n)
+V9 X6 GND PULSE(0 3.3 0 1n 1n 1599n 3200n)
+V11 X7 GND PULSE(0 3.3 0 1n 1n 3199n 6400n)
+V14 X8 GND PULSE(0 3.3 0 1n 1n 6399n 12800n)
+V17 X9 GND PULSE(0 3.3 0 1n 1n 12799n 25600n)
+V19 X10 GND PULSE(0 3.3 0 1n 1n 25599n 51200n)
+x1 X1 X2 X3 X4 X5 X6 X7 X8 X9 X10 CLK OUT+ OUT- VBIAS VDD GND CS_DAC_10b
+R1 VDD OUT- 50 m=1
+R2 VDD OUT+ 50 m=1
+**** begin user architecture code
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+
+.save  @R1[i] @R2[i] v(OUT+) v(OUT-) v(CLK)
+.control
+set wr_vecnames
+set wr_singlescale
+tran 1n 51200n
+run
+wrdata /home/ducluong/CS_DAC/spice/6MSB_MATRIX_layout.raw @R1[i] @R2[i] v(OUT+) v(OUT-) v(CLK)
+.endc
+
+
+ .inc /home/ducluong/CS_DAC/Magic_gf180mcuD/CS_DAC_10b.spice
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

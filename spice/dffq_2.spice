@@ -1,0 +1,4 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/gf180mcuc-stdcells/dffq_2.sym
+**.subckt dffq_2
+**.ends
+.end

@@ -1,0 +1,12 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/unit_cell_aray.sch
+.subckt unit_cell_aray Ri Ci Ri-1 CLK OUTP OUTN VBIAS VDD VSS
+*.PININFO Ri:I Ci:I Ri-1:I CLK:I OUTP:O OUTN:O VBIAS:B VDD:B VSS:B
+x4 net1 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x1 net5 CLK net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x2 Ri Ci net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x3 net6 Ri-1 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand2_2
+x5 net3 net4 OUTP OUTN VBIAS VSS CS_Switch_16x2
+x6 net1 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+x7 net2 net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+.ends
+.end

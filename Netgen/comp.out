@@ -1,0 +1,112 @@
+
+Circuit 1 cell thermo_decoder and Circuit 2 cell thermo_decoder are black boxes.
+Warning: Equate pins:  cell thermo_decoder is a placeholder, treated as a black box.
+Warning: Equate pins:  cell thermo_decoder is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: thermo_decoder                  |Circuit 2: thermo_decoder                  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+10                                         |10                                         
+11                                         |11                                         
+12                                         |12                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes thermo_decoder and thermo_decoder are equivalent.
+
+Circuit 1 cell x6MSB_MATRIX and Circuit 2 cell x6MSB_MATRIX are black boxes.
+Warning: Equate pins:  cell x6MSB_MATRIX is a placeholder, treated as a black box.
+Warning: Equate pins:  cell x6MSB_MATRIX is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: x6MSB_MATRIX                    |Circuit 2: x6MSB_MATRIX                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+10                                         |10                                         
+11                                         |11                                         
+12                                         |12                                         
+13                                         |13                                         
+14                                         |14                                         
+15                                         |15                                         
+16                                         |16                                         
+17                                         |17                                         
+18                                         |18                                         
+19                                         |19                                         
+20                                         |20                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes x6MSB_MATRIX and x6MSB_MATRIX are equivalent.
+
+Circuit 1 cell x4MSB_weighted_binary and Circuit 2 cell x4MSB_weighted_binary are black boxes.
+Warning: Equate pins:  cell x4MSB_weighted_binary is a placeholder, treated as a black box.
+Warning: Equate pins:  cell x4MSB_weighted_binary is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: x4MSB_weighted_binary           |Circuit 2: x4MSB_weighted_binary           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+8                                          |8                                          
+9                                          |9                                          
+10                                         |10                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes x4MSB_weighted_binary and x4MSB_weighted_binary are equivalent.
+
+Subcircuit summary:
+Circuit 1: CS_DAC_10b                      |Circuit 2: CS_DAC_10b                      
+-------------------------------------------|-------------------------------------------
+thermo_decoder (2)                         |thermo_decoder (2)                         
+x6MSB_MATRIX (1)                           |x6MSB_MATRIX (1)                           
+x4MSB_weighted_binary (1)                  |x4MSB_weighted_binary (1)                  
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: CS_DAC_10b                      |Circuit 2: CS_DAC_10b                      
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+OUTN                                       |OUTN                                       
+OUTP                                       |OUTP                                       
+CLK                                        |CLK                                        
+VBIAS                                      |VBIAS                                      
+X5                                         |X5                                         
+X8                                         |X8                                         
+X7                                         |X7                                         
+X10                                        |X10                                        
+X6                                         |X6                                         
+X9                                         |X9                                         
+X1                                         |X1                                         
+X2                                         |X2                                         
+X3                                         |X3                                         
+X4                                         |X4                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CS_DAC_10b and CS_DAC_10b are equivalent.
+
+Final result: Circuits match uniquely.
+.

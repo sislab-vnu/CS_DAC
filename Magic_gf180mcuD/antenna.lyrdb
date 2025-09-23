@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 ANTENNA DRC Run Report at</description>
+ <original-file>/home/ducluong/CS_DAC/Magic_gf180mcuD/CS_DAC_10b.gds</original-file>
+ <generator>drc: script='/home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/klayout/tech/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>CS_DAC_10b</top-cell>
+ <tags>
+  <tag>
+   <name>agate</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>pmetal</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>pmetal_factor</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>ametal_eff</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>adiodes</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>diode_factors</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>ratio</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>max_ratio</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>ANT.1</name>
+   <description>ANT.1: Maximum ratio of Poly2 perimeter area to related gate oxide area: 200</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.8</name>
+   <description>ANT.8: Maximum ratio of contact area to related gate oxide area: 10</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.2</name>
+   <description>ANT.16_i_ANT.2: Maximum ratio of Metal1 perimeter
+                 area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.2</name>
+   <description>ANT.16_ii_ANT.2: Maximum ratio of Metal1 perimeter
+                 area to related thick gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.9</name>
+   <description>ANT.16_i_ANT.9: Maximum ratio of Via1 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.9</name>
+   <description>ANT.16_ii_ANT.9: Maximum ratio of Via1 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.3</name>
+   <description>ANT.16_i_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.3</name>
+   <description>ANT.16_ii_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.10</name>
+   <description>ANT.16_i_ANT.10: Maximum ratio of Via2 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.10</name>
+   <description>ANT.16_ii_ANT.10: Maximum ratio of Via2 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.4</name>
+   <description>ANT.16_i_ANT.4: Maximum ratio of Metal3 perimeter area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.4</name>
+   <description>ANT.16_ii_ANT.4: Maximum ratio of Metal3 perimeter area to related thick gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.11</name>
+   <description>ANT.16_i_ANT.11: Maximum ratio of Via3 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.11</name>
+   <description>ANT.16_ii_ANT.11: Maximum ratio of Via3 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.5</name>
+   <description>ANT.16_i_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.5</name>
+   <description>ANT.16_ii_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.12</name>
+   <description>ANT.16_i_ANT.12: Maximum ratio of Via4 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.12</name>
+   <description>ANT.16_ii_ANT.12: Maximum ratio of Via4 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.6</name>
+   <description>ANT.16_i_ANT.6: Maximum ratio of Metal5 perimeter area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.6</name>
+   <description>ANT.16_ii_ANT.6: Maximum ratio of Metal5 perimeter area to related thick gate oxide area 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_iii_ANT.14_MT_MIMB</name>
+   <description>ANT.16_iii_ANT.14_MT_MIMB: Maximum ratio of each of the Top metal layer perimeter
+                    area to related MIM area is 400</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>CS_DAC_10b</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'ANT.16_ii_ANT.2'</category>
+   <cell>CS_DAC_10b</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (804.16,472.36;804.16,617.96;804.155,617.96;804.155,619.64;943.32,619.64;943.32,662.76;944.16,662.76;944.16,619.64;1021.72,619.64;1021.72,642.52;1023.4,642.52;1023.4,639.22;1025.42,639.22;1025.42,638.84;1023.4,638.84;1023.4,633.62;1025.42,633.62;1025.42,633.24;1023.4,633.24;1023.4,628.02;1025.42,628.02;1025.42,627.64;1023.4,627.64;1023.4,622.42;1025.42,622.42;1025.42,622.04;1023.4,622.04;1023.4,619.64;1023.405,619.64;1023.405,617.96;805.84,617.96;805.84,615.72;1061.2,615.72;1061.2,614.6;805.84,614.6;805.84,597.8;1061.2,597.8;1061.2,596.68;805.84,596.68;805.84,579.88;1061.2,579.88;1061.2,578.76;805.84,578.76;805.84,561.96;1061.2,561.96;1061.2,560.84;805.84,560.84;805.84,544.04;1061.2,544.04;1061.2,542.92;805.84,542.92;805.84,526.12;1061.2,526.12;1061.2,525;805.84,525;805.84,508.2;1061.2,508.2;1061.2,507.08;805.84,507.08;805.84,490.28;1061.2,490.28;1061.2,489.16;805.84,489.16;805.84,472.36)</value>
+    <value>[#agate] float: 2.702</value>
+    <value>[#pmetal] float: 4966.98</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#ametal_eff] float: 2682.1692</value>
+    <value>[#adiodes] text: '0'</value>
+    <value>[#diode_factors] text: '6000'</value>
+    <value>[#ratio] float: 992.660695781</value>
+    <value>[#max_ratio] float: 400</value>
+   </values>
+  </item>
+ </items>
+</report-database>

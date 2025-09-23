@@ -1,0 +1,178 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/6MSB_matrix.sch
+**.subckt 6MSB_matrix
+x65 X1 X2 X3 C1 C3 C4 C5 C6 C2 C7 VDD GND thermometter_decoder
+x64 X4 X5 X6 D1 D3 D4 D5 D6 D2 D7 VDD GND thermometter_decoder
+V2 X1 GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V5 X2 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+V6 X3 GND PULSE(0 3.3 0 1n 1n 19n 40n)
+V7 X4 GND PULSE(0 3.3 0 1n 1n 39n 80n)
+V8 X5 GND PULSE(0 3.3 0 1n 1n 79n 160n)
+V9 X6 GND PULSE(0 3.3 0 1n 1n 159n 320n)
+V15 CLK GND PULSE(0 3.3 2n 1n 1n 4n 10n)
+V1 VDD GND 3.3
+V10 VBIAS GND 1.8
+V4 OUTP GND 3.3
+V11 OUTN GND 3.3
+x1 D1 C1 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x2 D1 C2 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x3 D1 C3 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x4 D1 C4 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x5 D1 C5 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x6 D1 C6 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x7 D1 C7 VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x8 D1 GND VDD CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x9 D2 C1 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x10 D2 C2 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x11 D2 C3 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x12 D2 C4 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x13 D2 C5 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x14 D2 C6 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x15 D2 C7 D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x16 D2 GND D1 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x17 D3 C1 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x18 D3 C2 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x19 D3 C3 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x20 D3 C4 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x21 D3 C5 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x22 D3 C6 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x23 D3 C7 D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x24 D3 GND D2 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x25 D4 C1 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x26 D4 C2 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x27 D4 C3 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x28 D4 C4 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x29 D4 C5 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x30 D4 C6 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x31 D4 C7 D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x32 D4 GND D3 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x33 D5 C1 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x34 D5 C2 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x35 D5 C3 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x36 D5 C4 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x37 D5 C5 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x38 D5 C6 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x39 D5 C7 D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x40 D5 GND D4 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x41 D6 C1 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x42 D6 C2 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x43 D6 C3 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x44 D6 C4 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x45 D6 C5 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x46 D6 C6 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x47 D6 C7 D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x48 D6 GND D5 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x49 D7 C1 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x50 D7 C2 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x51 D7 C3 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x52 D7 C4 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x53 D7 C5 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x54 D7 C6 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x55 D7 C7 D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x56 D7 GND D6 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x57 GND C1 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x58 GND C2 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x59 GND C3 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x60 GND C4 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x61 GND C5 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x62 GND C6 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+x63 GND C7 D7 CLK net1 net2 VBIAS VDD GND unit_cell_aray
+R1 OUTP net2 0 m=1
+R2 OUTN net1 0 m=1
+**** begin user architecture code
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+
+
+.save v(OUTP) v(OUTN) @R1[i] @R2[i]
+.control
+set wr_vecnames
+set wr_singlescale
+tran 0.01n 320n
+run
+wrdata /home/ducluong/CS_DAC/spice/6MSB_matrix.raw v(OUTP) v(OUTN) @R1[i] @R2[i]
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  thermometter_decoder.sym # of pins=12
+** sym_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/thermometter_decoder.sch
+.subckt thermometter_decoder X0 X1 X2 D1 D3 D4 D5 D6 D2 D7 VDD VSS
+*.ipin X0
+*.ipin X1
+*.ipin X2
+*.opin D1
+*.opin D2
+*.opin D3
+*.opin D4
+*.opin D5
+*.opin D6
+*.opin D7
+*.iopin VDD
+*.iopin VSS
+x3 X1 X2 D6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x4 X1 X0 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x5 net2 X2 D5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x6 X2 D4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+x7 X1 X0 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x8 net3 X2 D3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x9 X1 X2 D2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x10 D2 X0 D1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x1 X1 X0 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+x2 net1 X2 D7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__and2_2
+.ends
+
+
+* expanding   symbol:  unit_cell_aray.sym # of pins=9
+** sym_path: /home/ducluong/CS_DAC/xschem/unit_cell_aray.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/unit_cell_aray.sch
+.subckt unit_cell_aray Ri Ci Ri-1 CLK OUTP OUTN VBIAS VDD VSS
+*.ipin Ri
+*.ipin Ci
+*.ipin Ri-1
+*.ipin CLK
+*.opin OUTP
+*.opin OUTN
+*.iopin VBIAS
+*.iopin VSS
+*.iopin VDD
+x4 net1 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__inv_2
+x1 net3 CLK net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+x2 Ri Ci net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__or2_2
+x3 net4 Ri-1 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand2_2
+x5 net1 net2 OUTP OUTN VBIAS VSS CS_Switch_16x2
+.ends
+
+
+* expanding   symbol:  CS_Switch_16x2.sym # of pins=6
+** sym_path: /home/ducluong/CS_DAC/xschem/CS_Switch_16x2.sym
+** sch_path: /home/ducluong/CS_DAC/xschem/CS_Switch_16x2.sch
+.subckt CS_Switch_16x2 INP INN OUTP OUTN VBIAS VSS
+*.ipin INP
+*.ipin INN
+*.opin OUTP
+*.opin OUTN
+*.iopin VBIAS
+*.iopin VSS
+XM2 net2 VBIAS VSS VSS nfet_03v3 L=0.3u W=0.62u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM1 net1 VBIAS net2 VSS nfet_03v3 L=0.28u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM3 net1 VBIAS net3 VSS nfet_03v3 L=0.28u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM5 OUTN INN net1 VSS nfet_03v3 L=0.3u W=0.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM6 net3 VBIAS VSS VSS nfet_03v3 L=0.3u W=0.62u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM9 OUTP INP net1 VSS nfet_03v3 L=0.3u W=0.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

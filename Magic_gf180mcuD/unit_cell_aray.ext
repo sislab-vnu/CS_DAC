@@ -1,0 +1,535 @@
+timestamp 1758523347
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use gf180mcu_fd_sc_mcu7t5v0__or2_2 gf180mcu_fd_sc_mcu7t5v0__or2_2_0 1 0 74 0 -1 605
+use gf180mcu_fd_sc_mcu7t5v0__nand2_2 gf180mcu_fd_sc_mcu7t5v0__nand2_2_0 1 0 1514 0 -1 605
+use gf180mcu_fd_sc_mcu7t5v0__inv_2 gf180mcu_fd_sc_mcu7t5v0__inv_2_0 1 0 2874 0 -1 605
+use gf180mcu_fd_sc_mcu7t5v0__dffq_2 gf180mcu_fd_sc_mcu7t5v0__dffq_2_0 1 0 74 0 1 725
+use gf180mcu_fd_sc_mcu7t5v0__buf_2 gf180mcu_fd_sc_mcu7t5v0__buf_2_2 1 0 3546 0 -1 605
+use gf180mcu_fd_sc_mcu7t5v0__buf_2 gf180mcu_fd_sc_mcu7t5v0__buf_2_1 1 0 3546 0 1 725
+use CS_Switch_16x2 CS_Switch_16x2_0 1 0 4905 0 1 -145
+port "Ri-1" 3 1638 181 2320 245 m1
+port "Ci" 2 430 -73 502 319 m1
+port "Ri" 1 206 149 278 402 m1
+port "VSS" 9 827 1749 1093 2241 m3
+port "VBIAS" 7 5321 -53 5371 820 m2
+port "OUTN" 6 5353 1061 5402 1406 m1
+port "OUTP" 5 4872 1055 4922 1470 m1
+port "CLK" 4 204 1079 392 1155 m1
+port "VDD" 8 177 1774 443 2266 m3
+node "m1_3353_199#" 1 190.287 3353 199 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5408 416 44625 1060 0 0 0 0 0 0
+node "Ri-1" 1 179.946 1638 181 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43648 1492 0 0 0 0 0 0 0 0
+node "m1_811_293#" 1 313.061 811 293 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47139 1768 0 0 0 0 0 0 0 0
+node "Ci" 0 165.816 430 -73 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28224 928 0 0 0 0 0 0 0 0
+node "Ri" 0 107.679 206 149 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18216 650 0 0 0 0 0 0 0 0
+node "m1_4426_545#" 0 210.418 4426 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41400 930 0 0 0 0 0 0 0 0
+node "VSS" 9 5195.07 827 1749 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37746 1346 141164 2622 4258376 26822 5138786 31084 0 0
+node "VBIAS" 2 481.413 5321 -53 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37392 1136 73112 2076 0 0 0 0 0 0
+node "m1_1000_985#" 2 597.619 1000 985 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5408 416 201312 3600 0 0 0 0 0 0
+node "OUTN" 1 171.555 5353 1061 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25824 1020 0 0 0 0 0 0 0 0
+node "m1_4247_230#" 3 552.118 4247 230 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5840 432 149356 3984 0 0 0 0 0 0
+node "OUTP" 1 192.642 4872 1055 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29240 1142 0 0 0 0 0 0 0 0
+node "m1_3141_196#" 2 565.29 3141 196 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8112 624 202318 3258 0 0 0 0 0 0
+node "m1_4249_1130#" 1 304.286 4249 1130 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5840 432 68720 1878 0 0 0 0 0 0
+node "CLK" 0 95.9832 204 1079 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14288 528 0 0 0 0 0 0 0 0
+node "a_2421_1459#" 6 40.2658 2421 1459 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3477 236 0 0 0 0 0 0 0 0
+node "a_84_1459#" 6 43.7517 84 1459 nnd 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4554 270 0 0 0 0 0 0 0 0
+node "VDD" 3184 8111.57 177 1774 m3 841232 4284 0 0 20000 800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154224 4196 135514 3794 4270760 26894 5137056 31074 0 0
+node "w_2999_1486#" 1804 16.968 2999 1486 nw 5656 314 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_1275_619#" 0 0 1275 619 ppd 0 0 0 0 0 0 20000 800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117652 2178 0 0 0 0 0 0 0 0
+cap "m1_4247_230#" "VBIAS" 356.65
+cap "m1_4249_1130#" "OUTP" 65.2679
+cap "m1_4249_1130#" "m1_3141_196#" 2.455
+cap "VBIAS" "OUTP" 27.219
+cap "a_84_1459#" "VDD" 39.8841
+cap "Ri" "VSS" 0.771798
+cap "VSS" "m1_1000_985#" 389.352
+cap "OUTN" "m1_4249_1130#" 0.52688
+cap "VDD" "m1_1000_985#" 377.324
+cap "Ri" "VDD" 41.3879
+cap "VSS" "VDD" 12987.9
+cap "OUTN" "VBIAS" 31.875
+cap "VBIAS" "m1_3353_199#" 1.25839
+cap "m1_811_293#" "Ri" 2.40128
+cap "m1_811_293#" "m1_1000_985#" 5.79832
+cap "m1_811_293#" "VSS" 77.3226
+cap "m1_4247_230#" "OUTP" 4.80766
+cap "m1_811_293#" "VDD" 126.804
+cap "m1_4247_230#" "m1_3141_196#" 3.55992
+cap "w_2999_1486#" "VDD" 4.14359
+cap "m1_4247_230#" "OUTN" 35.9106
+cap "m1_4247_230#" "m1_3353_199#" 7.20346
+cap "Ri" "CLK" 4.37311
+cap "OUTP" "m1_3141_196#" 2.24564
+cap "VSS" "CLK" 1.34173
+cap "VDD" "CLK" 50.5861
+cap "OUTN" "OUTP" 37.1852
+cap "Ri-1" "m1_3141_196#" 3.46715
+cap "m1_4426_545#" "VSS" 24.0433
+cap "m1_4426_545#" "VDD" 12.42
+cap "Ri-1" "m1_3353_199#" 0.0738679
+cap "m1_3353_199#" "m1_3141_196#" 71.6097
+cap "Ci" "Ri-1" 2.30264
+cap "VSS" "a_2421_1459#" 3.52982
+cap "VDD" "a_2421_1459#" 9.13678
+cap "VSS" "m1_4249_1130#" 57.8344
+cap "VDD" "m1_4249_1130#" 50.8531
+cap "VBIAS" "VSS" 59.947
+cap "VBIAS" "VDD" 65.5412
+cap "m1_4247_230#" "VSS" 128.186
+cap "m1_4247_230#" "VDD" 113.32
+cap "VSS" "OUTP" 13.0244
+cap "VDD" "OUTP" 12.7285
+cap "m1_1000_985#" "m1_3141_196#" 20.5338
+cap "Ri-1" "m1_1000_985#" 24.9689
+cap "VDD" "m1_3141_196#" 436.435
+cap "Ri-1" "VSS" 48.3705
+cap "VSS" "m1_3141_196#" 255.519
+cap "Ri-1" "VDD" 176.3
+cap "OUTN" "VSS" 9.81794
+cap "m1_4426_545#" "m1_4249_1130#" 5.42229
+cap "OUTN" "VDD" 7.15117
+cap "m1_4426_545#" "VBIAS" 0.441621
+cap "VSS" "m1_3353_199#" 122.485
+cap "VDD" "m1_3353_199#" 40.6784
+cap "m1_811_293#" "m1_3141_196#" 0.129163
+cap "Ci" "Ri" 48.5003
+cap "m1_4247_230#" "m1_4426_545#" 17.0276
+cap "Ci" "VSS" 10.8837
+cap "Ci" "VDD" 46.3072
+cap "Ci" "m1_811_293#" 3.52278
+cap "m1_4426_545#" "m1_3141_196#" 0.266764
+cap "VBIAS" "m1_4249_1130#" 16.4549
+cap "m1_4247_230#" "m1_4249_1130#" 104.563
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" 0.0988767
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 16.2505
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.095021
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.00100056
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.00130832
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.750332
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 4.76624
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -1.20064
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -2.18655
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.674536
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.000984067
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 23.4117
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.00133487
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" -24.2501
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.0193433
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.657803
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 0.163988
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 0.106867
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" -3.52278
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 80.4739
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 5.25165
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -1.20064
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" -12.3793
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 38.6763
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" -24.2501
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 0.0536708
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 9.5584
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" -0.0519936
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 8.32914
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.445602
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 0.952297
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" -0.845294
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 0.00958374
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 41.4751
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 75.9173
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 0.748441
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" 0.0172717
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -0.159422
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 8.29573
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 1.05303
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -2.29413
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 129.931
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 7.21571
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" -5.71896
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.185313
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 116.612
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" 1.31999
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -14.0467
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" 1.5564
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 39.8291
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 9.37361
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -106.038
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 1.67142
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -0.0168504
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 53.1106
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 20.7001
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.343096
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.0146523
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" -13.286
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 2.8343
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.677972
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" 0.900119
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.0199626
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 2.93891
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 42.7295
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 59.6187
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" 6.46341
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 2.03398
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.475948
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 3.46473
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 0.719003
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 21.6798
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 79.4517
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 48.5436
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 70.161
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 126.76
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 24.0963
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" -0.337512
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 89.6994
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.310729
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.212934
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.12029
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 1.38003
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 8.9992
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 34.9504
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" -0.667798
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" 0.0351545
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 1.31062
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 0.188474
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 0.572388
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 13.838
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 90.3343
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/VBIAS" 0.400203
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.0378764
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.794898
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" 0.611059
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 1.70858
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 196.183
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" 0.204192
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 6.32837
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.5821
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 21.561
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 61.1972
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 0.0788057
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 64.4048
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 1.2395
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.603753
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.978596
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" "CS_Switch_16x2_0/VBIAS" 3.7115
+cap "CS_Switch_16x2_0/a_64_826#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.967643
+cap "CS_Switch_16x2_0/a_186_832#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 2.25216
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "CS_Switch_16x2_0/VBIAS" 1.5563
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.114935
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/a_n250_826#" 0.127581
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 12.4605
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" 1.24035
+cap "CS_Switch_16x2_0/a_334_832#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 0.14625
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" 2.16627
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 3.56116
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_n250_1100#" 0.422162
+cap "CS_Switch_16x2_0/a_186_832#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 0.196024
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.596442
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/a_64_826#" 0.174254
+cap "CS_Switch_16x2_0/a_668_826#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 0.127581
+cap "CS_Switch_16x2_0/a_n250_826#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.694834
+cap "CS_Switch_16x2_0/OUTP" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 1.95008
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 17.2075
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 3.34508
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "CS_Switch_16x2_0/VBIAS" 0.315074
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 2.47282
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/VBIAS" 1.62009
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.979557
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.0392715
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 4.25987
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 1.00083
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 26.8272
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" 3.51697
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" 1.86583
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 31.713
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 2.01877
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 5.23861
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 5.52598
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 0.818511
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 76.9122
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159#" 0.596548
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" 29.7714
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.606511
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 0.0788772
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 1.42625
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" -15.8583
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 2.9021
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.895071
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 94.8823
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 0.734097
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 5.99333
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" 0.109888
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 87.9659
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_836_159#" 1.57088
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 2.09414
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" 1.88268
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527#" 0.124322
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.703302
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 0.248279
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 33.956
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 64.0721
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 32.1657
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.748586
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 2.27374e-13
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 176.103
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 3.12836
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 35.627
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 0.623775
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" 0.059009
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527#" 1.24402
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.589805
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.248279
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 61.8077
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" 21.6019
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159#" 0.656369
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" 20.2605
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1348_527#" 0.88955
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_244_472#" 0.353742
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.661009
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" -0.987203
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" 1.37858
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 28.5785
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" -1.76296
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_880_527#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.410616
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" 1.47359
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 0.115676
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" -0.972358
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 13.841
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 0.662989
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 10.8404
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 57.3487
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.305315
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/a_56_472#" 0.0190474
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.890001
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.86071
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.0796292
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.0214427
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2296_527#" 1.54498
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1328_159#" 0.370986
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.458783
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" 57.8778
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 29.3672
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 0.748263
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" 6.82876
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 4.54883
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 21.7491
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 10.4357
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 8.32083
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 25.3871
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 7.06475
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 170.415
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 10.9514
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 2.83085
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.00929356
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159#" 1.57794
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.661009
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159#" 0.533377
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 2.84115
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 0.198248
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.0109076
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" 6.95765
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 1.7335
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.12048
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_244_68#" 1.15685
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 7.14863
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" 19.816
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 61.0451
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 5.3864
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.0112118
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" 9.49946
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" 0.00596689
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 170.325
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.415826
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.458913
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 37.7575
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 6.07417
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.22539
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 51.5588
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/a_652_68#" 0.703399
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_836_159#" 0.165375
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.0310707
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" 2.82002
+cap "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" 82.7042
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" 10.1234
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 2.76552
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.164833
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" 14.8061
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" 74.4485
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" 15.7099
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 0.0918892
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 2.26218
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 85.5337
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/a_n250_1100#" 1.01785
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" 9.9166
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 11.2219
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2256_159#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.246276
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.367422
+cap "CS_Switch_16x2_0/a_64_826#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.768643
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 0.00190726
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "CS_Switch_16x2_0/a_186_832#" 0.102537
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 1.39159
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "CS_Switch_16x2_0/OUTP" 0.333828
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" 0.338896
+cap "CS_Switch_16x2_0/OUTP" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 1.35831
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" -0.78628
+cap "CS_Switch_16x2_0/a_668_1100#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.0258819
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 117.15
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 66.1627
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 1.4912
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_448_472#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.668178
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/OUTP" 12.2751
+cap "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 165.129
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 15.9809
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 266.938
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" 0.0152115
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 6.81371
+cap "CS_Switch_16x2_0/a_334_832#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.324513
+cap "CS_Switch_16x2_0/a_n250_826#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.0534725
+cap "CS_Switch_16x2_0/a_668_826#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.0386036
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 3.0865
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 37.1881
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 0.0015495
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.0340891
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 4.13712
+cap "CS_Switch_16x2_0/a_186_832#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 1.39391
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "CS_Switch_16x2_0/a_n250_1100#" 0.206986
+cap "CS_Switch_16x2_0/VBIAS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.671711
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/a_186_832#" 0.180592
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 17.6526
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_36_151#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 1.60238
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 7.62195
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 118.961
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 23.0598
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A1" 0.00966367
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" 0.586824
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2304_115#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 85.4589
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "CS_Switch_16x2_0/OUTN" 0.0622179
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 6.80557
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 0.483397
+cap "CS_Switch_16x2_0/a_n250_826#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 2.17652
+cap "CS_Switch_16x2_0/OUTN" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.778171
+cap "CS_Switch_16x2_0/OUTP" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" 5.90913
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 48.9424
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "CS_Switch_16x2_0/OUTP" -0.420169
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1376_115#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.110316
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_2011_527#" 0.120962
+cap "CS_Switch_16x2_0/a_n250_1100#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" 0.373571
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/a_1004_159#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.104537
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/OUTN" 0.216886
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_n250_826#" 0.635642
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" 0.654202
+cap "CS_Switch_16x2_0/a_334_832#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 1.61397
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/OUTN" -0.203702
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" 0.24421
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.708943
+cap "CS_Switch_16x2_0/a_334_832#" "CS_Switch_16x2_0/VBIAS" 4.39185
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/OUTN" 19.5073
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/a_n250_1100#" 0.0328531
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_n250_826#" 0.93756
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/a_64_826#" 0.839304
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_334_832#" 1.08722
+cap "CS_Switch_16x2_0/OUTN" "CS_Switch_16x2_0/VBIAS" -22.2731
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_n250_1100#" 0.615137
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" 0.253787
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/OUTN" 5.54644
+cap "CS_Switch_16x2_0/a_186_832#" "CS_Switch_16x2_0/OUTN" 0.600276
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_n250_1100#" 1.0654
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "CS_Switch_16x2_0/OUTP" 10.6038
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/OUTP" 29.8668
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_64_826#" 1.41125
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 4.79198
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/a_668_1100#" 0.0328531
+cap "CS_Switch_16x2_0/VBIAS" "CS_Switch_16x2_0/a_64_826#" 3.11663
+cap "CS_Switch_16x2_0/a_668_826#" "CS_Switch_16x2_0/VBIAS" 0.973113
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_668_1100#" 0.788794
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_64_826#" 1.31171
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/OUTP" 4.70945
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 2.01339
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 2.45493
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_668_826#" 0.93756
+cap "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.797572
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_668_1100#" 1.0654
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/OUTP" 4.70496
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" -22.4874
+cap "CS_Switch_16x2_0/OUTP" "CS_Switch_16x2_0/VBIAS" -23.1584
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/VBIAS" 14.0145
+cap "CS_Switch_16x2_0/a_186_832#" "CS_Switch_16x2_0/OUTP" 0.600276
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/OUTP" 1.7376
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" 4.31287
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 6.17921
+cap "CS_Switch_16x2_0/a_186_832#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.139765
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 1.77893
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.0060921
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/VBIAS" -0.139799
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" 16.0373
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/VBIAS" 15.4047
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "CS_Switch_16x2_0/a_186_832#" 0.0599926
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "CS_Switch_16x2_0/OUTP" 0.378173
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.561316
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "CS_Switch_16x2_0/a_186_832#" 5.07101
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 66.1022
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/VBIAS" 159.791
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/a_n250_826#" 0.777128
+cap "CS_Switch_16x2_0/OUTN" "CS_Switch_16x2_0/a_668_1100#" 0.319253
+cap "CS_Switch_16x2_0/a_186_832#" "CS_Switch_16x2_0/VBIAS" 9.99227
+cap "CS_Switch_16x2_0/OUTP" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" -1.19077
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "CS_Switch_16x2_0/a_186_832#" 0.43425
+cap "CS_Switch_16x2_0/OUTN" "CS_Switch_16x2_0/OUTP" -8.8525
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 3.19095
+cap "CS_Switch_16x2_0/OUTN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" 0.613876
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/a_36_68#" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" 0.0206962
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "CS_Switch_16x2_0/a_n250_1100#" 1.03322
+cap "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" 2.44742
+cap "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/a_36_68#" "CS_Switch_16x2_0/VBIAS" 0.17687
+cap "CS_Switch_16x2_0/a_n250_1100#" "CS_Switch_16x2_0/OUTP" 0.319253
+merge "CS_Switch_16x2_0/OUTP" "OUTP" -99.4121 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5776 -304 0 0 0 0 0 0 0 0
+merge "CS_Switch_16x2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VPW" -3997.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -97438 -12734 0 0 0 0 -304134 -2450 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VPW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VSS" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VPW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VSS" "m1_4426_545#"
+merge "m1_4426_545#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VSS" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VPW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VPW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VSS" "a_1275_619#"
+merge "a_1275_619#" "VSS"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VNW" -5560.6 -855176 -8774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81615 -4318 0 0 0 0 -302058 -2438 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/VNW" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VDD" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/VNW" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VDD" "a_2421_1459#"
+merge "a_2421_1459#" "w_2999_1486#"
+merge "w_2999_1486#" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/VNW" "a_84_1459#"
+merge "a_84_1459#" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/VNW" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VDD" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VNW"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/VNW" "VDD"
+merge "CS_Switch_16x2_0/INN" "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" -206.293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5840 -432 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/Z" "m1_4247_230#"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_2/I" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" -225.915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -416 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/ZN" "m1_3353_199#"
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A1" "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" -214.665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1710 -288 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/Z" "m1_811_293#"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A2" "Ci" -172.511 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28224 -928 0 0 0 0 0 0 0 0
+merge "CS_Switch_16x2_0/INP" "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" -169.819 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5840 -432 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/Z" "m1_4249_1130#"
+merge "gf180mcu_fd_sc_mcu7t5v0__buf_2_1/I" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/Q" -499.879 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8112 -624 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/Q" "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I"
+merge "gf180mcu_fd_sc_mcu7t5v0__inv_2_0/I" "m1_3141_196#"
+merge "gf180mcu_fd_sc_mcu7t5v0__or2_2_0/A1" "Ri" -114.375 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18216 -650 0 0 0 0 0 0 0 0
+merge "CS_Switch_16x2_0/OUTN" "OUTN" -58.9242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5776 -304 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/ZN" "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/D" -409.009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5408 -416 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/D" "m1_1000_985#"
+merge "CS_Switch_16x2_0/VBIAS" "VBIAS" -224.201 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__dffq_2_0/CLK" "CLK" -102.679 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14288 -528 0 0 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu7t5v0__nand2_2_0/A2" "Ri-1" -226.068 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43648 -1492 0 0 0 0 0 0 0 0

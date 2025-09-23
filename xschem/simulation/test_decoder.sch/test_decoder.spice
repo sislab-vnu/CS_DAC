@@ -1,0 +1,40 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/test_decoder.sch
+.subckt test_decoder
+
+x1 X1 XO net1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+x3 X1 X2 D2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_4
+V2 XO GND PULSE(0 3.3 0 1n 1n 4n 10n)
+V6 X2 GND PULSE(0 3.3 0 1n 1n 19n 40n)
+V5 X1 GND PULSE(0 3.3 0 1n 1n 9n 20n)
+x4 XO D2 D1 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_4
+x5 X2 net1 D3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_4
+x6 XO X1 net2 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__or2_4
+x7 X2 net2 D5 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+x8 X1 X2 D6 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+x9 XO X1 net3 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+x10 X2 net3 D7 VDD VNW VPW VSS gf180mcu_fd_sc_mcu7t5v0__and2_4
+**** begin user architecture code
+
+.tran 0.1n 80n
+.save all
+
+
+
+VVDD VDD 0 dc 3.3
+VVSS VSS 0 dc 0
+VVPW VPW 0 dc 0
+VVNW VNW 0 dc 3.3
+
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+**** end user architecture code
+.ends
+.GLOBAL GND
+.end

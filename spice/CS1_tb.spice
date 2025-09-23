@@ -1,0 +1,33 @@
+** sch_path: /home/ducluong/CS_DAC/xschem/CS1_tb.sch
+**.subckt CS1_tb
+V2 X1 GND 3.3
+V15 CLK GND 0
+V1 vcc GND 3.3
+V10 VBIAS GND 1.8
+R1 vcc net1 0 m=1
+R2 vcc net2 0 m=1
+x1 CLK X1 net2 net1 VBIAS GND CS_Switch_2x2
+**** begin user architecture code
+
+.include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuC/libs.tech/ngspice/smbb000149.ngspice typical
+
+ .include /home/ducluong/eda/unic-cass/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+.inc /home/ducluong/CS_DAC/Magic_gf180mcuD/CS_Switch_2x2.spice
+
+
+.save  @R1[i] @R2[i]
+.control
+set wr_vecnames
+set wr_singlescale
+tran 1n 160n
+run
+wrdata /home/ducluong/CS_DAC/spice/postlayoutsimulation.raw @R1[i] @R2[i]
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
